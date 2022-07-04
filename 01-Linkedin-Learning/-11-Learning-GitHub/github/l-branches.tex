@@ -1,0 +1,44 @@
+first of all you wil have the same working directory with all branches 
+
+branches are where you commit the changes 
+
+
+see the branches in the project  
+git branch --all 
+
+******* create branch 
+git branch the-name-of-branch
+
+***********go to branch 
+git checkout branch-name
+
+
+********* delete a branch 
+git branch -d branch-name     safe delete 
+git branch -D branch-name  to force delete 
+
+***** create branch and go to it in the same command 
+git checkout -b the-name-of-the-branch
+
+**** rename branch 
+be in the branch
+git branch -m new-name 
+
+***** merge branches 
+first way 
+
+be in the master branch 
+git merge sub-branch-you-want-to-merge
+now you can delete the sub-branch 
+
+***** 
+second way 
+
+making branch 
+make changes in it 
+commit changes 
+push directly to the origin without merging by 
+  git  origin sub-branch 
+then make pull request
+  and merge it from github 
+now you can delete the sub-branch 

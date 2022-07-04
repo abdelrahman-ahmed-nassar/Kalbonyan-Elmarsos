@@ -1,0 +1,47 @@
+1-What does the line counter[item] = 1 do in the code below?
+
+for item in items:
+  if (item in counter.keys():
+  counter[item] +=1
+  else:
+  counter[item]=1
+ 
+answer: It creates a dictionary entry for item and sets its value to one.
+
+2-Finding the maximum value recursively has the same time complexity as _____.
+
+
+answer: an unordered list search
+
+3-Which result happens when you add a redundant entry to a hash table?
+
+
+answer: The new entry replaces the old one.
+
+4-Which line in the code snippet below adds content to a hash table?
+1 items = ["apple", "pear", "orange", "banana", "apple","orange", "apple", "pear", "banana", "orange","apple", "kiwi", "pear", "apple", "orange"]
+
+2 filter = dict()
+
+3 for key in items:
+4       filter[key] = 0
+
+5 result = set(filter.keys())
+6       print(result)
+
+
+answer: 3
+
+5-Evaluate the code snippet below.
+At what point does recursion occur when using an algorithm to find the highest value in a data set? 
+
+1 def find_max(items):
+2     if len(items) == 1:
+3         return items[0]
+4 op1 = items[0]
+5 print(op1)
+6 op2 = find_max(items[1:])
+7 print(op1, op2)
+
+
+answer: line 6
