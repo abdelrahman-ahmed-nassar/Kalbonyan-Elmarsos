@@ -1,0 +1,59 @@
+download nodeJs 
+
+--- parcel 
+[installation]   npm install parcel --save-dev
+[using]  
+  1)    NPX
+  bundle the project
+    npx parcel index.html
+
+
+keep the state maintained using parcel 
+if(module.hot) {
+  module.hot.accept();
+}
+
+with parcel you don't have to write the entire path of the imported module 
+
+can work with common js module 
+
+
+
+[second way] (using npm commands)
+
+in the json file 
+"script": {
+  "start": "parcel index.html"
+}, 
+
+in the command 
+    npm run start
+
+
+[building phase]
+"script": {
+  "start": "parcel index.html", 
+  "build": "parcel build index.html", 
+}, 
+
+npm run build
+
+
+------ install packages globally [not recommend] 
+npm i parcel -g 
+
+
+-------------- [babel polyfilling]
+npm i core-js
+
+import "core-js/stable";
+
+specific the things we want to 
+import "core-js/stable/array/find";
+
+just like this
+
+[polyfilling the async functions]
+npm i regenerator-runtime
+
+import "regenerator-runtime/runtime"

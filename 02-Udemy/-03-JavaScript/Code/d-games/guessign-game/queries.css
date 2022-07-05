@@ -1,0 +1,36 @@
+@media (max-width: 767px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .between {
+    font-size: 11px;
+  }
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .left {
+    width: 100vw;
+    margin-bottom: 6rem;
+  }
+
+  .right {
+    width: 100vw;
+    text-align: center;
+  }
+  .number {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+}

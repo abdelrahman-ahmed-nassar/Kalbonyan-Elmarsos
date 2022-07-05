@@ -1,0 +1,7 @@
+go and download node from google 
+write    node -v    to check the version 
+write     npm install live-server -g 
+
+to open a live server write 
+live-server 
+in the terminal
