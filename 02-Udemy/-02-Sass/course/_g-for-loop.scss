@@ -1,0 +1,25 @@
+// ----- loop for
+
+// to => don't includes the end
+// through => includes the ind
+
+@for $i from 1 through 10 {
+  .class-#{$i} {
+    font-size: #{$i + 10px};
+  }
+}
+
+$dimensions: 0;
+
+@for $i from 1 through 10 {
+  .circle-#{100 + $dimensions} {
+    width: $dimensions + 100px;
+    height: $dimensions + 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  $dimensions: $dimensions + 100;
+}

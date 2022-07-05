@@ -1,0 +1,74 @@
+// descendent
+
+.parent {
+  font-size: 15px;
+  .child {
+    font-size: 44px;
+    .grand-child {
+      font-size: 5px;
+    }
+  }
+}
+
+// --- advanced selectors
+
+// *** Direct child for all the child selectors
+.parent > {
+  .child {
+    font-size: 20px;
+  }
+  .test {
+    font-weight: 10px;
+  }
+}
+
+// *** Direct child for a specific selector
+.parent {
+  > .child {
+    font-size: 20px;
+  }
+  .test {
+    font-weight: 10px;
+  }
+}
+
+// ** next element
+.parent {
+  + .child {
+    font-size: 20px;
+  }
+}
+
+// *** grouping block of selectors with {}
+.parent {
+  > {
+    .element-one p {
+      font-size: 10px;
+    }
+    .element-two p {
+      font-size: 20px;
+    }
+  }
+}
+
+// *** refer the element it self (&)
+
+.btn {
+  padding: 5px;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+// --- dealing with long hand properties
+.box {
+  font: {
+    size: 15px;
+    weight: bold;
+  }
+  margin: auto {
+    top: 10px;
+    bottom: 15px;
+  }
+}

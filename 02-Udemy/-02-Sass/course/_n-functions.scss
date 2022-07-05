@@ -1,0 +1,24 @@
+@function half($size) {
+  @return $size / 2;
+}
+
+$width: 200px;
+
+.element {
+  width: $width;
+  height: half($width);
+}
+
+// REST parameters
+
+@function calculate($sizes...) {
+  $total: 0;
+  @each $size in $sizes {
+    $total: $total + $size;
+  }
+  @return $total;
+}
+
+.element {
+  top: calculate(100px, 200px, 50px);
+}

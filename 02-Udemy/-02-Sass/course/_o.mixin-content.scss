@@ -1,0 +1,39 @@
+@mixin overlay($color, $opacity) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color, $opacity);
+}
+
+.black-overlay {
+  @include overlay(black, 0.5);
+}
+
+@mixin keyF($anim-name) {
+  @keyframes #{$anim-name} {
+    @content;
+  }
+
+  @-webkit-keyframes #{$anim-name} {
+    @content;
+  }
+}
+
+@include keyF(fade-in) {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@include keyF(go-up) {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 100px;
+  }
+}

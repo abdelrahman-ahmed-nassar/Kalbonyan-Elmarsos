@@ -1,0 +1,17 @@
+/// Function To Get Element Height
+///
+/// @param {size}
+/// Element width
+/// @return {init}
+/// Return Element height => Width / 2;
+
+@function half($size) {
+  @return $size / 2;
+}
+
+$width: 200px;
+
+.element {
+  width: $width;
+  height: half($width);
+}

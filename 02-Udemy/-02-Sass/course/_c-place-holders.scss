@@ -1,0 +1,11 @@
+// --- place holders
+%mani-box {
+  background-color: white;
+  padding: 15px;
+  font-size: 22px;
+}
+
+.article {
+  @extend %main-box;
+  color: green;
+}

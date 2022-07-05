@@ -1,0 +1,24 @@
+// --- if statement
+
+$theme: "light";
+
+.page {
+  @if $theme == "light" {
+    background-color: white;
+    color: #444;
+  } @else if $theme == "dark" {
+    background-color: #444;
+    color: white;
+  } @else {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+// / inline if
+$rounded: true;
+
+.box {
+  // condition, value, else (null will prevent this line (like return))
+  border-radius: if($rounded, 6px, null);
+}

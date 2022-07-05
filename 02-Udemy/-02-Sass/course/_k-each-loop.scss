@@ -1,0 +1,37 @@
+// --- loop over list of items
+
+$themes: red, green, blue;
+
+@each $theme in $themes {
+  .#{$theme}-theme {
+    .product {
+      border-bottom: 1px solid $theme;
+    }
+  }
+}
+
+$social: (
+  "facebook": blue,
+  "youtube": red,
+  "github": black,
+);
+
+@each $name, $color in $social {
+  .#{$name} {
+    color: $color;
+    &::before {
+      content: $name;
+    }
+  }
+}
+
+// destructuring
+
+$classes: "one" 20px red, "two" 15px green, "three" 22px blue;
+
+@each $class, $font, $color in $classes {
+  .#{$class} {
+    font-size: $font;
+    background-color: $color;
+  }
+}

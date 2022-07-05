@@ -1,0 +1,14 @@
+// --- interpolation  #{}
+$company: "elzero";
+
+.ad-#{$company} {
+  font-size: 20px;
+}
+
+ad-#{unique-id()} {
+  font-weight: bold;
+}
+
+// you can use interpolation in comments
+
+// #{$company}

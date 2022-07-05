@@ -1,0 +1,31 @@
+SASS: syntactically awesome style cheat
+
+features:
+  variables
+  functions
+  loop
+  extend
+  control flow
+  advanced structure
+
+requirements: 
+  HTML 
+  CSS 
+  JavaScript
+
+--- sass online compiler 
+  https://www.sassmeister.com/
+
+--- live sass compiler (VS code extension)
+  watch sass
+
+--- files will be imported 
+  sass/layout/_global-rules.scss
+
+--- importing 
+  @use "./file path"
+  
+  * Don't need to include the underscore
+
+
+
