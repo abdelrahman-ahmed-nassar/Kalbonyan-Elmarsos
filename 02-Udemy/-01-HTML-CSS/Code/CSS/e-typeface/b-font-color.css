@@ -1,0 +1,12 @@
+/****************************  font-color **********************/
+
+.text {
+  color: red;
+  color: rgb(red, green, blue);
+  color: rgba(red, green, blue, .6);
+  color: rgb(red, green, blue / .8);
+  color: #ffffff;
+  color: hsl(360deg, 50%, 50%);
+  color: hsla(360deg, 50%, 50%, .5);
+  color: transparent;
+}

@@ -1,0 +1,95 @@
+
+
+/******************   float ***********************************/
+
+/*
+a property that make te element float on the page meaning it become above the page and above other elements[out the page flow] but the text in those elements  won't come under the floated element  it will come next to him giving it some room 
+
+then you can justify the flow of the elements or to right or left 
+*/
+p {
+  float:none;
+  float: left;
+  float:right;
+  float: inherit;
+}
+
+/******************  clear float      *********************
+
+
+if there is some element under the floated element and with it in the sam container and you don't won't it to come under the float  you can do that by giving it a clear property like that 
+p {
+  clear: both;
+}
+
+assuming the element that you want it to start after the float is p
+then the p element will start under the flow and treat the float element as its a normal element    and this process is a reset of the layout to mke it back normal 
+
+but what if there is no element to put clear in it  and the float is the only element in its container
+
+the float element will come off its container and will disturb the layout 
+
+the solution 
+
+--------------  [1]  overflow 
+adding overflow: hidden or auto ; to the container  or the parent of the floated element
+===> not the best practice  because it cut the extra text that you need in your web 
+
+like  
+<div class="parent">
+  <div class="floated">...</div>
+  <div class="floated">...</div>
+</div>
+
+.floated {
+  float: left;
+}
+.parent {
+  overflow: hidden;
+  or 
+  overflow: auto;\
+}
+
+-------------------     [2]  clearfix hack
+
+by adding a pseudo element or an empty element to the container or the parent and make the clear property to that element 
+
+like 
+
+<div class="clearfix">
+  <p>floated element</p>
+  <p>floated element</p>
+</div>
+
+.clearfix::after {
+  content="" ;
+  display: table;
+  clear: both;
+}
+
+notice that you can name the class any name but don't and it with colon
+
+This fix has been created and maintained by the developer community, and if you're curious, the history of this fix can be found in this CSS tricks article.
+https://css-tricks.com/snippets/css/clear-fix
+
+
+a primitive way to do that is ti make a new element inside the container and give it the clear property   
+
+
+------------------   [3] display     
+this solution is still in the draft phase and not supported by all browser 
+
+
+
+
+<div class="parent">
+  <p>floated element</p>
+  <p>floated element</p>
+</div>
+
+.parent {
+  display: flow-root;
+}
+
+https://caniuse.com 
+is a great reference for checking browser support

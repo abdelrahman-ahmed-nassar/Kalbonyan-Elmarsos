@@ -1,0 +1,15 @@
+
+
+
+
+
+
+/********************************** mouse cursor     ************************/
+
+/* control the shape of the element when you hover on it */
+div {
+  cursor: pointer;
+  cursor: text;
+  cursor: grab;
+  cursor: move;
+}

@@ -1,0 +1,45 @@
+/************************************ transition *************************************/
+
+/* the way the element convert to it's new state when you use pseudo class */
+
+.a:hover {
+  margin: 20px;
+  background-color: black;
+}
+/* 1s  =  1000ms*/
+.a {
+  background-color: red;
+  transition-duration: 2s;
+  /*the time of the transition process */
+  transition-delay: 2s, 0s;
+  /*will wait two second and then start */
+  transition-property: margin-left, margin-top, color, width;
+  /*the property that will applied*/
+  transition-property: all;
+  /* default value */
+
+  /* see inimitable properties */
+
+  transition-timing-function: ease;
+  /* default value=> start slow and fast and finally slow  the default value */
+  transition-timing-function: linear; /*start normal and fast and go   */
+  transition-timing-function: ease-in; /*start slow and fast   */
+  transition-timing-function: ease-out; /*start normal and fast and slow   */
+  transition-timing-function: ease-in-out; /*start slow and normal and slow  */
+}
+
+.div {
+  transition: width 2s 1s linear, height 3s 0s ease;
+  /*property | time-duration | delay | function */
+  -webkit-transition: width 2s 1s linear, height 3s 0s ease;
+  -moz-transition: width 2s 1s linear, height 3s 0s ease;
+  -ms-transition: width 2s 1s linear, height 3s 0s ease;
+  -o-transition: width 2s 1s linear, height 3s 0s ease;
+}
+
+.class:hover {
+  background-color: #eee;
+  width: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}

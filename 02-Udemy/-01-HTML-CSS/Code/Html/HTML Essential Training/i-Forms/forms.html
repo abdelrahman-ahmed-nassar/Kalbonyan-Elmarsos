@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- to crate a form-->
+  <form action="the link which will receive the data" method="post">
+    <!--method="get" -->
+    <!--get is insecure never use it -->
+
+    <!-- to create fields -->
+    <div>
+      <label for="pass">your password </label>
+      <!--password input -->
+      <input id="pass" type="password" required placeholder="enter your password" value="a constant value "
+        name="the name will go to backend">
+    </div>
+    <br>
+    <div>
+      <label for="name">your name
+        <input id="name" type="text" required placeholder="enter your name " name="the name will go to backend">
+      </label>
+    </div>
+    <br>
+    <label for="email">your email </label>
+    <input id="email" type="email">
+    <!-- a submit button-->
+    <input type="submit" value="save">
+  </form>
+
+
+  --input_types--
+  <input type="hidden" name="private info" id="">
+  <input type="reset" name="reset" id="">
+  <input type="color" name="color">
+  <input type="date" name="date">
+  <input type="month" name="month ">
+  <input type="time" name="time">
+  <input type="file" name="file ">
+  <input type="url" name="url ">
+  <input type="image" name="image ">
+  <input type="search " name="search">
+  <input type="phone number" name="phone number">
+  <input type="range" name="range" min="0" max="100" step="10" value="0">
+  <input type="number" min="0" max="100" step="1" name="number">
+  <input type="text" readonly value="obama ">
+  <input type="text" disabled value="won't be sent ">
+  <input type="text" name="" id="" autofocus>
+  <input type="text" name="" id="" minlength="10" maxlength="100">
+  <input id="pass" type="password" required placeholder="enter your password">
+  <input id="email" type="email">
+
+
+
+  <!--big input -->
+  <label for="s"></label>
+  <textarea name="subject" id="s" cols="30" rows="10"></textarea>
+
+
+
+
+  another way to link a label with a input
+  <label>
+    <input type="checkbox" name="Cats">
+    I like Cats!
+  </label>
+
+  _______________________________________________________
+
+
+
+  radio select one of all
+
+  <form action="" method="post">
+    <div>
+      <input id="win" type="radio" name="os" value="Windows" checked />
+      <label for="win">Windows</label>
+    </div>
+    <div>
+      <input id="lin" type="radio" name="os" value="Linux" />
+      <label for="lin">Linux</label>
+    </div>
+    <div>
+      <input id="mac" type="radio" name="os" value="Mac" />
+      <label for="mac">Mac</label>
+    </div>
+  </form>
+
+
+
+  check box select more than option
+  <form action="" method="post">
+    <div>
+      <input id="en" type="checkbox" name="language" value="english" checked />
+      <label for="en">English</label>
+    </div>
+    <div>
+      <input id="ar" type="checkbox" name="language " value="arabic " />
+      <label for="ar">Arabic </label>
+    </div>
+    <div>
+      <input id="sp" type="checkbox" name="language" value="spain" />
+      <label for="sp">Spain</label>
+    </div>
+  </form>
+
+  select an element or more when there is a lot option
+  <form>
+    <label for="My_books">check a box: </label>
+    <select name="books" id="My_books">
+      <option value="to back end">book1</option>
+      <option value="2">book2</option>
+      <option value="3">book3</option>
+    </select>
+  </form>
+  organizing the option
+  <form action="">
+    <label for="book">choose a book:</label>
+    <select name="book" id="book">
+      <optgroup label="police">
+        <option value="1">book1</option>
+        <option value="2">book2</option>
+        <option value="3">book3</option>
+      </optgroup>
+      <optgroup label="romantic" multiple>
+        <!--can select more than value-->
+        <option value="4">book4</option>
+        <option value="5" selected>book5</option>
+        <!--automatically -->
+        <option value="6">book6</option>
+        <option value="7">book7</option>
+      </optgroup>
+      <optgroup label="comic">
+        <option value="8">book8</option>
+        <option value="9">book9</option>
+        <option value="10">book10</option>
+      </optgroup>
+    </select>
+  </form>
+  <form action="" novalidate target="_blank">
+
+  </form>
+  <form action="">
+    like the select but you can search in it
+    <input list="programming" name="prog" id="pr">
+    <datalist>
+      <option value="python"></option>
+      <option value="python"></option>
+      <option value="python"></option>
+      <option value="python"></option>
+      <option value="python"></option>
+      <option value="python"></option>
+    </datalist>
+
+  </form>
+
+  <form action="">
+
+    with closing tag or not
+    <input list="programming" name="prog" id="pr">
+
+    <datalist id="programming">
+      <option value="python">
+      <option value="python">
+      <option value="python">
+      <option value="python">
+      <option value="python">
+    </datalist>
+
+  </form>
+  <a href="" hreflang="es-s"></a>
+  <button f></button>
+
+
+
+
+  <fieldset>
+    <legend>Contact details</legend>
+    <label>Email:
+      <br />
+      <input type="text" name="email" /></label>
+    <br />
+    <label>Mobile:
+      <br />
+      <input type="text" name="mobile" />
+    </label>
+    <br />
+    <label>Telephone:
+      <br />
+      <input type="text" name="telephone" /></label>
+  </fieldset </body>
+
+</html>
+<html>
+
+<head>
+  <title>Forms</title>
+</head>
+
+<body>
+  <form action="http://www.example.com/review.php" method="get">
+    <fieldset>
+      <legend>
+        Your Details: 
+      </legend> 
+      <label> 
+        Name: 
+        <input type="text" name="name" size="30" maxlength="100"> 
+      </label>
+      <br/> 
+      <label> 
+        Email: 
+        <input type="email" name="email" size="30" maxlength="100"> 
+      </label>
+      <br/>
+    </fieldset>
+    <br/>
+    <fieldset>
+      <legend>
+        Your Review: 
+      </legend>
+      <p> <label for="hear-about"> How did you hear about us? </label> <select name="referrer" id="hear-about">
+          <option value="google">Google</option>
+          <option value="friend">Friend</option>
+          <option value="advert">Advert</option>
+          <option value="other">Other</option>
+        </select> </p>
+      <p>
+        172FORMS
+        EXAmplEForms
+        Would you visit again? <br /> <label> <input type="radio" name="rating" value="yes" />
+          Yes </label> <label> <input type="radio" name="rating" value="no" />
+          No </label> <label> <input type="radio" name="rating" value="maybe" />
+          Maybe </label> </p>
+      <p> <label for="comments"> Comments: </label> <br /> <textarea rows="4" cols="40"
+          id="comments">          </textarea> </p> <label> <input type="checkbox" name="subscribe" checked="checked" />
+        Sign me up for email updates </label> <br /> <input type="submit" value="Submit review" />
+    </fieldset>
+  </form>
+</body>
+
+</html>

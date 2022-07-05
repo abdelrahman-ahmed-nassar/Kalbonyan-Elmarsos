@@ -1,0 +1,5 @@
+div {
+  letter-spacing: 2px; /*the space between each letter */
+  text-indent: 10px; /*white space before the line*/
+  word-spacing: 3px; /*the spaces between words*/
+}

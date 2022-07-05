@@ -1,0 +1,12 @@
+/************************* outline ********************/
+
+div {
+  outline: 20px red solid;
+  outline-style: dashed;
+  outline-width: 0px;
+  outline-color: #ddd;
+  /* doesn't add to the width */
+  /*you can't customize it */
+  /* doesn't accept the radios */
+  /*don't use it */
+}

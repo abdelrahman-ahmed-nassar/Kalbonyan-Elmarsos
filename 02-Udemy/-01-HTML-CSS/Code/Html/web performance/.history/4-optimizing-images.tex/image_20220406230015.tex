@@ -1,0 +1,64 @@
+Quality of image 
+  reduce the Quality with photo shop 
+  or with Squoosh 
+
+  Scaling the image Hack 
+  downscale the image with 87 percent 
+  upscale the result to 115 percent 
+
+  standard web image format 
+    JPG /JPEG 
+      meant for photos 
+      lossy image format with adjustable compression 
+      high compression = large artifacts
+      use for photos when WebP is not an option 
+    PNG
+      Meant for graphics 
+      lossless image format 
+      optional transparent alpha layer 
+      use for computer-generated graphics and transparency 
+    GIF
+      Meant for simple lo-fi graphics 
+      Lossy image format 
+      256 colors 
+      can be animated(but don't use them)
+      SVG/video is always better option 
+    SVG     
+      meant for advanced scalable graphics 
+      written in markup, can be included in HTML, is styled with CSS 
+      Very small when optimized 
+      Use for vector-based computer generated graphics and icons
+    webP
+      meant for web-based photos 
+      up to 34% smaller than jpeg 
+      Not supported in older browser 
+      Use for all photos and complex detail images 
+
+
+** 
+What format should i use ? 
+for photos, use webP (with jpg fallback) or jpg 
+for complex computer graphics use PNG or jpg (which is smaller)
+for graphics with transparency use PNG or WebP
+for scalable computer graphics , icons, graphs use SVG 
+Avoid animated gif ; use a video instead 
+
+---- manual image optimization 
+
+1- determine the maximum displayed size for all images 
+2-1920px max width for full-bleed images
+3-scale image to maximum displayed size 
+
+--- automated image optimization 
+  imagemin 
+
+
+-- lazy loading 
+load an asset (image, video, iframe, etc) only when a specific requirement 
+
+loading attribute = lazy   
+
+loading="lazy" 
+
+use the picture element or the img to have a responsive images and resolution 
+

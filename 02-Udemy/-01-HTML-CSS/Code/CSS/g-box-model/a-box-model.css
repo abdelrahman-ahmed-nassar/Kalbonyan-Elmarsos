@@ -1,0 +1,25 @@
+/************************  box model  ****************************/
+
+/*
+  every element in the page layout is represented in a box wether it is a text or picture or else 
+  there is five properties that make up the box model 
+  
+  The browser creates a rectangle for each element in the HTML document. The Box Model describes how the
+  padding, border, and margin are added to the content to create this rectangle.
+
+  width and height  
+  padding    
+  border    
+  margin     
+
+  in these properties we can use the <length> or <percentage> values 
+
+  when using a percentage the element take its size from its container [parent] 
+*/
+
+.container {
+  width: 100px;
+}
+.inside-container {
+  width: 50%; /* equal 500px */
+}

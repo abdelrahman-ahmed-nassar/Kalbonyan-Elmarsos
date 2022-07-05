@@ -1,0 +1,22 @@
+
+/* determine the height between each line */
+p {  
+  line-height: 1em; 
+  line-height: 1;  /*  use that way it's the best  */
+  line-height: 100%; 
+  line-height: 16px;
+  /*
+  if the line height is same as the font-size like the previous examples then that is the normal value  
+  if it less than the font-size  the line will overlap 
+  and for sure if it bigger then there will be a space 
+  */
+  line-height: .5em;
+  line-height: 1.2em;
+}
+
+/*************** line-height ***************/
+
+p {
+  line-height: 1.6; /*the space between each line */
+  line-height: 160%;
+}

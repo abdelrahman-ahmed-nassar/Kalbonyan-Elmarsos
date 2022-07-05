@@ -1,0 +1,18 @@
+
+/*********************************    variable   ************************************/
+/* custom property */
+/* local and global variable */
+:root { /* put your local  variables here */
+  --main-color: blue; /* put the name you want after -- but make the name descriptive  */
+  --main-padding: 20px;
+}
+/* using the variable*/
+div {
+  background-color: var(--main-color, black);  /* the value after coma is alternative value */
+  padding: calc(20px + var(--main-padding));
+}
+
+.local {
+  --main-color: red; /*  now that is local variable and you can't use it in any place at the page except this selector*/
+  background-color: var(--main-color);
+}

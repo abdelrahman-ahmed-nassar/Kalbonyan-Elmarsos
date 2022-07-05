@@ -1,0 +1,15 @@
+/* ********************* how to style the html file  *********************/
+
+/*
+external style sheet => when make a new file for styling  
+the weakest 
+
+internal style sheet  => when write the style in <style></style> in html
+override the external and it has more specificity 
+
+inline style sheet => when writing the styling in the element it self < style="color:red;">hello</ p>  
+override the all
+*/
+p {
+  color: #111;
+}

@@ -1,0 +1,8 @@
+
+
+/* make a shadow for your text and you won't often use it  */
+p {
+  text-shadow: 1px 2px .5 red; /*H-shadow  V-shadow  blur  color*/
+  /* the blur  0   mean   very obvious   the  1  mean hidden*/
+  /*you can add more than one shadow in the same declaration by separating them by comma */
+}

@@ -1,0 +1,17 @@
+/*********************************  opacity ******************************************/
+
+div {
+  background-color: rgb(red, green, blue / 0.3);
+  /*for the color just*/
+}
+/*
+add opacity to the background 
+*/
+div {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+div {
+  background-color: red;
+  opacity: 0.1; /*for all the content not just the color*/
+}

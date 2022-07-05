@@ -1,0 +1,40 @@
+/*
+
+[11][attribute selector]
+
+  [title] {}
+  meaning apply this style to any element has a title attribute 
+
+  div[title]{}  
+  meaning apply this style to any div with the title attribute 
+
+  [title="name"]{}  
+  meaning this style to any item has a title attribute its value is name
+
+  div[title="name"]{}   
+  meaning this style to any div item has a title attribute its value is name 
+
+  [title~="div"] {}   
+  meaning apply this style to any element has a title attribute has a value [contain] the  ((word)) div
+
+  [title*="cd"] {}  
+  meaning apply this style to any element have a title attribute has a value [contain] the ((string)) cd
+
+  [title^="mes"] {}  
+  meaning apply this style to any element have a title attribute has a value [start] with a ((string)) mes
+
+  [title$="th"] {}  
+  meaning apply this style to any element have a title attribute has a value [end] with a ((string)) mes
+
+  [attr='val' i] 
+  Where attr has value val, ignoring val's letter casing.
+
+
+  you can Select element using its ID without the high specificity of the ID selector
+
+  HTML:
+<div id="element">...</div>  
+CSS
+#element { ... }          => High specificity will override many selectors 
+[id="element"] { ... }    => Low specificity, can be overridden easily 
+*/

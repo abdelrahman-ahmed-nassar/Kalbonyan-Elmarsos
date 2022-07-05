@@ -1,0 +1,22 @@
+/********************changing the display style of the element*/
+
+/* you can change the style of any element by using the display property followed by the style like */
+
+p {
+  display: inline;
+}
+
+span {
+  display: block;
+}
+
+a {
+  display: inline-block;
+}
+
+/*********************************making the element invisible ****************************/
+div {
+  display: none; /* delete the element totally from the workflow */
+  visibility: visible; /*default value */
+  visibility: hidden; /* hidden but the element book its place in the workflow */
+}

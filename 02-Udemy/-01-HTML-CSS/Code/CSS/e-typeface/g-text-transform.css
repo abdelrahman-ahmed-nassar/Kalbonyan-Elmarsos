@@ -1,0 +1,6 @@
+
+div {
+  text-transform: uppercase; /*every letter will be  capital*/
+  text-transform: lowercase; /* every letter is small */
+  text-transform: capitalize; /*first letter will be  capital*/
+}

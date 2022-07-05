@@ -1,0 +1,90 @@
+
+
+/*****************   design system    *************/
+/*
+ui and ux patterns and templates  and ready-made component like buttons forms and others
+
+https://ui-patterns.com/patterns
+https://ux.mailchimp.com/patterns
+https://material.io/components
+framework 
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+*/
+
+
+/* design architecture 
+what id the goal from the system 
+faster,organized,consistent
+increase the accessibility 
+centralized documentation 
+are you building it from scratch
+what technologies will be used 
+after ending who will maintain the system 
+what is timeline and budget 
+educate clients on the process
+
+--- design principles ------
+ux and ui 
+clarity
+efficiency
+consistency 
+beauty 
+https://material.io/design/introduction  => introduction to the material design 
+https://www.lightningdesignsystem.com/  => give you the principles go to guidelines   overview 
+https://www.git-tower.com/blog/dev-philosophy-1  =>  article 
+
+---content strategy-----
+
+how to deal with small screens 
+**Mobile first**  approach 
+purpose and themes 
+reflect the brand/product/company's values 
+how to communicate with customers
+how the user feel when using the web 
+
+http://www.voiceandtone.com  => how to convey the tone you want to the user 
+https://alistapart.com/about/style-guide  => styling guides
+
+---take an inventory ----
+make an inventory of all the component that you will need in your project 
+then categorize the component in groups like fonts, colors, typography, icons, cards 
+UI patterns such as forms, buttons, interactive components and media    
+
+create a color pallet 
+organize colors into groups, such as default style color, primary brand color, accent, or border colors   
+
+take notes of the context of the color option 
+
+typography
+record all text-based styles such as:
+font-size 
+font-weight
+typeface
+
+https://cssstats.com  =>  show you the inventory of any web page 
+https://lnkd.in/g6kCDvX.com  =>  article 
+
+---library of designs ----
+
+https://www.yelp.com/styleguide/color  => how to use color and color pallets and other things 
+https://lightningdesignsystem.com  =>  how ad use the different kinds oof component  
+--- frame work ---
+https://www.getbootstrap.com
+--- style guide ---
+are used to provide a shared vocabulary and central reference guide for your team 
+https://www.atlassian.design   =>  style guide 
+https://www.stylegudides.io
+
+--- css architecture 
+easy to read, reusable, maintainable, flexible, scalable 
+naming convention 
+reduce issus inheritance and specificity 
+
+steps 
+building blocks 
+building components
+building templates 
+
+https://bandar.design/blog/%D9%85%D9%86%D9%87%D8%AC%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D8%A7%D9%84%D8%B0%D8%B1%D9%8A-atomic-design/
+
+*/

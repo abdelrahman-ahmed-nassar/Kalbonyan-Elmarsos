@@ -1,0 +1,73 @@
+How browsers render content - [Instructor] To understand performance optimization, you first need a solid
+understanding of how typing something into the address bar of a browser results 
+in the page being rendered in the viewport. So let's follow our requests to some
+site.com all the way from the initial request to the final results. It all 
+starts with the browser sending a request for some site.com to its ISP, that's 
+the internet service provider for the current internet connection the browser is
+connected to, that could be your regular internet provider, if you're in your 
+house or an office, or it could be your cell phone provider, if you're using 
+your mobile phone, the ISP then sends the request immediately to a DNS domain 
+name service. This is effectively a phone book for the web, associating the 
+host name or URL. So Universal Resource Identifier in our case, some site.com 
+with an IP address the actual location of that service. This by the way, is how 
+you can move a domain name from one server to another, and why it takes a while 
+to do so. You're really just changing the entry in the domain name service to 
+this site with this name now lives up this new address. And the reason why it 
+takes a while is because the domain name service has to be updated. And then 
+that update has to be distributed all across the web. Anyway, this DNS lookup
+is done for each unique hostname. So if the site you're requesting is using
+externally hosted fonts, or JavaScript libraries, or images, or videos or 
+services, this DNS lookup happens for each of those different services. 
+Anytime there's a new domain name, a new DNS lookup have to take effect.
+This is the first major performance bottleneck. To do away with some of this 
+performance overhead, the domain name to IP address association will probably be 
+cached at numerous different steps, your ISP will cached as information, it will 
+also likely be cached in your router and on your computer. That way when you send
+a request to the same domain you requested before, instead of having to go through 
+the whole DNS lookup again, we're just pulling a cache from somewhere closer to the 
+computer, but that also means if the DNS has changed in the meantime, you'll get an 
+incorrect address pointing and things won't work as expected. Once the IP address is 
+established, the browser and server now perform what's called a TCP handshake, where 
+they exchange identity keys and other information to establish a temporary 
+and working relationship. It is quite literally, hello, I am browser. Hi, I'm 
+server. Hi server, I have a request. Okay, go ahead browser I am ready to serve. 
+This is also where the type of connection is determined this is there's a regular 
+HTTP connection or is it an encrypted HTTPS connection? If the latter, encryption 
+keys are exchanged and if both the browser and the server support it, the 
+transaction is updated from HTTP 1.1 to HTTP two, which provides substantial 
+performance enhancements, We now have a connection and everything is ready to go. 
+At this point, the browser sends an HTTP GET request for the resource it's looking 
+for. This initial GET request will be for whatever the default file on the server 
+location is, typically index.html or index.php or index.js or something similar to
+that. The time it takes for the browser to finally receive the first byte of the 
+actual page it's looking for, is measured in time to first byte or TTFB, the first
+true performance measurement. The first piece of data called the packet that the
+browser receives is always 14 kilobytes, then the packet size doubles with every
+new transfer. That means if you want something to happen right away, you need 
+to cram it into those first 14 kilobytes. The browser now gets a file an HTML 
+document, and it starts reading it from top to bottom and then parsing that 
+data. This means the HTML is turned into a DOM tree, the CSS is turned into a 
+CSSOM tree and object model for the CSS of the page, which makes it possible 
+for the browser to render the CSS for JavaScript to interact with it. And ask 
+the document is parsed, the browser also loads in any external assets as they 
+encountered. That means anytime it encounters a new CSS file, or reference to 
+anything else, it'll send a new request, the server responds by sending the 
+request back, then it gets placed into the system, and the browser starts 
+rendering that as well. In the case of JavaScript, though, the browser stops 
+everything else and waits for the file to be fully downloaded. Why? Because 
+there's a good chance of JavaScript wants to make changes to either the DOM or
+the CSSOM or both. This is what's known as render blocking, whatever
+rendering was happening, stops and is literally blocked for as long as the browser 
+is waiting for the JavaScript to be fully loaded and then fully executed. Once all 
+of this parsing is done, the rendering can begin in earnest and here the browser 
+the DOM and CSSOM to style, layout, paint and composite the document in the 
+viewport. This is the process that actually creates what you see in the browser. 
+The metric time to first Contentful paint refers to how long it takes for all of 
+this to happen and this step to start taking place, as you can see there is a lot 
+going on behind the scenes when a website or app is loaded into the browser. And 
+this breakdown is a severely simplified version of true events. What's important 
+for our purposes is to remember what's actually happening, that way we can identify
+bottlenecks and add performance enhancements to get past them as quickly as 
+possible.
+
+

@@ -1,0 +1,33 @@
+- [Instructor] Browsers and servers use the HTTP protocol to talk to each other, and
+send and receive files and data. In fact, every interaction happening between the 
+browser and the server is an HTTP transaction over this protocol. When you interact
+with content on the web today, you're using one of two different versions of the 
+HTTP protocol, either the old HTTP/1.1 or the more modern HTTP/2. Which protocol 
+version is in use has a significant impact on the performance of the site. Let me 
+explain. In HTTP/1.1, all files requested by the browser are loaded synchronously, 
+one after the other. So a typical HTML page with two style sheets, a couple of 
+images, and some JavaScript would require the browser to first load the HTML 
+, then the CSS files, then the JavaScript files, and finally the image files one 
+after the other. This is slow, inefficient, and a recipe for terrible performance.
+To work around this obvious issue, browsers cheat by opening up to six parallel 
+connections to the server to pull down data. However, this creates what's known 
+as head of line blocking, where the first file, the HTML file, holds back the 
+rest of the files from downloading. It also puts enormous strain on the internet 
+connection and the infrastructure, both the browser and the server, because 
+you're now operating with six connections instead of one single connection. In
+HTTP/2, we have what's known as multiplexing. The browser can download 
+separate files at the same time over one connection, and each download is 
+independent of the others. That means with HTTP/2, the browser can start 
+downloading a new asset as soon as it's encountered, and the whole process 
+happens significantly faster. Now, for HTTP to work, a few key conditions need 
+be met. Number one, the server must support HTTP/2. Now most servers do, but 
+it's worth checking. Number two, the browser must also support HTTP/2. All 
+modern browsers do, but again, it's worth checking if you're working with 
+really old infrastructure. And number three, the connection must be encrypted
+over HTTPS. If any of these conditions are not met, the connection 
+automatically falls back to HTTP/1.1. So bottom line, for instant performance
+improvements with minimal work, get an SSL certificate for your domain. 
+They're available for free from services like Let's Encrypt and ensure your 
+server supports HTTP/2. As a bonus, your site traffic is encrypted out of 
+gate, which means safer browsing for your visitors and higher ranking on 
+Google and everywhere else.

@@ -1,0 +1,21 @@
+/********************************* lists     ********************************/
+
+li {
+  list-style-position: outside; /* default value */
+  list-style-position: inside; /*including the formatting*/
+
+  list-style-image: url();
+  /* to define an image */
+}
+
+li {
+  list-style-type: disc; /* the default icon*/
+  list-style-type: circle;
+}
+
+li {
+  /*short hand code*/
+  list-style: disc outside url();
+  list-style: none; /*removing thee bullets */
+  padding-left: 0;
+}

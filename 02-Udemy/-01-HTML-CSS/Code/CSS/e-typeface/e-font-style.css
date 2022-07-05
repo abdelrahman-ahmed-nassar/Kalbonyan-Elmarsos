@@ -1,0 +1,7 @@
+/*************** font-style ****************/
+
+body {
+  font-style: italic;
+  font-style: normal; /*will remove the style if it already exist*/
+  font-style: oblique;
+}

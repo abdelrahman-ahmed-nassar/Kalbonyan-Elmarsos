@@ -1,0 +1,70 @@
+- [Instructor] Knowing where performance bottlenecks appear in the pipeline between
+your service and the visitor's browser is key to performance optimization, so let's
+map them out. Keep in mind here, this is going to be different from site to site 
+and service to service. You need to investigate your particular circumstances to 
+identify which bottlenecks cause performance issues for you. Starting all the way 
+at the source, the server itself can contribute to poor performance. How fast the 
+server processor is, how much memory it has, what types of storage it uses, what 
+else is happening on the server if it's a shared server... All of these things can
+have a significant performance impact, especially on sites with a lot of traffic.
+The server connection and bandwidth also has an impact on performance. Slower
+connections or congested shared connections lead to poor performance. To
+address server-based performance issues, make sure you scale your server to
+the traffic you expect to get, explore dynamic cloud solutions that open up
+extra servers when necessary, and make sure the server has enough bandwidth 
+and capability to handle your expected traffic. On the code end, you can 
+also optimize what you store on the server for best performance by 
+compressing all your files as much as possible and reducing the number of
+HTTP requests sent to the server initially. For high traffic sites and 
+sites with a global audience, another best practice is to use a CDN, a 
+content delivery network, to deliver files to users. Here, the files are 
+cached on multiple servers, and the user is served from whatever server is
+closest to and fastest for them. The next bottleneck is the connection 
+made between the browser and the servers hosting the files necessary to 
+render the page. For each of these connections, that whole DNS and TCP 
+handshake loop needs to take place, which slows down the whole process. To
+address these connection issues, you can tell the browser to do a DNS 
+prefetch and pre-connect to servers you know will eventually be connected 
+with. You can preload content immediately, rather than wait for the 
+browser to find out it needs it. And you can even tell the server to use
+server push to automatically push files to the browser before the 
+request is even made. You can also consider pre-caching assets you know 
+the user will need in the future, so the files are already in the cache 
+of the browser by the time the user requests them. Speaking of files, 
+how many files are downloaded and in what order those files are 
+downloaded has an impact on performance, but not always in the way you'd 
+expect. In the days of HTTP1, an obvious step to improving performance 
+wants to reduce the number of files requested from the server as much as
+possible. That's because of those six open connections and the 
+synchronous loading and the head of line blocking and all that. With 
+HTTP2 and multiplexing, none of this is an issue anymore, and this 
+loading of JS and CSS bundles is no longer a best practice because the 
+browser can and will download multiple files simultaneously. As a 
+result, it may be a lot faster to serve up CSS and JavaScript in 
+several smaller modular files than one big bundle. This more modern 
+approach goes against common doctrine for both CSS and JavaScript and
+requires working against the standard features and code bundlers, but 
+it is slowly gaining traction because of the obvious performance 
+benefits. Additionally, there's the question of when the files are 
+requested and in what order? Using Async and defer when loading 
+JavaScript and loading critical CSS and then deferring the rest of the 
+CSS can greatly enhance the perceived performance of a site. Now, this 
+level of optimization requires careful analysis and testing, so we'll 
+talk a lot about it later in the course. All of this said, by far the
+biggest bottleneck for any modern site or service is images. The more
+images, the more data needs to be transferred, the worst the 
+performance gets. There are a lot of things you can do to improve 
+image performance: optimizing images to reduce their file size, using 
+images markup, lazy loading images so they're only loaded when the 
+browser actually needs them, and most obviously, but hardly ever 
+talked about, using less images or not using images at all. We'll 
+talk about all of that later in the course as well because it's 
+a huge and important topic for performance optimization. On the 
+topic of optimization, all files, from HTML to CSS to JavaScript, 
+and images and everything else can and should be compressed and 
+optimized as much as possible to make the physical data transfer as 
+small as possible. So, yeah, there are many bottlenecks in this 
+transaction, which means there are many opportunities for 
+performance optimization.
+
+

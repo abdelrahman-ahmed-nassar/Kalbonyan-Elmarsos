@@ -1,0 +1,70 @@
+
+/****************font-typeface *******************/
+
+/*refers to a set of fonts designed with common characteristics, composed of glyphs*/
+
+/*
+there are five categories of typefaces 
+[1] script  => hard to read in small spaces often used for wedding invitation or greeting cards
+in web  it's usually reserved for headlines or small, decorative text details
+[2] decorative  are usually reserved for headings and decorative details when used for the web
+[3] monospace   are often used for displaying code
+[4] serif  tend to be viewed as traditional and formal. 
+[5] san serif   do not have decorative lines, and are often thought of as contemporary and modern
+*/
+
+/*there is  web safe fonts for html and css that is exist in any device such as  
+
+Arial           => font family    (sans-serif)   [type face:  serif-fonts ]
+verdana         => font family    (sans-serif)   [type face:  serif-fonts ]
+Helvetica       => font family    (sans-serif)   [type face:  serif-fonts ]
+tahoma          => font family    (sans-serif)   [type face:  serif-fonts ]
+trebuchet MS    => font family    (sans-serif)   [type face:  serif-fonts ]
+Times news roman=> font family     (serif)      [type face:  sans-serif fonts]  used foe illegal doc 
+Georgia         => font family     (serif)      [type face:  sans-serif fonts]
+courier         => font family    (monospace)    [type face:  monospace-fonts ]
+courier new     => font family    (monospace)    [type face:  monospace-fonts ]
+brush script MT => font family     (cursive)     [type face:  script or decorative fonts]
+Comic Sans MS   => font family     (cursive)     [type face:  script or decorative fonts]
+Monotype Corsiva => font family    (cursive)    [type face:  script or decorative fonts]
+Impact           => font family    (fantasy)    [type face:  decorative fonts]
+Haettenschweiler => font family    (fantasy)    [type face:  decorative fonts]
+
+for more detail visit https://fonts.google.com/knowledge?query=fantsy
+comic sans      => casual font    don't use it in formal situations 
+*/
+
+/*  changing the font typeface in your web */
+
+body {
+  font-family: Arial, Helvetica, sans-serif; /*you include the type followed by an alternate font separated by coma*/
+}
+
+/*
+if you want to expand your type face options you can do any of this option 
+------------
+[1] download a font file along with the website just like any other resource such as images 
+
+and then added with @font-face rule like that 
+*/
+@font-face {
+  font-family: 'ChunkFiveRegular';
+  src: url('fonts/chunkfive.eot');
+}
+/*
+after that you can use the font 
+
+p { 
+  font-family: "serif" or the name you had chosen ,"helvetica",sans-serif;
+}
+-------------------------
+[2]  use google fonts or adobe fonts 
+
+search for the font  like caveat 
+select it 
+and you can pairing fonts together 
+like caveat and montserrat  in the same link 
+customize the font weight like what yiu need 
+then copy the <link> 
+put it in the html file in the <head> and right before the css style file 
+*/

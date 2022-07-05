@@ -1,0 +1,43 @@
+------------classes and id Acceptable Values For an ID The only restrictions on
+the value of an id are: it must be unique in the document. it must not contain
+any space characters. it must contain at least one character. So the value can
+be all digits, just one digit, just punctuation characters, include special
+characters, whatever. Just no whitespace. So these are valid:
+<div id="container">...</div>
+<div id="999">...</div>
+<div id="#%LV-||">...</div>
+<div id="____V">...</div>
+<div id="⌘⌥">...</div>
+<div id="♥">...</div>
+<div id="{}">...</div>
+<div id="©">...</div>
+<div id="♤₩¤☆€~¥">...</div>
+
+Those are invalid:
+<div id=" ">...</div>
+This is also invalid, when included in the same document:
+<div id="results">...</div>
+<div id="results">...</div>
+
+An id value must begin with a letter, which can then be followed only by:
+letters (A-Z/a-z) digits (0-9) hyphens ("-") underscores ("_") colons (":")
+periods (".") Referring to the first group of examples in the HTML5 section
+above, only one is valid:
+<div id="container">...</div>
+These are also valid:
+<div id="sampletext">...</div>
+<div id="sample-text">...</div>
+<div id="sample_text">...</div>
+<div id="sample:text">...</div>
+<div id="sample.text">...</div>
+
+Again, if it doesn't start with a letter (uppercase or lowercase), it's not
+valid. -- For a Class The rules for classes are essentially the same as for an
+id. The difference is that class values do not need to be unique in the
+document. Referring to the examples above, although this is not valid in the
+same document:
+<div id="results">...</div>
+<div id="results">...</div>
+This is perfectly okay:
+<div class="results">...</div>
+<div class="results">...</div>

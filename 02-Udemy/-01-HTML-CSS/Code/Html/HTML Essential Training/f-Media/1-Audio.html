@@ -1,0 +1,28 @@
+to put audio in your page
+
+<audio src=""></audio>
+<!-- src=" the path of the audio "-->
+
+<!-- audio attribute -->
+
+<!-- adding controls -->
+<audio src="" controls></audio>
+
+<!-- add autoplay -->
+<audio src="" autoplay></audio>
+
+<!-- looping the audio -->
+<audio src="" loop></audio>
+
+<!-- mute the audio -->
+<audio src="" muted></audio>
+
+<!--  the advantage of having a closing tag -->
+<!-- we can use more than audio file with different formats-->
+<!--The browser will use the first file that it understands in the list.-->
+<audio>
+  <source src="birds.oog" type="audio/mpeg" />
+  <source src="birds.mp3" type="audio/oog" />
+  <source src="" type="audio/tag" />
+  your browser doesn't support the audio tag
+</audio>

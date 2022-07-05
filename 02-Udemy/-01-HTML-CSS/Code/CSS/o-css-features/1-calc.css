@@ -1,0 +1,13 @@
+
+
+
+
+
+/************************************** calc *******************************/
+
+/* you can use this property as a calculator */
+
+div {
+  width: calc(88% / 5);
+  width: calc((100% - 90px) / 5);
+}

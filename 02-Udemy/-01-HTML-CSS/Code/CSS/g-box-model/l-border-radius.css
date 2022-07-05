@@ -1,0 +1,10 @@
+/************************************ border-radius****************************/
+
+/* need vendor prefix */
+.class {
+  border-radius: 10px 20px 20px 30px; /* top right bottom left */
+  border-radius: 20px;
+
+  border-radius: 50%; /*make a circle */
+  border-top-right-radius: 20px 10px;
+}

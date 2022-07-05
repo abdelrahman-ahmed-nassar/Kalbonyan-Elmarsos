@@ -1,0 +1,61 @@
+- [Instructor] A tried and true method for performance optimization is caching or 
+storing of assets. This can be done at three main levels in the transaction between 
+the browser and the server. On the server, on the CDN or in the browser itself. Your
+caching strategy will depend on how your site or service works, and how the 
+infrastructure of your host or CDN works. Here are the basics for all three of 
+levels. If you're running a site or service relying on server-side rendering, 
+meaning each page or view is generated on the fly by the server when it is 
+requested, caching may provide a huge performance boost. This scenario includes 
+pretty much all established content management systems like WordPress, Drupal, 
+Joomla! Magento and so on. By enabling caching, the server no longer has to render
+the page every time the page is requested. Instead when the page is rendered, a 
+snapshot of that page is created and then stored in the server cache. The next 
+time a visitor then comes to the site, there'll be handed at this stored cached 
+snapshot instead of a freshly rendered page. That way the server doesn't have to
+rerender the page for every single visitor. This by the way is why so-called static
+site generators have become so popular in the web dev community. They produce 
+pre-rendered cacheable static pages out of the box, and bypass the entire CMS 
+
+side rendering problem. The challenge with this type of caching for these types of
+services is they often have dynamic features like common sections. So every time 
+a new comment is added, the cache needs to be cleared, and then the page has to 
+be regenerated. Even so, caching should be enabled for all sites relying on 
+server-side rendering because performance benefits are so significant. The next 
+step is CDN caching. CDNs are effectively external caching services for sites. In 
+their most basic configuration, they will serve cast versions of a site or 
+service to the viewer, but CDNs can also do a lot more including what's known as
+edge computing. Here, the rendering of a site is done by the CDN at the point of
+contact with the visitor. So instead of the server rendering the page and 
+delivering cache snapshot to the CDN, the CDN renders the page when requested 
+then caches it itself. This edge approach works well with modern static site 
+generators like Gatsby and all JavaScript based site generators and frameworks 
+because they serve up static assets by default, and are built to work in this 
+modern web architecture. Once that connection is made between the server and 
+the CDN of the browser, and all files are being sent to the browser, we get to 
+the last caching step, storing assets in the browser for future use. There are 
+two main things we can do here. One, store existing assets. So if the visitor 
+returns to the site it already has all the information cached in the browser 
+and two, push files to the browser early so by the time the browser requests 
+the file, the files that are already sitting in the cache. All browsers do 
+some level of caching automatically. That's why you find yourself needing to 
+refresh your browser multiple times or even go to incognito mode or clear the
+cache when you're developing a site to see the most recent changes. The 
+browser will always cache CSS and JavaScript and image files unless 
+explicitly told not to. And we can then instruct the browser on exactly how 
+we want to handle caching of our assets. For assets that are unlikely to 
+change such as main style sheets, JavaScript, and other images, long caches 
+makes sense. For assets that are likely to change over time, short cache 
+durations, or no cashing at all may make more sense. To ensure new and 
+updated assets always make it to the visitor. We can use cache busting 
+strategies like appending automatic hashes to file names or something else. 
+Or we can rely on the server itself to document the file name on file date 
+for each file, and then do the caching automatically. There is one more 
+benefits to caching that is rarely talked about but it's really important. 
+Thanks to multiplexing. You can now split up CSS and JavaScript files into 
+smaller modules. And that means when you update something in CSS or 
+JavaScript, instead of having to recache an entire style sheet for an entire
+site, you're just recaching the module that has that update. That goes for 
+CSS and JavaScript and takes full advantage of all this caching that's 
+happening at every step in the process.
+
+

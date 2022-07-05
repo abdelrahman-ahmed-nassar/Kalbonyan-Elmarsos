@@ -1,0 +1,153 @@
+/*
+translate any pseudo class to 
+which is  
+
+
+*/
+
+/*******   [first-child & last-child]   ************/
+
+p:first-child {
+  color: red;
+}
+/*
+apply this style to one element have this two condition
+(1) its a paragraph 
+(2) it's the first child in its container or parent  and there is no thing before it 
+*/
+p:last-child {
+  color: red;
+}
+/*
+apply this style to one element  have this two condition 
+(1) its a paragraph 
+(2) it's the last child in its container or parent  and there is no thing after it 
+*/
+
+/*******  [first-of-type & last-of-type ]    **********/
+
+p:first-of-type {
+  font-size: 14px;
+}
+/*
+  apply this style to one element with two condition  
+  (1) its a paragraph
+  (2)it is the first p in the container whatever the container is     
+  */
+
+p:last-of-type {
+  color: red;
+}
+/*  
+  apply this style to one element with two condition  
+  (1) its a paragraph
+  (2)it is the last p in the container whatever the container is
+  */
+
+/**   [only-child & only-of-type]   **/
+
+p:only-child {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*
+  apply this style to one element  have this two condition 
+  (1) its a paragraph 
+  (2) it's the only child in its container and there is no any other element
+  */
+
+p:only-of-type {
+  color: red;
+}
+/* 
+  will apply this style to one element  have this two condition 
+  (1) its a paragraph 
+  (2) it's the only paragraph in its container and there is no other paragraph
+  */
+
+/**  [Not]  (Except)  **/
+
+p:not(.wrong) {
+  font-weight: bolder;
+}
+/*
+  mean apply this style to any p element that
+  (1)doesn't have the .wrong class 
+  (or you can say it like:) any p element  except the p with the .wrong class 
+  */
+
+p:not(:first-child) {
+  color: blue;
+}
+/*
+  mean apply this style to all paragraph 
+  except the first child in its container
+  */
+
+img:not([alt]) {
+  background-color: red;
+}
+/*
+  very helpful in debugging like in this case 
+  it will style any image that doesn't have alt attribute 
+  */
+
+/** you can put any type of selector you want  making some great combination **/
+
+/**   [nth-child]   **/
+
+p:nth-child(2) {
+  color: red;
+}
+/* mean apply this style to the any paragraph in condition that it is the second child in its parent  */
+
+p:nth-child(even) {
+  color: white;
+}
+/* mean apply this style to the any paragraph which have an even index number  */
+
+p:nth-child(odd) {
+  color: blue;
+}
+/* mean apply this style to the any paragraph which have an odd index number  */
+
+p:nth-child(n + 6) {
+  color: red;
+}
+/* mean apply style to the sixth p child and the 7 and 8 and so forth  */
+
+/** the solution IS **/
+/* start  Compensation is the equation from 0 and continue    (use algebra) */
+
+p:nth-child(-n + 9) {
+  color: red;
+}
+/* mean apply style to the ninth p child and the 8 and 7 and 6 and so forth  */
+
+p:nth-child(n + 4):nth-child(-n + 8) {
+  color: white;
+}
+/* mean apply this style to 4 --> 8  p child  */
+
+p:nth-child(n + 2):nth-child(odd):nth-child(-n + 9) {
+  color: rebeccapurple;
+}
+/* mean apply this style to 3, 5, 7, 9 */
+
+p:nth-child(3n + 1):nth-child(even) {
+  color: aliceblue;
+}
+/* mean apply this style to 4, 10 */
+
+/**   [nth-last-child]   **/
+
+/* count the element from the last   meaning the last will be the first  */
+
+/**  [nth-of-type]   **/
+
+/* like the nth-child in every thing but depending on the type not hte child  */
+
+/**   [nth-last-of-type]{}    **/
+
+/* count type-elements from the last  */
+
+/* visit  https://nthmaster.com for more details */

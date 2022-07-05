@@ -1,0 +1,66 @@
+/************** adding background photo  ***************/
+
+/*
+if you want to use an image follow retina display 
+for example if you want to put a image in a 300px box 
+you should fetch a 600px photo 
+*/
+div {
+  background-image: url(../images/FB_IMG_15995083898458529.jpg); /*the path of the image */
+
+  background-repeat: repeat; /*repeat the photo vertically and horizontally */
+  background-repeat: no-repeat; /*won't repeat it */
+  background-repeat: repeat-x; /*will repeat it horizontally */
+  background-repeat: repeat-y; /*will repeat it vertically */
+}
+
+/**************************customizing the background ************** */
+
+div {
+  background-attachment: scroll; /*default value */
+  background-attachment: fixed; /* the back ground will be fixed in the page while scrolling */
+}
+
+/* change the position of the photo in the page*/
+div {
+  background-position-x: left;
+  background-position-y: top;
+
+  /*the short hand */
+  background-position: left top;
+  background-position: left; /* the browser will put a center value when you let the second value empty*/
+
+  background-position: 20px 30px;
+  /*
+  first value mean make 20px between the photo and the left 
+  th second value mean make  30px between the photo and the top 
+  */
+
+  background-position: 20% 30%;
+  /* it work also with the percentage*/
+}
+
+div {
+  /*customizing the size of the image in container*/
+  background-size: auto;
+  /*default value */
+  background-size: cover;
+  /* make the photo fit the content and can be stretch or cut  */
+  background-size: contain;
+  /* resize the photo to make it fully visible */
+
+  background-size: 800px 400px;
+  /*the width  then  the height*/
+  background-size: 30% 70%;
+  /*work with percentage  */
+  background-size: 100% 100%;
+}
+
+/* In CSS3, we can stack multiple background in the same element. */
+#mydiv {
+  background-image: url(img_1.png), /* top image */ url(img_2.png),
+    /* middle image */ url(img_3.png);
+  /* bottom image */
+  background-position: right bottom, left top, right top;
+  background-repeat: no-repeat, repeat, no-repeat;
+}

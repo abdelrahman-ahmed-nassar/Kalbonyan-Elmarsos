@@ -1,0 +1,133 @@
+
+
+
+
+/********************************** responsive layout *********************************/
+/*
+visit https://alistapart.com/article/responsive-web-design 
+visit https://lnkd.in/CSS_Media-Queries
+to test your responsive design https://www.browserstack.com 
+or download the responsive viewer extension in google chrome 
+or use the developer tool in you browser   
+
+
+1-fluid layout
+2-flexible image 
+3-media queries 
+*/
+/*
+@media media-type  (condition or media feature) {
+}
+*/
+/* media types  */
+@media all {} /* matches to all devices  and it's the default value*/ 
+
+@media print {  /* while print apply this block of CSS code  */
+  div > p {
+    font-size: 20px;
+  }
+  .parent > div:first-child {
+    display: none ;
+  }
+}
+
+@media speech {} /*matches to the screen reader screen */
+
+@media screen {} /*all devices that is not print or speech */
+
+/*  you don't have to define the media type it will be all automatically  */
+
+@media (max-width: 500px ) {  /* [the media feature] when the screen is less than or equal  500px apply that */
+}
+
+@media (min-width: 1000px) { 
+  /* when the screen is more than or equal  1000px apply that */
+}
+
+@media (min-width:500px) and (max-width:1400px){ 
+  /* between 1000 and 1400 apply that */
+}
+
+
+/* 
+you can make a whole new folder for each condition and <link> it with html 
+and give it  the  media="any condition "  attribute 
+
+or import that file to your css file by @import url()
+
+or you can use it in internal style like that 
+<style media="the condition "> </style> 
+
+but the best practice is to put the media in the main css file under each styling for the element to have easy access on it  
+
+*/
+
+/* 
+the standard sizing 
+https://css-tricks.com/snippets/css/media-queries-for-standerd-devices
+
+
+
+these  is what you will work in 
+-----------------
+0  => 767px         mobile screen  360 *  640  or  375 * 667 
+@media (max-width: 767px){}
+
+768px  => 991px       small screen
+@media (min-width: 768px) and (max-width:991px){} 
+            make a range 
+
+992px  => 1200px      medium screen
+@media (min-width: 992px){}
+
+1200px => 1400px     large screen      1366 * 768 
+@media (min-width: 1200px )
+---------------
+
+1400 => 1200   for xx-large screens        1920 * 1080 
+*/
+
+/* custom media */
+@media (max-width:119px) {} /*the styling will be applied to every screen less than 1200 instead of writing the same style on each media */
+
+/*********** the desktop first approach *************/
+/* 
+
+write your code for the desktop version 
+
+then defining the breaking points  
+
+
+
+we use the max-width 
+if there is more than media achieve the condition then they will both work 
+but the one in the last will override the other because of cascading rule 
+so we use the bigger breaking point then the smaller 
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+}
+
+
+@media (max-width: 767px) {
+
+}
+
+*/
+
+/* rem and em do NOT depend on html font-size in media queries! 
+instead, 1em = 1rem = 16px */ 
+
+
+html {
+  font-size: 62.5%;
+}
+@media (min-width: 84em) {
+  /* 1350 px   */
+  p {
+    font-size: 2rem;
+    /* 2rem = 20px */
+  }
+}

@@ -1,0 +1,123 @@
+/**************  ways_to_represent_colors  *********************/
+
+/**** [1][by the name]  ****/
+h1 {
+  color: red;
+}
+
+/* look at https://colours.neilorangepeel.com  for colors names */
+
+/****  [2][RGB] ***8*/
+p {
+  color: rgb(255, 0, 0);
+}
+/*
+  rgb( red-value, green-value, blue-value)
+  every color value start with 0  and end with  256   (16*16)
+  or you can use percentage value  %    
+*/
+
+/****   [3][RGBA]   *****/
+
+p {
+  color: rgba(255, 128, 0, 0.5);
+}
+/*
+  rgba ( red-value, green-value, blue-value , opacity percentage [alpha channel])
+  it take a fourth value(alpha value) of the opacity of the element  transparent.
+  the alpha channel value can be a decimal like  .5  => 50% opacity.
+  The rgba value will only affect the element on which it is applied (not child elements).
+*/
+
+/*** rgb(red, green, blue  / opacity ) *****/
+
+p {
+  color: rgb(255, 00, 128 / 0.5);
+}
+/* you can use this way also to specify a opacity  */
+
+/****   [ transparent color ] *****/
+
+p {
+  color: transparent;
+}
+/* you can use a transparent color like that  */
+
+/**** [4]  [hexadecimal codes] ******/
+
+p {
+  color: #ffff00;
+}
+/*
+#0011ff  consist of 3 pairs of values  
+each pair of values represent one of the channels (red, green, blue)
+and allow to specify any of the 256 value
+__0123456789abcdef__
+#ff  =>>  16  *  16  = 256  =>  red
+letters is case-insensitive 
+#ffffff = #FFFFFF
+
+when the value of the pairs is the same it can be shorted 
+#ff0000  =  #f00
+#000000 = #000
+#ff0077 = #f07
+*/
+
+/****   [5][hsl]   ******/
+
+p {
+  color: hsl(360deg, 50%, 50%);
+}
+/* color: hsl(hue, saturation, lightness); */
+
+/** (1)[the hue value]  (the color itself ) **/
+
+/*
+Hue is near to the colloquial idea of color.
+Technically speaking however, a color can also have saturation and brightness as well as hue.
+
+
+is specified as an angle within the color wheel 
+red equals zero degrees or 360 degrees
+Green equals 120 degrees
+blue equals 240 degrees, 
+the value can be used with the deg unit or not 
+hsl(270, 60%, 60%)  ==  hsl(270deg, 60%, 60%)
+*/
+
+/*** (2)[the saturation value]  (the degree of the color) ***/
+
+/*
+Saturation refers to the amount of gray in a color.
+At maximum saturation, there would be no gray in the color.
+At minimum saturation, the color would be mostly gray.
+
+saturation is represented with a percentage 
+so 0% is gray 
+and 100% is full saturation 
+*/
+
+/*** (3)[the lightness value]  ( the brightness ) *****/
+
+/*
+Brightness (or "value") refers to how much black is in a color. 
+At maximum brightness, there would be no black in the color. 
+At minimum brightness, the color would be very dark.
+
+brightness is represented with a percentage 
+*/
+
+/****   [6][hsla] (for alpha channel) ***/
+
+p {
+  color: hsla(360deg, 50%, 50%, 0.5);
+}
+
+/** resources **/
+
+/*
+visit https://Lnkd.in/css-tricks  for practising on hsla
+visit https://randoma11y.com/#/?_k=ktm4x0  a web provide colors combination with high contrast
+visit https://coolors.co/app  for generating color palettes 
+visit https://www.webfx.com/web-design/hex-to-rgb   to change the hex code into rgb color
+*/

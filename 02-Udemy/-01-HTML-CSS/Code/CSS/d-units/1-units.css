@@ -1,0 +1,34 @@
+/*
+  [1] absolute <length>
+
+  fixed units, always the same size 
+  not affected by value in related elements 
+  Example =>
+  
+  cm__centimeter =>   37.8px  = 25.2/64 in
+  mm_Millimeters  =>  1/10th of 1cm 
+  in__inches  =>      2.54cm  = 96px
+  pc__picas  =>       1/6th of 1in  
+  pt__point  =>       1/72th of 1in
+  px__pixel =>        1/96th of 1 in   ==>>> the most common 
+  
+  [2] relative <length> 
+  relational sizing, not fixed 
+  dependent upon values declared in parent and ancestor elements
+  Example => 
+
+  
+  percentage => of the container box what ever it is  
+  1em   => Font size of the parent (the closest ancestor element ) 1.1em = 110% from the parent size
+  1ex   => x-height of the element's font.
+  1rem  => Font size of the root element. ==>   [html]  which is 16px
+  1vw   => 1% of the viewport's width.
+  1vh   => 1% of the viewport's height.
+  1vmin => 1% of the viewport's smaller dimension.
+  1vmax =>	1% of the viewport's larger dimension.
+
+  you don't have to put a unit if the value is 0
+
+  notice that 
+  there is some elements that come with default style like [h2] for example
+  */

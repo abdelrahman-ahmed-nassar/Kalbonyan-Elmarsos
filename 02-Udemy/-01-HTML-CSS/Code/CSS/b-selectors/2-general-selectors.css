@@ -1,0 +1,108 @@
+/**  [1][universal selector]  **/   
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }  
+  /*
+    :apply the style to every element not inherit this style it just give it any element 
+    including the body tag  but when using the body it inherit its properties to any thing inside it 
+  */
+
+
+/** [2][type selector or element selector] **/
+  div {
+    color: red;
+  }         
+  /* apply style to every div element  */
+
+
+/**  [3][class selector]  **/      
+  .class {
+    color: blue;
+  }       
+  /* apply style to any element have this class */
+
+
+/**  [4][id selector]  **/
+  #id-name {
+    display: inline;
+  } 
+  /* apply style to any element have this id */
+
+
+/** [5][combined or compound selector]  **/
+  p.class {
+    border: 1px solid black;
+  }
+  /*
+  apply this style to any (p) have this class meaning there is two conditions firstly it 
+  must be p secondly it must that class at the same time 
+
+  article#my-id {}
+  apply this style to tha article that have that id     (you can use that to increase specificity) 
+
+  .class.class {}  
+  apply this style to any element have this two classes at the same time
+  */
+
+
+/**  [6][descendant selectors]  **/
+  ul il {
+    list-style: none;
+  }    
+  /*
+  apply this style to any (il) inside ul  regardless its degree in the inheritance tree
+  meaning the ul just need to be  an ancestor for the li regardless its degree a parent or a 
+  grandparent, we write the parent first then the child ad the style will be applied to the child 
+  remember:  write the selector from the left and read it from the right
+  */
+
+
+/**  [7][gathering or grouping selector]  **/
+  a,
+  h1,
+  .class,
+  #id {
+    color: yellow;
+  }
+  /*
+  apply this style to (all) of those selectors
+  you can put them in the same line but that is the best practice 
+  */
+
+
+/**  [8] [direct child combinator]  **/
+  .parent > p {
+    font-size: 20px;
+  } 
+  /* 
+  apply this style to any and every element have this two condition 
+  (1) it's a  paragraph        
+  (2) it's a direct child for the .parent  
+  you can think of the child as the element which indented directly after the parent with just one tab more
+  you can delete the tab  but for readability use it  
+  */
+
+
+/**  [9] [general sibling combinator]  **/
+  div ~ p {
+    font-weight: bold;
+  }
+  /*   
+  mean apply this style to any and every p element with (1) condition 
+  it must be a sibling for the div  and don't have to be directly after it  
+
+  p ~ p {}
+  notice if we have a list a paragraphs the first one won't be styled 
+  */
+
+/**  [10][adjacent  siblings combinator ]  **/
+  div + p {
+    font-style:italic;
+  }  
+  /*
+  mean apply this style to the element that have three condition
+  (1) it's a paragraph
+  (2) it must be a sibling for the div 
+  (3) it must come directly after him without no thing between them 
+  "siblings are the elements that have the same direct parent" 
+  */

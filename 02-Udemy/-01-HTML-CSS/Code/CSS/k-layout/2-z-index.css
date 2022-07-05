@@ -1,0 +1,18 @@
+
+
+
+/********************************  z-index  ****************************/
+
+/*
+refers to how elements stacked in the z-axis the third dimension  
+its called the  stacking context 
+element with a higher stack level is rendered in front of the element with the lower stack level.
+
+in default element is ordered in the z-axis depending in it order in html 
+
+but you can change that by using  z-index  property 
+
+but there is a condition  that the element you will apply this property on it 
+[it must have a position property] such as relative or any thing else 
+the value of this property can be any number but he rule is the higher the number the first it will come
+*/

@@ -1,0 +1,14 @@
+/**************** font short hand property *************/
+
+p {
+  font: font-style font-variant font-weight font-size/ line-height font-family;
+}
+/*there is some rules around the short hand property 
+[1] the short hand must include a font size and font family 
+[2] other values is optional 
+[3] order matter  so the [font-style font-variant font-weight ] must come before [font-size]
+[4] lin-height must immediately follow font-size proceeded by a forward slash 
+[5] font-family must be the last value 
+
+for more  visit https://lnkd.in/css-font
+*/

@@ -1,0 +1,37 @@
+div {
+  overflow: visible; /*default value  any thing exceed the content box will be visible*/
+  overflow: hidden; /* any thing excess the content  will be hidden */
+  overflow: scroll; /* will put a scroll whether there is overflow or not */
+  overflow: auto; /* will put a scroll if there is over flow */
+  overflow-y: hidden; /* hide the vertically overflow */
+  overflow-x: hidden; /*hide the horizontally overflow content */
+}
+
+p {
+  white-space: wrap;
+  /*dealing with wrap text when it exceed the maximum width  */
+  white-space: nowrap;
+  /*the text will continue whether the width is end or not */
+}
+
+p {
+  word-break: normal;
+  /* dealing with the text when it over the full width like long link treated as one word*/
+  word-break: break-all;
+  /* it break the text if it exceed the full width */
+}
+
+p {
+  white-space: nowrap;
+  text-overflow: ellipsis; /*make a ... after the overflow  instead of cutting it */
+}
+/*
+Notice the difference 
+*/
+
+div {
+  overflow: auto; /*the text will look the same but the redundancy will be cut or make scroll */
+  white-space: nowrap; /*make the text continue and get out of the width*/
+  word-break: break-all; /*the overflow will be broken and go under line */
+  text-overflow: ellipsis; /* when you make the white space no wrap and the overflow hidden and this put dots to tell the user there is some cut here*/
+}

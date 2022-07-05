@@ -1,0 +1,99 @@
+/*****************************  pseudo element *************************************/
+
+/*with two colon but one colon will work also but that is the best practice */
+
+p::first-letter {
+  color: #ddd;
+}
+/* style the first letter of the paragraph*/
+
+div::first-line {
+  color: green;
+}
+/*will style the first line in the div  */
+
+div::selection {
+  color: yellow;
+  background: black;
+}
+/*what selected with cursor which often has a blue back ground */
+
+/*** the most important pseudo element ******/
+
+p::after {
+  content: ""; /*you must but this property*/
+  position: absolute;
+  right: -5;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: green;
+}
+
+/* make a pseudo element after the p */
+
+p::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid green;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.parent {
+  counter-increment: any-name;
+}
+
+p::after {
+  /* make a counter      you can use before */
+  content: counter(any-name);
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  margin-top: -10px;
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.one::before {
+  /* will show the value of the attribute  as a text */
+  content: attr(the-name-of-the-attribute-without-quotes);
+  display: none;
+}
+
+.one:hover::before {
+  /*if the element is hovered it will show the before or rather it will apply this style to the before  */
+  display: block;
+}
+
+div::before {
+  /* not best practice  */
+  content: url();
+}
+/* you can customize the shape of the bullets of the li by using before  */
+ul {
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid green;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  margin-top: -10px;
+}

@@ -1,0 +1,77 @@
+/*****************************************  selectors  **************************** */
+
+/*
+selector {
+  property: value;     => each line is a declaration   or a property-value pair
+}
+all that is a declaration block
+
+
+-------------------------------------------------------------------
+
+
+[1][universal selector]  
+  *{}   
+    apply the style to every element in the page 
+
+[2][type selector like]   
+  div, body, p, em
+  refer to  the element in the html page
+
+[3][class selector] 
+  an attribute that tou can give to the element in the html
+
+[notice that]
+  in html   you can give one element more than class like that 
+  <p class="class1 class2"> lorem </P>
+  make sure that you left the space between each class 
+
+to apply style to this selector put a dot then the name or the value of the selector attribute   like
+.the-class
+
+<----------------- rules and best practice when naming your class or id --------->
+
+
+(1)use a specific type of naming and don't change it  
+
+ways of naming  
+  original => some awesome var 
+  camel case =>  someAwesomeVar  
+  snake case => some_awesome_var
+  kebab case => some-awesome-var  =>    use it in css [all is lower case and dash between each word]
+  pascal case => SomeAwesomeVar
+  upper case snake case => SOME_AWESOME_VAR 
+
+
+(2) its name is descriptive and simple
+
+(3) don't use space between words if you want to separate them  
+    instead you can use dash -  like class="my-class"
+
+(4) the class or id can't start with number but can start with any thing else  
+
+(5) the id value must be unique but in classes it doesn't matter
+
+(6)don't end the name of class with : if you want to use it with pseudo element or pseudo selector 
+
+visit:  https://www.smacss.com  for more details about naming classes
+<---------------------------->
+
+[4][id selector] 
+an attribute that you give to the html element
+to use it use # and the name of the id 
+#id
+the id value must be unique in the one page
+
+
+------------------------tips while dealing with selectors "best practice" 
+
+(1)write selector from left to write read them from right to left
+(2)the best practice is "less is more"  
+(3)for global styling use the <html> tag 
+(4)use descendant selectors to fine-tune styling
+(5)use pseudo-classes and pseudo-element as needed
+(6)Avoid IDs in CSS styling
+(7)Keep your selector simple 
+(8)if it indicate to the element you need then don't add more than that   and don't repeat your self 
+*/

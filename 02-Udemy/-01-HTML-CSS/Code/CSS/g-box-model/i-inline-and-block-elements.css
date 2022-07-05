@@ -1,0 +1,182 @@
+/**********************  how elements occupy space [display-style]  **************/
+
+/*
+  there is three types of Html elements 
+
+
+  [1]  inline-level element
+
+    * take the same space of the content contained within their tag
+    *the element are displayed in aline, side by side starting from the page flow
+    * doesn't accept width or height until you position them whether with position or flex or float 
+
+    * accept padding from all directions 
+    * respect  margin but just from left or right 
+    * doesn't algin vertically  
+    * elements come next to it and doesn't add line break and does'nt wrap except if there is no space for it 
+    Examples :
+        
+        <a>
+        <img>
+        <iframe>
+        <video>
+        <picture>
+        <acronym>
+        <button>
+        <audio> (if it has visible controls)
+        <b>
+        <br>
+        <canvas>
+        <cite>
+        <code>
+        <data>
+        <datalist>
+        <del>
+        <em>
+        <embed>
+        <i>
+        <input>
+        <ins>
+        <label>
+        <mark>
+        <meter>
+        <noscript>
+        <object>
+        <output>
+        <progress>
+        <q>
+        <s>
+        <script>
+        <select>
+        <small>
+        <span>
+        <strong>
+        <sub>
+        <sup>
+        <textarea>
+        <time>
+
+  [2]  block-level element
+
+    * take the same height  as the content contained between their tags 
+    * span the entire width of its containing element  
+    * add line break  no thing come next to him 
+    * respect padding,  margin,  width,   hight and border 
+    * the margin can collapse vertically 
+    * respect every thing 
+
+    Example :
+        <address>
+        Contact information.
+
+        <article>
+        Article content.
+
+        <aside>
+        Aside content.
+
+        <blockquote>
+        Long ("block") quotation.
+
+        <details>
+        Disclosure widget.
+
+        <dialog>
+        Dialog box.
+
+        <dd>
+        Describes a term in a description list.
+
+        <div>
+        Document division.
+
+        <dl>
+        Description list.
+
+        <dt>
+        Description list term.
+
+        <fieldset>
+        Field set label.
+
+        <figcaption>
+        Figure caption.
+
+        <figure>
+        Groups media content with a caption (see <figcaption>).
+
+        <footer>
+        Section or page footer.
+
+        <form>
+        Input form.
+
+        <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+        Heading levels 1-6.
+
+        <header>
+        Section or page header.
+
+        <hgroup>
+        Groups header information.
+
+        <hr>
+        Horizontal rule (dividing line).
+
+        <li>
+        List item.
+
+        <main>
+        Contains the central content unique to this document.
+
+        <nav>
+        Contains navigation links.
+
+        <ol>
+        Ordered list.
+
+        <p>
+        Paragraph.
+
+        <pre>
+        Preformatted text.
+
+        <section>
+        Section of a web page.
+
+        <table>
+        Table.
+
+        <ul>
+        Unordered list.
+
+
+
+  [3]  inline-block element
+    don't take the full width
+    allow elements before and after it 
+    doesn't add a break line 
+    respect padding and margin from any direction 
+    respect width and hight 
+  **in conclusion 
+  an inline element that respect  margin and padding and other things 
+  
+  Example :
+  it can be any inline element by applying this declaration on it 
+  
+  span {
+    display: inline-block;
+  }
+*/
+
+/*
+Nesting 
+
+block in block  =>  legal 
+inline in block =>  legal
+inline in inline => legal
+
+block in inline => illegal
+
+
+*/

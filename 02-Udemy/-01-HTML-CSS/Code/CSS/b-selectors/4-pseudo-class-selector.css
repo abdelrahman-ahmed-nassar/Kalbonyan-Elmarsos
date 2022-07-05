@@ -1,0 +1,63 @@
+/*
+
+<---------  the pseudo classes and elements declaring  --------->
+
+[:root]
+  matches the root element of a tree representing the document.
+
+  you put the variable in it like 
+  :root {--main-color:red;}
+  then use the variable 
+  .class{var(--main-color)
+
+[:link]
+  Applies to any links which have href attribute and  haven't been visited by the user.
+
+[:visited] 
+  Applies to any links which haven't been visited by the user.
+
+[:hover]
+  Applies to any element being hovered by the user's pointing device, but not activated.
+
+[:active] 
+  the moment you click on the link and before you release the click
+
+[:checked]
+  Applies to radio, checkbox, or option elements that are checked or toggled into an "on" state.
+
+[type="checkbox"]:checked  {}  
+  if you want just the checked chick box not he radio button 
+
+input[type="checkbox"] :checked + label {}
+  the label after each checked label  
+
+[:empty] 
+  Applies to any UI element which has no thing in it(white space considered as a thing)(comment doesn't considered).
+
+[:disabled] 
+  Applies to any UI element which is in a disabled state. 
+
+[:enable]
+  Applies to any UI element which is in an enabled state.
+
+[:required]
+  styling  any required element like  password input 
+
+[:optional] 
+  the opposite  apply the style to any element that isn't required 
+
+input:required + span {
+  color: red;
+}
+now if the input is required that style will be applied 
+
+[:focus] 
+  when you click in text area or input   or when you moving with tab button 
+
+  
+
+[:target] 
+styling the element that you navigate to may by a and id 
+the styling will appear just when you click on the a 
+
+*/

@@ -1,0 +1,12 @@
+/*
+background: 
+  [<background-image>]
+  [<background-color>]  
+  [<background-position>]
+  /[<background-size>]
+  [<background-repeat>] 
+  [<background-origin>]  => How the background is positioned (ignored when background-attachment is fixed)
+  [<background-clip>]=>How the background is painted relative to  content-box, border-box, or the padding box 
+  [<background-attachment>]
+[<initial|inherit>];  
+*/

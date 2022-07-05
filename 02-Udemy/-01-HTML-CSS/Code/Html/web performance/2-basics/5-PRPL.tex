@@ -1,0 +1,29 @@
+- [Instructor] There's a useful mnemonic device you can use to remember how to 
+achieve the best possible performance for your website or application. PRPL, or 
+P-R-P-L, referring to the PRPL pattern. This is an acronym that stands for push or
+preload the most important resources, render the initial route as soon as possible, 
+pre-cache remaining assets, and lazy load other routes and non-critical assets. 
+This pattern has become the industry standard benchmark for web performance for two
+main reasons. It was developed by the leading industry experts on performance and 
+it just makes sense. If we push or preload important resources to the browser using
+server push for the initial load and service workers in the next round, the 
+application will run faster. If we render the initial route as soon as possible by 
+serving the browser with critical CSS and JavaScript, the perceived performance of
+the application will be improved. If we pre-cache remaining assets so they are 
+available when the browser needs them, the application performance will be 
+dramatically improved. And finally, if we lazy load all non-critical assets so 
+they only load when they are actually needed, we reduce the time to initial load
+and save the visitor from wasting their bandwidth on assets they will never use.
+As you make your way through this course, keep the PRPL pattern in mind 
+almost everything that we're going to cover fits into one of these steps, push
+our preload, render, pre-cache, and lazy load.
+
+
+THE PRPL pattern 
+  Push (or preload) the most important resources 
+
+  render the initial route as soon as possible 
+
+  pre-cache remaining assets 
+
+  laze load other routes and non-critical assets 

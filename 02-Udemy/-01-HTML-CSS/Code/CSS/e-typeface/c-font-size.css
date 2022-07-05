@@ -1,0 +1,21 @@
+/*****************font size *************/
+
+/*
+it takes a length unit as it's value 
+
+the default size of the document text is 16px 
+*/
+
+p {
+  font-size: large;
+  font-size: x-large;
+  font-size: small;
+  font-size: x-small;
+  font-size: medium;
+  font-size: 20px;
+  font-size: 1.1em;
+  font-size: 1.1rem;
+
+  font-size: .5vw; 
+  /*change the font-size depending on the screen width */
+}

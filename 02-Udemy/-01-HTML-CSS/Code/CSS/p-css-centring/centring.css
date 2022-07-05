@@ -1,0 +1,142 @@
+/**----------[1][flex box]-----------**/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* or in the child  */
+.child {
+  align-self: center;
+}
+
+/**-------------[2][transform]------------**/
+
+/*   HTML 
+<div class="container">
+  <div class="element"></div>
+</div>
+*/
+.container {
+  position: relative;
+}
+.element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/**-------------[3][margin]-------------**/
+/*     HTML
+<div class="containerDiv">
+    <div id="centeredDiv"></div>
+</div>
+
+
+<div class="containerDiv">
+    <p id="centeredParagraph">This is a centered paragraph.</p>
+</div>
+
+
+<div class="containerDiv">
+    <img id="centeredImage" src="" />
+</div>
+*/
+
+.containerDiv {
+  width: 100%;
+  height: 100px;
+  padding-bottom: 40px;
+}
+#centeredDiv {
+  margin: 0 auto;
+  width: 200px;
+  height: 100px;
+  border: 1px solid #000;
+}
+#centeredParagraph {
+  width: 200px;
+  margin: 0 auto;
+}
+#centeredImage {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+/**---------------[4][text-align]------------**/
+/* HTML 
+<p>Lorem ipsum</p>
+*/
+p {
+  text-align: center;
+}
+
+/**-----------[5][position absolute]--------------**/
+/*
+<div class="parent">
+  <img class="center" src="http://lorempixel.com/400/200/" />
+</div>
+*/
+.parent {
+  position: relative;
+  height: 500px;
+}
+.center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/**-------------[6][using calc]-----------**/
+/* HTML 
+<div class="center"></div>
+*/
+.center {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: red;
+  top: calc(50% - 50px / 2); /* height divided by 2*/
+  left: calc(50% - 50px / 2); /* width divided by 2*/
+}
+
+/**----------[7][line height]------------**/
+div {
+  height: 200px;
+  line-height: 200px;
+}
+
+/**------[8][vertical align-----------**/
+
+div.vertical {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/**---------[9][ Vertically align an image inside div]**/
+/* HTML 
+<div class="wrap">
+  <img src="http://lorempixel.com/400/200/" />
+</div>
+*/
+.wrap {
+  height: 50px; /* max image height */
+  width: 100px;
+  border: 1px solid blue;
+  text-align: center;
+}
+.wrap:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 1px;
+}
+img {
+  vertical-align: middle;
+}

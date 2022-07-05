@@ -1,0 +1,7 @@
+/**************** font variant ****************/
+
+p {
+  font-variant: small-caps;
+  /*make a word upper case but small in size you won't use it often */
+  font-variant: normal;
+}

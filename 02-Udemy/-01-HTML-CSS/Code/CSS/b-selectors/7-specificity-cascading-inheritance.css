@@ -1,0 +1,127 @@
+/***************************  inheritance and specificity and cascading   **************************/
+
+/*
+determines how browsers decide which CSS rule takes precedent 
+when there are conflicting declarations
+<body>
+<p class="example"> what is my color? </P>
+</body>
+
+body {
+  color:green;
+}
+
+p {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+
+.example {
+  color: gold;
+}
+
+
+that is based on 3 main rules 
+
+
+-----[specificity]------[cascading]-----[Inheritance]
+
+
+the role says 
+(1)"for any element the most specific selector will take precedence and override the other selector"  
+(2)"if the elements are equal in specificity then we move to cascading and the last item in tha page will be applied"
+(3)"Inheritance  applied just when there is no property you out in the element so it will inherit this property from its father "
+
+_____________specificity________
+1. universal (*)
+2. type (p)
+3. class(.example)
+4. id (#example)
+
+id is the most powerful and override all the other types 
+
+
+A => count the number of Id  selector 
+
+B => count the number of class, attribute, and pseudo class selectors
+
+C => count the number of type and pseudo-element selectors 
+
+
+*                a=0   b=0  c=0   = 000
+p                a=0   b=0  c=1   = 001
+.class           a=0   b=1  c=0   = 010 
+#id              a=1   b=0  c=0   = 100
+.class p         a=0   b=1  c=1   = 011
+#id p            a=1   b=0  c=1   = 101
+ul li a          a=0   b=0  c=3   = 003
+
+
+who have the bigger number will be applied
+
+visit https://specificity.keegan.st
+
+---------------------------
+properties and specificity   in w3c  
+
+first public working draft => they still experimented may not be supported by all browser
+
+working draft  => they still experimented may not be supported by all browser
+
+candidate recommendation => are set to become formalized W3C recommendation  but sometimes require approval
+
+proposed recommendation  => are set to become formalized W3C recommendation  but sometimes require approval
+
+recommendation           => the current standards for the latest browser  
+
+superseded recommendation => has been replaced by a newer version 
+
+
+
+_____________cascading____________
+
+
+the cascade in cascading style sheets refers to how style rules are applied based on specificity  and source order
+
+for example 
+
+p {
+  color: red;
+}
+
+p {
+  color: black;  => that will work because its the last in the order
+}
+
+p {
+  color: red;
+  color: black;  => that will take precedence
+}
+
+order work just when the specificity is equal 
+
+but if there is a specificity then the order doesn't matter 
+
+__________important__________________
+p {
+  font-size: 20px !important;
+}
+/*
+this declaration will override the order and the specificity
+
+visit https://Lnkd.in/CSS_Specificity  for more details 
+
+
+_____________inheritance___________ 
+some properties is inheritable lik font family 
+and other isn't inheritable like the border 
+
+You can force a lot of properties to inherit values from their 
+parent elements by using inherit for the value of the properties.
+
+the inheritance property is so weak and any style on the element 
+wil override the property 
+*/

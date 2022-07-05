@@ -1,0 +1,124 @@
+we crate a list in html to represent a lot of things
+such as list of links in a navigation bar or list of items
+
+
+there are two kind of lists
+1- ordered list
+2-unordered list
+
+to create an unordered list
+
+<ul>
+  <!-- unordered list-->
+  <li>item</li>
+  <li>item</li><!-- list item -->
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+</ul>
+
+to create an ordered list
+
+<ol>
+  <!-- ordered list-->
+  <li>item</li>
+  <li>item</li><!-- list item -->
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+</ol>
+
+-------           nested lists
+
+<ul>
+  <li>item 1</li>
+  <li>item 2
+    <ul>
+      <li>sub-item 2.1</li>
+      <li>sub-item 2.2</li>
+    </ul>
+  </li>
+  <li>item 3</li>
+</ul>
+
+
+---------   customize the ordered list
+<!-- notice that the indentation is not required it's the best practice  -->
+<ol reversed start="22" type="1">
+  <!--ordered list -->
+  <li>step 1 </li>
+  <li>step 2 </li>
+  <li>step 3 </li>
+  <li>step 4 </li>
+</ol>
+<!-- reversed => reverse the ordering  -->
+<!-- start=" 2"=> start from position -->
+<!-- type="A" or "I" "1" "a" "i" => type of ordering -->
+
+<ol>
+  <li value="20">item</li>
+  <!--the order of this li will be 20-->
+  <li> item </li>
+  <li>item</li>
+</ol>
+
+<ol start="5">
+  <li>Item</li>
+  <!--order = 5 -->
+  <li>Some Other Item</li>
+  <!--order = 6 -->
+  <li value="4">A Reset Item</li>
+  <!--order = 4 -->
+  <li>Another Item</li>
+  <!--order = 5 -->
+  <li>Yet Another Item</li>
+  <!--order = 6 -->
+</ol>
+
+<ol reversed>
+  <li>Item</li>
+  <!--5-->
+  <li>Some Other Item</li>
+  <!--4-->
+  <li value="4">A Reset Item</li>
+  <!--4-->
+  <li>Another Item</li>
+  <!--3-->
+  <li>Yet Another Item</li>
+  <!--2 -->
+</ol>
+
+<ol>
+  <li>Hello, list!</li>
+  <li>
+    <ul>
+      <li>Hello, nested list!</li>
+    </ul>
+  </li>
+</ol>
+
+____________________________
+
+----------        use the definition list
+<dl>
+  <!--definition list have a key and value -->
+  <dt>term</dt>
+  <dd>definition description </dd>
+  <dd>additional definition</dd>
+</dl>
+
+other way of doing that
+<dl>
+  <dt>
+  <dd>definition of second term </dd>
+  </dt>
+</dl>
+multi item definition 
+<dl>
+  <dt>name 1</dt>
+  <dt>name 2</dt>
+  <dd>value for 1 and 2</dd>
+  <dt>name 3</dt>
+  <dd>value for 3</dd>
+  <dd>value for 3</dd>
+</dl>

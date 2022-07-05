@@ -1,0 +1,39 @@
+<!-- this is a comment the editor will ignore it  do it in vs code by [ctrl + /] -->
+
+<!--
+  in old day all tags were written in uppercase
+  It doesn't matter the browser will support whatever you do 
+
+  some elements are short like   p  i  a  
+  that because in past that was for saving memory 
+
+  the closing tag 
+  The newer HTML elements always have both an opening and a closing tag
+  but for some of the older elements, there is no closing tag. Like, image
+
+  best practice
+  put a slash at the end of any element that otherwise didn't have a closing tag
+  but that doesn't matter and it's up to you 
+
+-->
+Inline display elements, usually such as span or a, will include up to one
+white-space character before and after them in the document. In order to avoid
+very long lines in the markup (that are hard to read) and unintentional
+white-space (which affects formatting), the white-space can be commented out.
+<!-- Use an HTML comment to nullify the newline character below: -->
+<a href="#">I hope there will be no extra whitespace after this!</a
+><!--
+--><button>Foo</button>
+Try it without a comment between the inline elements, and there will be one
+space between them. Sometimes picking up the space character is desired. Example
+code:
+<!-- Use an HTML comment to nullify the newline character below: -->
+GoalKicker.com – HTML5 Notes for Professionals 25
+<a href="#">I hope there will be no extra whitespace after this!</a
+><!--
+--><button>Foo</button>
+<hr />
+<!-- Without it, you can notice a small formatting difference: -->
+<a href="#">I hope there will be no extra whitespace after this!</a>
+<button>Foo</button>
+Output:

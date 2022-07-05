@@ -1,0 +1,44 @@
+/***********  How could you link the css file with the html ************/
+
+/*
+----------------[1] with the <link> tag  in html like 
+
+  <head>
+    <link rel="stylesheet" href="the path of the file" type="text/css">
+  </head>
+
+ypu can have more than <link> in the same page and the ine comes last will override the others 
+
+you can link one html file with more than html file 
+and you can make more than css file to style one html file
+
+[relative path] => link to some thing to your website  (its in your server or device)
+
+[absolute path]  => refer to a resource located on a foreign server like a link in another web
+
+don't refer to specific file or image by absolute path, instead download it and then call it with the relative path
+
+{ notice that }
+
+<a href="https://notmywebsite.com"> link to external website </a>  OKAY
+
+< img src="https://notmywebsite.com/images/photo.jpg"> link to a specific image or file in a website NOT OKAY  [hot linking you should avoid]
+
+
+----------------[2] 
+<head> 
+  <style type="text/css">
+    @import url("the css file path");
+  </style>
+</head>
+
+or you can put this in the CSS file 
+
+@import '/additional-styles.css';
+
+this way you can separate you css styling to more than file and then combine them to one file 
+no one use ths way nowadays because it will make your web slow
+
+[notice that]
+if you have a lot of css files you can combine them in one file by making it and import the other files in it 
+*/

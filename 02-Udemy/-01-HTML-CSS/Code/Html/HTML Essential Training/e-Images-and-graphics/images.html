@@ -1,0 +1,76 @@
+<img src="images/image.jpg" alt="error" width="100px" height="  100px" title="photo"/>
+Gif only 256 color SVG scalable vector graphic emoji JPG image format for
+compressing photos most common png
+<!-- img is an inline element-->
+<!-- src  you put the source of the photo in it-->
+<!-- alt provide a text that will appear if there is some thing wrong with the photo -->
+
+<figure>
+  <img
+    src="https://www.wikihow.com/images_en/thumb/0/00/Set-Image-Width-and-Height-Using-HTML-Step-2-Version-3.jpg/v4-460px-Set-Image-Width-and-Height-Using-HTML-Step-2-Version-3.jpg.webp"
+    alt="a text when the photo got error alternate text  "
+  />
+  <figcaption>this is a caption of the photo</figcaption>
+</figure>
+
+Responsive image using the srcset attribute
+<img
+  sizes="(min-width: 1200px) 580px,
+  (min-width: 640px) 48vw,
+  98vw"
+  srcset="
+    img/hello-300.jpg   300w,
+    img/hello-600.jpg   600w,
+    img/hello-900.jpg   900w,
+    img/hello-1200.jpg 1200w
+  "
+  src="img/hello-900.jpg"
+  alt="hello"
+/>
+
+Using srcset without sizes
+<img
+  src="img/hello-300.jpg"
+  alt="hello"
+  srcset="img/hello-300.jpg 1x, img/hello-600.jpg 2x, img/hello-1200.jpg 3x"
+/>
+
+: Responsive image using picture element
+<picture>
+  <source media="(min-width: 600px)" srcset="large_image.jpg" />
+  <source media="(min-width: 450px)" srcset="small_image.jpg" />
+  <img src="default_image.jpg" style="width: auto" />
+</picture>
+
+Image Maps
+<img
+  src="http://jaced.com/blogpix/2007/trisquarecircle/002.gif"
+  usemap="#shapes"
+/>
+<map name="shapes">
+  <area shape="polygon" coords="79,6,5,134,153,134" />
+  <area shape="rectangle" coords="177,6,306,134" />
+  <area shape="circle" coords="397,71,65" />
+</map>
+
+
+Images should...
+      Be relevant
+      Convey information
+      Convey the right mood 
+      Be instantly recognizable 
+      Fit the color palette
+
+stoCk photos
+www.istockphoto.com
+www.gettyimages.com
+www.veer.com
+www.sxc.hu
+www.fotolia.com
+
+onlIne extra
+We have provided an online 
+gallery that helps you choose the 
+right image for your website. You 
+can find it in the tools section of 
+the site accompanying this book.

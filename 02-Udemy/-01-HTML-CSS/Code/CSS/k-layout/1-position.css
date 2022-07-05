@@ -1,0 +1,55 @@
+/***********************************   position     *********************************/
+
+/*
+there are 5 different values. Each responsible for a different type of positioning
+*/
+
+p {
+  position: static;
+  /* default value  meaning the element is not positioned  
+  all of the following values require positioning value like 
+  top or right or left or bottom  */
+
+  position: fixed;
+
+  /*  the element will fixed in the page while scrolling   */
+  /*  relative to the viewport */
+
+  top: 20px; /*  mean make 20px between the element and the viewport from top  */
+  right: 0; /*  make there is no space between the element and the right side of the viewport   */
+
+  position: sticky;
+  top: 10px;
+  /*it stays in the initial spot until you scroll the page. Then it becomes fixed when the value in the offset property has been met*/
+  /*move to down just when reach the top or you can customize it */
+
+  /* work like fixed but you can give it the position that it will be fixed in it */
+  /* relative to containing block and viewport*/
+
+  position: relative;
+  /* moving the element relative to its current position */
+
+  right: 20px;
+  /*it will move to the left because this statement mean look at the right side of the element and then make the new position right to that side with 20px  */
+  bottom: 20px; /*it will move up because this statement mean look at the bottom side of the element and then make the new position up to that side with 20px  */
+  left: -20px;
+  /*every property of those can accept negative values*/
+
+  /**when using the relative position the element will still reserved it place and no element will come under it*/
+  position: absolute;
+  top: 10px;
+  left: 0;
+  /* moving the element relative to the nearest positioned ancestor containing element */
+
+  /* elements with absolute positioning are relative to it's closest [positioned] ancestor element. If that exists, it will be relative to the body element*/
+  /* and when you move it it will move relative to its initial status*/
+
+  /* if you want to define the container of this element and which it will move relatively to it  */
+  /*  you can do that by adding a  position:absolute;  to the container  */
+
+  /**  when moving element with absolute value it will come off the over flow and its place won't be reserved and other element will come instead of it*/
+
+  position: relative;
+  top: 20%;
+  /* you can use any <length> unit*/
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  _______________________________________________________
+  tables
+
+  <table border="1" bgcolor="#efefef">
+  
+    <caption>the title of the table </caption>
+    <thead>
+      <!--the main row-->
+      <tr>
+        <!--table row -->
+        <th>first</th>
+        <!--the head table data cell-->
+        <th>last</th>
+        <th>marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ali</td>
+        <!--table data cell-->
+        <td>omar</td>
+        <td>ahmed</td>
+      </tr>
+      <tr>
+        <td>ali</td>
+        <td>omar</td>
+        <td>ahmed</td>
+      </tr>
+      <tr>
+        <td>ali</td>
+        <td>omar</td>
+        <td>ahmed</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">total </td>
+        <!--combining of two cells-->
+        <td>160</td>
+      </tr>
+    </tfoot>
+  </table>
+
+
+  <table>
+    <tr>
+      <td>row 1 col 1</td>
+      <td>row 1 col 2</td>
+      <td>row 1 col 3</td>
+    </tr>
+    <tr>
+      <td colspan="3">This second row spans all three columns</td>
+    </tr>
+    <tr>
+      <td rowspan="2">This cell spans two rows</td>
+      <td>row 3 col 2</td>
+      <td>row 3 col 3</td>
+    </tr>
+    <tr>
+      <td>row 4 col 2</td>
+      <td>row 4 col 3</td>
+    </tr>
+  </table>
+
+
+
+  <table>
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">Column Heading 1</th>
+        <th scope="col">Column Heading 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Row Heading 1</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Row Heading 1</th>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  scope is known as an enumerated attribute, meaning that it can have a value from a specific set of possible values.
+  This set includes:
+  col
+  row
+  colgroup
+
+
+
+
+  <!-- <caption> table title
+  <thead> Header content
+  <tbody> body content
+  <tfoot> footer content -->
+  <!--  <th> head cells -->
+  <!--<td> body cells -->
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+/****  Text-Decoration  ****/
+
+
+div {
+  text-decoration-line: line-through; /* line*/
+  text-decoration-line: underline;
+  text-decoration-line: overline;
+  text-decoration-line: none; /*to delete the under line from link*/
+  text-decoration-line: underline overline;
+  text-decoration-line: underline line-through;
+}
+p {
+  text-decoration-color: red; /* the color of the line */
+}
+p {
+  text-decoration-style: solid; /* the style of the line */
+}
+
+/* for short hand */  
+p {
+  text-decoration: underline red solid;
+}

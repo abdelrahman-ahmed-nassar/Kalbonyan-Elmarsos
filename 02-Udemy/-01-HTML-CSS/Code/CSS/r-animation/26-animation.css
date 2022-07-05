@@ -1,0 +1,239 @@
+/******************  animation ***********/
+
+/* make kayframe with any name you like*/
+@keyframes any-name {
+  from {
+    background-color: #000;
+  }
+  to {
+    background-color: #fff;
+  }
+}
+
+/********* animation-name  **************/
+
+/********* animation-duration  ***********/
+
+/*now apply the animation to any element by using
+1- animation-name      => the animation name
+2- animation-duration  => the time of the animation 
+*/
+div {
+  animation-name: change-color;
+  animation-duration: 6s;
+}
+
+/* customize the actions */
+
+@keyframes change-color {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  75% {
+    background-color: black;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+/********** animation-iteration-count *************/
+
+/*
+determine how many times you want the animation to happen
+*/
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #e8e3e3;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  /* the options for the animation-iteration-count can be any number you define*/
+
+  /******** animation-timing-function  *********/
+  /* easing is what describes the speed changes of your animation over the course of its duration */
+  animation-timing-function: ease;
+  /* default value=> start slow then fast then finally slow  the default value */
+  animation-timing-function: linear; /*all the animation will be in the same speed*/
+  animation-timing-function: ease-in; /*start slow then faster  */
+  animation-timing-function: ease-out; /*start fast then slow */
+  animation-timing-function: ease-in-out; /*start slow then normal then slow */
+
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  /*  easing.net   */
+
+  /*steps function play an animation back a defined numbers of steps, pausing briefly at each, instead of smoothly interpolating between keyframes states*/
+  animation-timing-function: steps(14);
+}
+
+/**************** animation direction *************/
+/* lets you control what order our keyframes are executed in*/
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #e8e3e3;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  /* the options for the animation-iteration-count can be any number you define*/
+
+  animation-direction: reverse;
+  /*reverse the direction*/
+  animation-direction: alternate;
+  /*go forward and then backward */
+  animation-direction: alternate-reverse;
+  /*go backward and then forward*/
+}
+
+/*************** animation delay ***************/
+/* specifies the amount of time to wait before starting to perform the animation*/
+
+@keyframes coloring {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: black;
+  }
+}
+div {
+  animation-name: coloring;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-delay: 2s;
+  /*can accept negative value to delete this time from the duration*/
+  animation-delay: -2s;
+
+  /* fill mode */
+  /*lets you control what happens during delays before the animation start actively playing , and/or what happens after an animation's duration has ended*/
+  animation-fill-mode: none;
+  /*after the animation done the element will be in its first style*/
+  animation-fill-mode: forwards;
+  /* the element will take its style from the last key frame in the direction */
+  animation-fill-mode: backwards;
+  /* the element will take its style from the first key frame in the direction */
+
+  /*animation play state*/
+  /*determine if the element is run or no*/
+  animation-play-state: running;
+  /*mean it works*/
+  animation-play-state: paused;
+  /*will stop*/
+
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+  /* name | duration | */
+}
+
+/* tutorial */
+/*
+HTML 
+<div class="load">
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: arial;
+  background-color: #333;
+}
+
+.load {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+.load div {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  animation-name: up-and-down;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.load .two {
+  animation-delay: 0.3s;
+}
+.load .three {
+  animation-delay: 0.6s;
+}
+
+@keyframes up-and-down {
+  to {
+    opacity: 0.2s;
+    transform: translateY(-20x);
+  }
+}
+
+/* HTML 
+<div class="wrap">
+  <h2>text</h2>
+</div>
+*/
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0.02);
+  }
+  85% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+h2 {
+  font-size: 10rem;
+  font-family: sans-serif;
+  color: #dcf2b0;
+  text-shadow: 3px 3px 0px #59c3c3;
+  animation-name: scale-in;
+  animation-duration: 2s;
+}
+/***** enhancing with animation  *****/

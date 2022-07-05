@@ -1,0 +1,33 @@
+/*********************************  box-sizing  **********************************/
+
+p {
+  box-sizing: content-box; /*default value */
+  box-sizing: border-box;
+  /*
+  that property change the way that padding added to the content box
+  in normal the padding is added after the content box increasing the full width and height of the element    
+
+  but when using this property  if you set  a width or height to the element it won't change never
+  
+  but how it deal with padding    actually when you add a margin or padding the browser 
+  make the content box smaller so eventually the element is in the same dimensions 
+
+  notice that since margin adds space around the element, changing the box sizing has no effect on the margin treating
+
+  so the box-sizing property works only in padding and border  not margin 
+  */
+}
+
+/*************************** box model fix *************************/
+
+/* is to reassign the way of box model treating with padding  in all page  */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

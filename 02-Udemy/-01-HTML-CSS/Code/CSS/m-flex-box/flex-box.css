@@ -1,0 +1,276 @@
+/******************************* flex-box  ************************************/
+
+/*all the flex properties with the default values */
+
+.flex-container {
+  /*[6] properties and [1] shorthand */
+  display: flex;
+  /* apply the flex layout */
+  flex-direction: row;
+  /* the flow of the elements[define the direction of the main and cross axis] */
+  flex-wrap: nowrap;
+  /* dealing with extra elements*/
+  flex-flow: row nowrap;
+  /* short hand property */
+  justify-content: flex-start;
+  /*define the elements aligning on the main axis*/
+  align-items: flex-start;
+  /*define the elements aligning on the cross axis*/
+  align-content: flex-start;
+  /*define the flow of the content as a whole when there is wrapping*/
+  gap: 10px;
+}
+.flex-child {
+  /* [5] properties nad one short hand*/
+  flex-grow: 0;
+  /*how the element will grow if there is extra space*/
+  flex-shrink: 1;
+  /*how the element will shrink if there is no space and the wrap is nowrap*/
+  flex-basis: auto;
+  /*the initial width of the element*/
+  flex: 0 1 auto;
+  /*short hand property*/
+  order: 0;
+  /* determine the order of the element */
+  align-self: flex-start;
+  /* determine the vertical align independent from the align-items property */
+}
+
+/**--------- [More Details] --------**/
+
+/*? when should i use the flex bix layout? */
+/* when dealing with one dimension layout*/
+
+/**----- display -----**/
+
+.flex-container {
+  display: flex;
+  /*? what happen when we give a container element this property? */
+  /*the container take the default value of the 6 container properties */
+  /* the children take the default values of the 5 child properties  */
+  /*todo:understanding these properties will make you understand flexbox and items*/
+
+  /*? how the browser deal with the normal flex box*/
+  /* 
+  like a block level element 
+  meaning:
+  [1] take the full width of the viewport 
+  [2] take the height of its content 
+  [3] no thing will come beside it 
+  */
+  display: inline-flex;
+  /*? how the browser deal with the inline-flex box*/
+  /*
+  will deal with it as inline-block level element
+  meaning:
+  [1] take the width of its content 
+  [2] take the height of its content 
+  [3] other elements will come beside it 
+  [4] inline-flex doesn't change how the flex items are displayed. 
+  Instead, it makes the flex-container display inline.
+  */
+}
+
+/**----- flex-direction -----**/
+
+.flex-container {
+  flex-direction: row;
+  /*
+  the default value and it make the item flow like the normal flow of the page
+  meaning: 
+  if the page is in arabic 
+  the items will flow from right to left 
+  if the page is in english 
+  the items will flow from left to right 
+  */
+  flex-direction: row-reverse;
+  /*
+  reverse mean: reverse the flow of the language like we have changed the language 
+  EX:   page in english  
+  the first item in the normal row will be the first from the left 
+  if we make it row-reverse 
+  it will still the first but from the right 
+  */
+  /*!the main axis in the row flow will be horizontally  and the cross vertically */
+  flex-direction: column;
+  /* the items will be stacked and the flow will be from [top to bottom] */
+  /*! the main axis will be horizontally and the cross axis will be vertically*/
+  flex-direction: column-reverse;
+  /*
+  the items will be stacked and the flow will be from [top to bottom] 
+  meaning the item that was the first in the normal flow 
+  will be the first too but from the bottom 
+  */
+}
+
+/**----- flex-wrap -----**/
+
+.flex-container {
+  flex-wrap: nowrap;
+  /* 
+  default value 
+  this property work when you give the flex-items a width 
+  and the width of the container is less than the total width
+  
+  the items will shrink because they get the flex-shrink: 1; property by default
+  
+  if you don't want that and want them to go down and make new row instead of shrinking 
+  use the following property 
+  */
+  flex-wrap: nowrap;
+  /*! nowrap without [ - ](hyphen)  */
+  /*now the extra item will be in new row under the first row */
+
+  flex-wrap: wrap-reverse;
+  /*the extra element will be in the first row and the other element will go in second row*/
+}
+
+/**----- flex-flow shorthand -----**/
+
+.flex-container {
+  flex-flow: row wrap;
+  /* flex-direction | flex-wrap */
+}
+
+/**----- justify-content -----**/
+
+.flex-container {
+  justify-content: flex-start;
+  /*  default value */
+  /*! doesn't define the flow of the elements the direction do that */
+  /*
+  instead it determine the aligning and position of the elements on the main axis 
+  meaning the order of the items and the direction will be the same but the content as a whole will move 
+  */
+  justify-content: center;
+  justify-content: flex-start;
+  justify-content: flex-end;
+
+  justify-content: stretch;
+  /*the items will take the full length of the main axis*/
+
+  /*gaps between elements*/
+  justify-content: space-between;
+  /*will distribute the extra space between the elements */
+  justify-content: space-around;
+  /*will distribute the extra space around the element so 
+  the space between every item will be 2 
+  and the space between the last and first item will be 1  
+  */
+  justify-content: space-evenly;
+  /*add equal spaces around and between the element */
+}
+
+/**----- align-items -----**/
+
+.flex-container {
+  align-items: stretch; /*default*/
+  /* make the items take the full height of its container*/
+  /*! if the item have a height property it will override this property*/
+  align-items: normal;
+  /* the items take the height of the highest element*/
+  align-items: flex-start;
+  /*align the items on the cross axis*/
+  align-items: flex-end;
+  /*! notice that since you give the item on of the other property it's no longer stretch meaning it will take the height of its content unless you give it a height property  */
+  align-items: center;
+
+  align-items: baseline;
+  /* Baseline alignment (the line of the fonts )*/
+}
+
+/**----- align-content -----**/
+
+.flex-container {
+  /*dealing with the content vertically as a whole 
+  when there is multiple lines with wrapping */
+
+  align-content: stretch; /* default value*/
+  align-content: flex-end;
+  align-content: flex-start;
+  align-content: center;
+
+  align-content: space-around;
+  align-content: space-between;
+  align-content: space-evenly;
+}
+
+/**----- gap ------**/
+/*! not supported by all the browsers */
+/* add space between the elements across the main axis */
+div {
+  display: flex;
+  gap: 10px;
+}
+
+/**----- flex-grow -----**/
+
+.flex-item {
+  flex-grow: 0; /*default value*/
+  /*
+  deal with extra space in the main axis 
+  if there is extra space items by default won't grow to fill that space 
+  
+  you can add any number to an specific element to make it grow more than the other elements
+
+  the property won't work if there no space for the items to grow 
+  */
+}
+
+/**----- flex-shrink -----**/
+
+.flex-item {
+  flex-shrink: 1;
+  /*
+  default value
+  determine how items will shrink if there isn't enough space in the container
+  its value is a number 
+  */
+  flex-shrink: 0;
+  /*
+  it won't shrink at all. So if there's not enough space in the container, it will overflow, unless you set the flex wrap to wrap.
+  */
+  flex-shrink: 3;
+  /*give the element the priority to shrink first*/
+}
+
+/**----- flex-basis -----**/
+
+.flex-items {
+  flex-basis: auto; /*default value*/
+  flex-basis: 300px;
+  /*
+  set the initial size of the flex-items 
+  give the item a length in the main axis wether it's vertically or horizontally 
+  mean it's considered as a width and height property at the same time
+
+
+  flex-basis respect the max-width and max-height property and affected with it 
+  
+  Think of this as your ideal sizing. If there's enough space, make  the flex items the size declared with flex-basis.  If not, then shrink or grow according to the grow or the shrink properties 
+
+  its value can be px or percentage 
+  */
+}
+
+/**----- flex shorthand ------**/
+
+.flex-item {
+  flex: 0 1 auto;
+  /* grow | shrink | basis*/
+}
+
+/**----- order -----**/
+.flex-item {
+  order: 0; /* default value */
+  /*when there is a lot of element  you should give each item you want to swap an order */
+}
+/**----- align-self -----**/
+.flex-item {
+  /* aligning item itself for more specialization */
+  /* will override the align-items property */
+  align-self: auto;
+  /* for the item itself   [default value] */
+  align-self: stretch;
+  align-self: flex-start;
+}

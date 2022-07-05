@@ -1,0 +1,46 @@
+/********************************** gradient *******************************/
+
+div {
+  background-image: linear-gradient(
+    to right,
+    red 60%,
+    rgb(38, 138, 38) 40%
+  ); /*direction or angle | color stop1 | color stop 2 */
+  background-image: linear-gradient(90deg, red, green);
+
+  /*
+to top  =  0deg
+to right = 90deg
+to bottom = 180deg 
+to left = 270deg  
+*/
+
+  /* determine the width of each color*/
+  background-image: linear-gradient(
+    270,
+    red 5%,
+    rgb(141, 42, 141) 40px,
+    green 40%,
+    blue 25%,
+    yellow 25%
+  ); /*direction or angle | color stop1 | color stop 2 */
+}
+
+/* create a diagonal gradient */
+.diagonal-linear-gradient {
+  background: linear-gradient(to left top, red, yellow 10%);
+}
+/* remove the color collapse and add a start and end point for each color  */
+div {
+  background-image: linear-gradient(
+    to right,
+    #29806b 20%,
+    #27ae60 20%,
+    #27ae60 40%,
+    #d35400 40%,
+    #d35400 60%,
+    #8e44ad 60%,
+    #8e44ad 80%,
+    #c0392b 80%
+  );
+}

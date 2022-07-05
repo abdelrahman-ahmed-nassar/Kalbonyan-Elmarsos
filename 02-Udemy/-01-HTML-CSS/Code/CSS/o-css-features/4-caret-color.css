@@ -1,0 +1,11 @@
+
+
+
+/***************************  caret-color  *********************************/
+
+
+.caret-color {
+  caret-color: blue; /*the |  color when writing */
+  pointer-events: none; /*disable the events that happen when click on the element */
+}
+

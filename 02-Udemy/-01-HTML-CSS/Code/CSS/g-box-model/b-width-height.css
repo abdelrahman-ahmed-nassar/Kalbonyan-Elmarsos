@@ -1,0 +1,62 @@
+/**********  the width and height  ******************/
+
+/* 
+By default a box is sized just big enough to hold its contents. 
+To set your own dimensions for a box you can use the height and width properties. 
+
+you can use any length unit 
+
+use percentages, the size of the box is relative to the size of the browser window 
+or, if the box is encased within another box, it is a percentage of the size of the containing box.
+
+When you use ems, the size of the box is based on the size of text within it. 
+Designers have recently started to use percentages and ems more for measurements as they try to 
+create designs that are flexible across devices which have different-sized screens.
+
+you can't add these properties to the inline elements until you position them 
+whether with position or flex or float 
+
+*/
+p {
+  width: 100px;
+  height: 50px;
+
+  min-width: 100px;
+  max-width: 400px; /* add a prospect for the width to stretch*/
+
+  width: fit-content; /*will be adjusted to fit the content */
+
+  width: inherit; /* to make the element take the width of its parent  */
+}
+/* min-width  and  min-height */
+
+/*
+min-width property specifies the smallest size a box
+can be displayed at when the browser window is narrow
+
+max-width property indicates the maximum width a box 
+can stretch to when the browser window is wide.
+*/
+td.description {
+  min-width: 450px;
+  max-width: 650px;
+  text-align: left;
+  padding: 5px;
+  margin: 0px;
+}
+
+/* min-height, max-height */
+h2,
+p {
+  width: 400px;
+  font-size: 90%;
+  line-height: 1.2em;
+}
+h2 {
+  color: #0088dd;
+  border-bottom: 1px solid #0088dd;
+}
+p {
+  min-height: 10px;
+  max-height: 30px;
+}

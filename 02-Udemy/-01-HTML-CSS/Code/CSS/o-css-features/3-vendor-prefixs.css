@@ -1,0 +1,29 @@
+
+
+
+
+/*  ****************** vendor prefixes ***************************/
+
+/*
+[1] new css feature appeared
+[2]browsers test the feature in version x 
+[3] browser add prefix to give developer the ability to use it 
+[4] the feature is fully supported , no need for prefix
+
+can I use  web 
+
+-webkit- => chrome, safari, new opera version 
+-moz- => firefox
+-ms- ==> Ie, Edge 
+-o- ==> old version 
+*/
+
+.class {
+  -webkit-blend-mode: "";
+}
+
+
+
+div {
+  color: red !important;
+}

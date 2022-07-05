@@ -1,0 +1,52 @@
+/** background-color  property **/
+
+div {
+  background-color: #fff;
+  background-image: url();
+}
+
+.cover {
+  background: red url();
+}
+
+/*
+the background property give the element a background
+the background-color take the color of the background
+the background-image take the path of the image you want to put 
+*/
+
+/*
+in the box model the background-color will be added to the content box and padding
+and won't be added to the margin or the border 
+*/
+
+/*! Notice that */
+
+/* The following statements are all equivalent: */
+div {
+  background: red;
+  background-image: url(image.png);
+}
+div {
+  background-color: red;
+  background-image: url(image.png);
+}
+div {
+  background-image: url(image.png);
+  background-color: red;
+}
+div {
+  background: red url(image.png);
+}
+/*
+They will all lead to the red color being shown underneath the image, where the parts of the image are transparent, or the image is not showing (perhaps as a result of background-repeat).
+*/
+
+/*! But */
+
+div {
+  background-image: url(image.png);
+  background: red;
+}
+
+/* Here, the value of background overrides your background-image. */

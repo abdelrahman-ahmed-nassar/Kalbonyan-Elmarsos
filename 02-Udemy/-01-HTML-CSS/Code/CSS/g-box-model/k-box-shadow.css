@@ -1,0 +1,49 @@
+/*********************************  box-shadow *********************************/
+
+/* making a shadow for the box container  cool property  */
+.class {
+  box-shadow: 10px 10px 0.5 1 outset #ddd;
+}
+/*H-shadow | v-shadow | blur distance  | spread of shadow | inset or outset */
+/*
+  HorizontAl offset
+  Negative values position the shadow to the left of the box.
+
+  verticAl offset
+  Negative values position the shadow to the top of the box.
+
+  Blur DistAnce
+  If omitted, the shadow is a solid line like a border.
+
+  spread of shADoW
+  If used, a positive value will cause the shadow to expand in all directions, and a negative value will make it contract.
+
+ /*you can add more than shadow  just use comma */
+
+/* Syntax */
+/* Keyword values */
+div {
+  box-shadow: none;
+
+  /* offset-x | offset-y | color */
+  box-shadow: 60px -16px teal;
+
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: 10px 5px 5px black;
+
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+  /* inset | offset-x | offset-y | color */
+  box-shadow: inset 5em 1em gold;
+
+  /* Any number of shadows, separated by commas */
+  box-shadow: 3px 3px red, -1em 0 0.4em olive;
+
+  /* Global values */
+  box-shadow: inherit;
+  box-shadow: initial;
+  box-shadow: revert;
+  box-shadow: revert-layer;
+  box-shadow: unset;
+}

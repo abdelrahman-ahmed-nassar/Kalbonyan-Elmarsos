@@ -1,0 +1,37 @@
+/***************************    tables     **********************************/
+table {
+  width: 100%;
+  border: 1px solid black;
+  border-spacing: 8px;
+  /*the space between each cell*/
+}
+
+table td {
+  padding: 15px;
+  background-color: #eee;
+}
+table thead td {
+  background-color: blue;
+  color: #eee;
+  text-align: center;
+  font-weight: bold;
+  border-color: #f35246;
+  empty-cells: hide;
+}
+
+/*field set*/
+fieldset {
+  width: 350px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: right;
+}
+legend {
+  background-color: #efefef;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: left;
+  text-transform: uppercase;
+}

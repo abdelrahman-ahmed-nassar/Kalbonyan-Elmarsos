@@ -1,0 +1,41 @@
+/* ************************  syntax  ******************** */
+
+/*
+selector {
+  property: value;     => each line is a declaration   or a property-value pair
+}
+all that is a declaration block
+
+selector refer to the element which the style will apply on it
+property refer to the style characteristics to be applied to the element
+value  specific the property 
+
+there is long-hand syntax 
+
+padding-top: 10px;
+padding-right: 5px;
+padding-bottom:10px  ;
+padding-left: 5px ;
+
+short-hand syntax 
+
+padding: 10px 5px;
+
+the best practice for writing a declaration block  
+
+div {
+  padding: 10px;
+}
+
+p {
+  margin-top: 10px;
+}
+
+    space after selector  
+    space after the colon 
+    no space before the semi colon
+    blank line between each declaration block 
+    the final carly brace in new line with no tabs
+
+go to code Guide.co  for syntax guidance
+*/

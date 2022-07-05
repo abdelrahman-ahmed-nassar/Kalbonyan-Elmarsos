@@ -1,0 +1,22 @@
+/*****    aligning the text   *****/
+
+
+/*  aligning the text in the the element that have th text  */
+p {
+  text-align: center;  
+  text-align: left;
+  text-align: center;
+  /*
+  give it to the parent
+  to algin text within its container   work  just with the block element or inline-block 
+  its's an inheritable property so you can put it in <html> and itt will be applied to every element  */
+}
+
+
+div {
+  text-align: center; /*the position of the text in its box */
+  vertical-align: middle; /*algin text vertically*/
+  vertical-align: top;
+  direction: ltr; /*the text flow arabic or english*/ /*ltr => left to right */
+  direction: rtl; /*change the flow of the text from right to left */
+}

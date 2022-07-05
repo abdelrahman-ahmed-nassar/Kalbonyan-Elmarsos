@@ -1,0 +1,250 @@
+/*******************************   grid    ********************************/
+
+/*all the properties with the default values*/
+
+.parent-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-auto-rows: auto;
+  grid-auto-columns: auto;
+  row-gap: 1px;
+  column-gap: 1px;
+  gap: 10px;
+  justify-content: stretch;
+  align-content: stretch;
+  grid-template-areas: nav;
+}
+
+/**------------------------------- 
+|      parent element layout      |
+--------------------------------**/
+
+/**----- display -----**/
+div {
+  display: grid;
+  display: inline-grid;
+}
+
+/**----- grid-template-columns ------**/
+
+div {
+  display: grid;
+  /* you write the height of each column*/
+  grid-template-columns: 100px 100px 100px;
+  /*mean 3 columns each one is 100px*/
+  grid-template-columns: 25% 50% 25%;
+  /* you can use the percentage*/
+  grid-template-columns: auto auto auto auto;
+  /* mean 4 columns equal in size */
+  grid-template-columns: repeat(5, auto);
+  /* instead of writing each column */
+  grid-template-columns: repeat(3, 100px) 10% 30px auto;
+  /* or can mix the values  
+  the browser will apply the fixed value first then go to the percentage 
+  the the last space will go to the auto 
+  */
+  grid-template-columns: 1fr 1fr 1fr;
+
+  /*? what is the difference between the fraction and th auto */
+  /* 
+  the first difference appear when you use fr and auto together 
+  other difference is you can use numbers with fr like 3fr 2fr 1fr 
+  
+  when using them together 
+
+  auto is shy
+  will take the minimal width (width of its content)
+  
+  fr  is greedy 
+  will take all the  extra space 
+  */
+
+  grid-template-columns: minmax(100px, 200px) 100px 1fr;
+  /*
+  the column will take 200px if there is enough space 
+  if there is no space it will shrink to 100px 
+  the minmax is more powerful than the the fraction 
+  */
+
+  grid-template-columns: repeat(auto-fill, 200px);
+  /*
+  now you didn't define the number of the columns 
+  if the container is 500px and each item is 200px 
+  the grid will make two columns 
+  */
+
+  grid-template-columns: repeat(auto-fill, minmax(200, 300));
+  /* combining */
+}
+
+/**----- grid-template-rows -----**/
+
+.parent-grid {
+  display: grid;
+  /* you write the height of each row   by default is auto meaning if you didn't define a height for a specific row it will get auto*/
+  grid-template-rows: repeat(4, 1fr);
+  /* the sam as columns take the same values [auto, fr, %, px] */
+}
+
+/**----- grid-auto -----*/
+.parent-grid {
+  grid-auto-rows: 200px;
+  /* implicit row 
+  
+  what will happen if you define 3 rows for you grid layout 
+  then the items was more than 3 
+  so the extra element will go down and create new row with height of auto 
+  but what if you don't it to be auto 
+
+  use this property 
+  
+  so if there is  new row for the extra row will be 200px in height 
+  and the cool feature is the new rows appear just if there is an extra element and if not it disappear
+  */
+
+  grid-auto-columns: 50px;
+  /*
+  this property apply just if there is extra columns  like if no-wrap is on 
+  */
+
+  /*or you can use the other option (auto-fill) */
+
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-rows: repeat(auto-fill, 100px);
+}
+
+/**----- gap -----**/
+
+.parent-grid {
+  /* the gaps between the cells */
+  row-gap: 20px;
+  column-gap: 10px;
+  gap: 20px 10px;
+  /* row | column */
+}
+
+/**------ justify-content -----**/
+.parent-grid {
+  /* the property won't work if the columns is with fr because it take the full width and it won't be any space for the items to move 
+  */
+
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  /* if the column width is auto and you apply this property then the elements will take the minimal width      but if it 1fr   it won't do that */
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+/**----- align-content -----**/
+
+.parent-grid {
+  display: grid;
+  align-content: flex-start;
+  align-content: flex-end;
+  align-content: center;
+  /* if the row width is auto and you apply this property then the elements will take the minimal width */
+  align-content: space-between;
+  align-content: space-around;
+  align-content: space-evenly;
+}
+
+/**----- grid-template-area -----**/
+
+/*   HTML 
+
+
+
+<div class="page">
+  <h2 class="logo">    your logo     you want it to take  3 columns 
+  <nav>    nav bar with list of links inside it 
+  <section>  for content 
+  <aside>  for the side bar
+  <footer>
+</div>
+
+
+*/
+
+/* determine how each item will span */
+
+.page {
+  display: grid;
+  height: 100vh;
+  background-color: #eee;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    "logo logo logo nav nav nav nav nav nav nav" /* that is the first row */
+    "cont cont cont cont cont cont cont cont side side " /* the second row*/
+    "foot foot foot foot foot foot foot foot foot foot "; /*the third row*/
+
+  /*  if you want a gap   but  .   instead  */
+}
+
+h2 {
+  grid-area: logo;
+}
+nav {
+  grid-area: nav;
+}
+section {
+  grid-area: cont;
+}
+aside {
+  grid-area: side;
+}
+
+footer {
+  grid-area: foot;
+}
+
+/**------------------------------- 
+|      child element layout      |
+------------------------------**/
+
+/**----- grid-column -----**/
+
+/*  determining the space or cells that specific element take and this property is applied on the child*/
+.child {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  /* short hand */
+  grid-column: 1 / 5;
+  /*will take 4 column    the first, second, third and fourth cell*/
+
+  /* you don't know the end */
+  grid-column: span 3; /*will start from its current position and will take 3 columns */
+  grid-column: 2 / span 3; /*will start from 2 and take 3 columns*/
+
+
+  /* if we want the element to start from a specific line and go to the end */
+  grid-column: 2 / -1;
+}
+
+/**----- grid-row -----**/
+
+.child {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-row: 2 / 3;
+}
+
+/**----- order  -----**/
+.child {
+  order: 2;
+}
+
+/* short hand */
+.child {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 5;
+  /* short hand */
+  grid-area: 1 / 2 / 3 / 5;
+
+  /*or you can name the cells with the grid-template area */
+}

@@ -1,0 +1,33 @@
+/**************  font-weight  *******************/
+
+/*use the font-weight property to determine how bold the characters appear */
+
+body {
+  font-weight: 100; /*  thin  */
+  font-weight: 200; /*  extra thin (ultra lite) */
+  font-weight: 300; /* light */
+  font-weight: 400; /* normal    =>  the default value*/
+  font-weight: 500; /*  medium */
+  font-weight: 600; /* semi  bold */
+  font-weight: 700; /* bold   => default for heading  */
+  font-weight: 800; /* extra bold (ultra bold )*/
+  font-weight: 900; /*  black  (heavy)*/
+
+  font-weight: normal; /* = 400  */
+  font-weight: bold; /*   =700  */
+
+  font-weight: lighter; /*inherit from the parent 
+  if it 500 or less it will change it into 100
+  if it 600 or 700 it will change into 400 
+  if it  800 or 900 it will change it into 700
+  */
+  font-weight: bolder; /* inherit from the parent 
+  if it 300 or less it will change it into 400
+  if it 400 or 500 it will change into 700 
+  if it  600 or 700 it will change it into 900
+
+
+  notice that not all font families include all font weight 
+  and if you enter an un-exist font weight it will change it to the nearest number exit
+  */
+}

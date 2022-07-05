@@ -1,0 +1,45 @@
+/**************   margin  ************/
+
+/*
+the margin is used to adds/remove spaces around the element 
+it accepts negative value 
+[doesn't] contribute to the total amount of space  an element occupies 
+*/
+p {
+  margin-top: 2px;
+  margin-right: 2px;
+  margin-bottom: -2px;
+  margin-left: 2px;
+}
+/*short hand    just like the padding   "don't repeat your self"  */
+p {
+  margin: auto;
+  margin: 2px 2px 2px 2px; /* top right bottom left */
+  margin: 2px;
+  margin: 0 auto; /*to centralize the element horizontally in its container   */
+  /* but vertically doesn't work like that way  */
+}
+
+/*
+[Q] what is the difference between margin-top: -10px; and margin-bottom: 10px;
+
+when you make margin-bottom: 10px; 
+the element stay in the sme place but push the element that under it 10px
+
+when you use margin-top: -10px  
+the element move 10px to the top 
+
+*/
+
+/*  margin collapsing 
+when there is two elements above other and each element has a margin 
+the browser won't count the two margins it will collapse it two one margin 
+but notice 
+
+[1] only  vertical margin collapse 
+[2] the bigger margin win  meaning the bigger margin will be applied 
+[3] margin collapse happen between two element but they should have no thing between them  like a hr or br 
+[4] nesting doesn't prevent collapse 
+
+
+*/

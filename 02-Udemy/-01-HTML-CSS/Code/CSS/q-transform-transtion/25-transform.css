@@ -1,0 +1,107 @@
+/***************************  2D transform      ******************************/
+
+/** scale **/
+div {
+  transform: scaleX(1);
+  /*default value =-> the normal width*/
+  transform: scaleY(2);
+  /*default value the normal height*/
+  transform: scale(2, 1);
+  /*the short hand of the width[X|Y]*/
+  transform: scale(2);
+  /*the x and y will be 2*/
+  transform: scale(-1);
+  /*the item will flip*/
+}
+
+/** rotate **/
+
+/* 
+take the degree units 
+
+deg => degrees 
+rad => radiant
+grad => gradient 
+turn => one turn 
+*/
+div {
+  transform: rotate(365deg);
+  transform: rotate(6.28rad);
+  transform: rotate(400grad);
+  transform: rotate(1turn);
+  transform: rotate(0.5turn);
+  /*
+  if the value is positive it will rotate clockwise
+  if the value is negative  it will rotate counterclockwise
+
+  */
+}
+/*trick*/
+div img:hover {
+  transform: rotate(10deg) scale(1.3);
+  /* the order mater */
+  opacity: 0.6;
+}
+
+/** translate **/
+
+div {
+  transform: translateX(20px);
+  transform: translateY(10px);
+  transform: translate(20px, 10px);
+  /*moving elements [ X | y ]*/
+}
+
+/* centring the element with the position and the translate */
+
+.item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/** skew **/
+
+div {
+  transform: skewX(10deg);
+  transform: skewY(20deg);
+  transform: skew(10deg, 20deg);
+  transform: skew(10deg);
+  /*! the other value will be 0*/
+}
+
+/** Matrix **/
+
+div {
+  /*scaleX(), skewY(), skewX(), scaleY() translateX(), translateY()  
+  take the tan of angle */
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  /* to make it with the normal transition */
+  transform: translateX() translateY() scaleX() scaleY() skewX() skewY();
+}
+
+/** origin **/
+div {
+  transform-origin: 50% 50%;
+  transform-origin: center center;
+  /* X | y */
+}
+/*
+  default value 50% 50% 0
+  first value => x-axis 
+  - CSS units [px, em, rem]
+  - % 
+  - keyword
+    left = 0% 
+    center = 50% 
+    right = 100% 
+  second value => y-axis
+  - CSS units [px, em, rem]
+  - % 
+  - keyword
+    top = 0% 
+    center =50% 
+    bottom = 50% 
+  
+  */

@@ -1,0 +1,31 @@
+/******************    padding   ************************/
+
+/* 
+padding add/remove space inside of the element but around the content box meaning 
+if the element has a background-color the padding will be affected with that color 
+padding doesn't accept negative value 
+contribute to the total amount of space  an element occupies 
+*/
+
+/*     long hand property   */
+
+p {
+  padding-top: 10%;
+  padding-right: 10%;
+  background-color: #fff;
+  padding-bottom: 10%;
+  padding-left: 10px;
+}
+/*     the short hand property  */
+
+p {
+  padding: auto; /*will split the space between each direction */
+  padding: 2px 2px 2px 2px; /* top right bottom left        a clock wise pattern  */
+  padding: 2px; /*mean  all sides will be 2px */
+  padding: 2px 5px; /*mean the top and bottom will be 2px  and the right and bottom will be 5px*/
+  padding: 2px 3px 4px; /*the top 2px the right and left 3px  the bottom  4px */
+  /*you can mix units as you want */
+  padding: 10px 20% 2vh 1vw;
+  /*if the element have a default padding you can reset it by using */
+  padding: 0;
+}
