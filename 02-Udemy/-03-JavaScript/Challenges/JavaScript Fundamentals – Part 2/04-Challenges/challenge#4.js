@@ -29,4 +29,3 @@ console.log(calcAverage(numbers));
 console.log(calcAverage(tips));
 console.log(calcAverage(bills));
 
-// NOTICE

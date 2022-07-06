@@ -2,51 +2,66 @@
 
 ## Challenges
 
-- [ ] [JavaScript Fundamentals – Part 1 ](./Challenges/JavaScript%20Fundamentals%20%E2%80%93%20Part%201/)
-- [ ] [JavaScript Fundamentals – Part 2](./Challenges/JavaScript%20Fundamentals%20%E2%80%93%20Part%202/)
-- [ ] [Developer Skills & Editor Setup ](./Challenges/Developer%20Skills%20%26%20Editor%20Setup/)
-- [ ] [JavaScript in the Browser: DOM and Events](./Challenges/JavaScript%20in%20the%20Browser%20DOM%20and%20Events/)
-- [ ] [Data Structures, Modern Operators and Strings.](./Challenges/Data%20Structures%2C%20Modern%20Operators%20and%20Strings/)
-- [ ] [A Closer Look at Functions](./Challenges/A%20Closer%20Look%20at%20Functions/)
-- [ ] [Working With Arrays.](./Challenges/Working%20With%20Arrays/)
-- [ ] [Object Oriented Programming (OOP)](<./Challenges/Object%20Oriented%20Programming%20(OOP)/>)
-- [ ] [Asynchronous JavaScript](./Challenges/Asynchronous%20JavaScript/)
+- [x] [JavaScript Fundamentals – Part 1 ](./Challenges/JavaScript%20Fundamentals%20%E2%80%93%20Part%201/)
+- [x] [JavaScript Fundamentals – Part 2](./Challenges/JavaScript%20Fundamentals%20%E2%80%93%20Part%202/)
+- [x] [Developer Skills & Editor Setup ](./Challenges/Developer%20Skills%20%26%20Editor%20Setup/)
+- [x] [JavaScript in the Browser: DOM and Events](./Challenges/JavaScript%20in%20the%20Browser%20DOM%20and%20Events/)
+- [x] [Data Structures, Modern Operators and Strings.](./Challenges/Data%20Structures%2C%20Modern%20Operators%20and%20Strings/)
+- [x] [A Closer Look at Functions](./Challenges/A%20Closer%20Look%20at%20Functions/)
+- [x] [Working With Arrays.](./Challenges/Working%20With%20Arrays/)
+- [x] [Object Oriented Programming (OOP)](<./Challenges/Object%20Oriented%20Programming%20(OOP)/>)
+- [x] [Asynchronous JavaScript](./Challenges/Asynchronous%20JavaScript/)
 
 ## Projects
 
 ### Pig Game
 
-- [Project-code](./Projects/Pig-Game)
-- [Live Demo]()
+- [Project-code](https://github.io/abdelrhman-ahmed-kamal/pig-game/)
+- [Live Demo](https://abdelrhman-ahmed-kamal.github.io/pig-game/)
 
 ### Bankist
 
-- [Project-code](./Projects/Bankist)
-- [Live Demo]()
+- [Project-code](https://github.io/abdelrhman-ahmed-kamal/bankist)
+- [Live Demo](https://abdelrhman-ahmed-kamal.github.io/bankist/)
 
 ### Bankist Site
 
-- [Project-code](./Projects/Bankist-Site)
-- [Live Demo]()
+- [Project-code](https://github.io/abdelrhman-ahmed-kamal/bankist-website/)
+- [Live Demo](https://abdelrhman-ahmed-kamal.github.io/bankist-website/)
 
 ### Mapty
 
-- [Project-code](./Projects/Mapty)
-- [Live Demo]()
+- [Project-code](https://github.io/abdelrhman-ahmed-kamal/mapty/)
+- [Live Demo](https://abdelrhman-ahmed-kamal.github.io/mapty/)
 
 ### Forkify
 
-- [Project-code](./Projects/Forkify)
-- [Live Demo]()
+- [Project-code](https://github.io/abdelrhman-ahmed-kamal/forkify/)
+- [Live Demo](https://abelrahman-forkify.netlify.app)
 
 ---
 
 ## Code
 
-[Code](Code)
+- [Fundamentals 1](./Code/a-fundamentals%231/)
+- [Fundamentals 2](./Code/b-fundamentals%232/)
+- [developer skills](./Code/c-developer-skills/)
+- [Games](./Code/d-games/)
+- [Data Structure and operations](./Code/e-data-structures-and-operations/)
+- [How JS works behind the scenes](./Code/e-How-js-work-behind-the-scenes/)
+- [Closer look at functions](./Code/f-functions/)
+- [Arrays](./Code/g-arrays/)
+- [Numbers, Date and time](./Code/h-numbers-date-time/)
+- [Dom Manipulation](./Code/i-DOM-minpulation/)
+- [Object Oriented Programming](./Code/j-OOP/)
+- [Mapty and GeoLocation](./Code/k-Mapty/)
+- [Async JavaScript](./Code/m-Asynchronous-JavaScript%2CAJAX%2CAPIs/)
+- [JS development](./Code/n-js-development/)
+
+
 
 ---
 
-[Course-Link](https://www.udemy.com/course/the-complete-javascript-course/)<br>
-
-![Certificate](https://via.placeholder.com/468x300?text=Certificate+Here)
+[Course-Link](https://www.udemy.com/course/the-complete-javascript-course/)
+<br>
+![Certificate]()
