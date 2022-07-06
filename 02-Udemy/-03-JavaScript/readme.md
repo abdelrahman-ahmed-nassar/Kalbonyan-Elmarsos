@@ -16,28 +16,28 @@
 
 ### Pig Game
 
-- [Project-code](https://github.io/abdelrhman-ahmed-kamal/pig-game/)
+- [Project-code](https://github.com/abdelrhman-ahmed-kamal/pig-game/)
 - [Live Demo](https://abdelrhman-ahmed-kamal.github.io/pig-game/)
 
 ### Bankist
 
-- [Project-code](https://github.io/abdelrhman-ahmed-kamal/bankist)
+- [Project-code](https://github.com/abdelrhman-ahmed-kamal/bankist)
 - [Live Demo](https://abdelrhman-ahmed-kamal.github.io/bankist/)
 
 ### Bankist Site
 
-- [Project-code](https://github.io/abdelrhman-ahmed-kamal/bankist-website/)
+- [Project-code](https://github.com/abdelrhman-ahmed-kamal/bankist-website/)
 - [Live Demo](https://abdelrhman-ahmed-kamal.github.io/bankist-website/)
 
 ### Mapty
 
-- [Project-code](https://github.io/abdelrhman-ahmed-kamal/mapty/)
+- [Project-code](https://github.com/abdelrhman-ahmed-kamal/mapty/)
 - [Live Demo](https://abdelrhman-ahmed-kamal.github.io/mapty/)
 
 ### Forkify
 
-- [Project-code](https://github.io/abdelrhman-ahmed-kamal/forkify/)
-- [Live Demo](https://abelrahman-forkify.netlify.app)
+- [Project-code](https://github.com/abdelrhman-ahmed-kamal/forkify)
+- [Live Demo](https://abdelrahman-forkify.netlify.app/)
 
 ---
 
@@ -64,4 +64,4 @@
 
 [Course-Link](https://www.udemy.com/course/the-complete-javascript-course/)
 <br>
-![Certificate]()
+![Certificate](https://www.udemy.com/certificate/UC-f32afeb5-246e-4073-a57d-b26844a095b9/)
