@@ -24,15 +24,17 @@ challenges
 
 ### Code Summary and Explanation
 
-- [**Section 1:** Programming Basics](./course-code-nad-explanation/1-programming-Basics/)
-- [**Section 2:** Programming Syntax](./course-code-nad-explanation/2-programming-syntax/)
-- [**Section 3:** Variable And DataTypes ](./course-code-nad-explanation/3-variable-and-dataTypes/)
-- [**Section 4:** Conditional Code](./course-code-nad-explanation/4-conditional_code/)
-- [**Section 5:** Modular Code ](./course-code-nad-explanation/5-Modular_code/)
+- [**Section 1:** Programming Basics](./course-code-and-explanation/1-programming-Basics/)
+- [**Section 2:** Programming Syntax](./course-code-and-explanation/2-programming-syntax/)
+- [**Section 3:** Variable And DataTypes ](./course-code-and-explanation/3-variable-and-dataTypes/)
+- [**Section 4:** Conditional Code](./course-code-and-explanation/4-conditional_code/)
+- [**Section 5:** Modular Code ](./course-code-and-explanation/5-Modular_code/)
 
 ---
 
 <br>[Course Link](https://www.linkedin.com/learning/programming-foundations-fundamentals-3/)
-<br>[Preview Certificate]()
+<br>[Preview Certificate](https://www.linkedin.com/learning/certificates/0614272f25ce2f2092198979824dfc3891e37cdb52dcf6c3d3b01d00e93ad8d0?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B9znAdOUJTu2aYA5T5YqZLQ%3D%3D)
 
 ## [Next Course](../-02-Programming-Foundations-Beyond-Fundamentals/)
+
+### [Back To LinkedIn Courses](../)

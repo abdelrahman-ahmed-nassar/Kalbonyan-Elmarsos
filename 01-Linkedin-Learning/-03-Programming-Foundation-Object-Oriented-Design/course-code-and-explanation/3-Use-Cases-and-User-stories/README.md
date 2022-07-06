@@ -1,5 +1,5 @@
 
-Use cases: shifting focus towards the user and how they accomplish a particular goal
+## Use cases: shifting focus towards the user and how they accomplish a particular goal
   a use case needs three essential things
 
   title: what is the goal?
@@ -45,12 +45,12 @@ Use cases: shifting focus towards the user and how they accomplish a particular 
 
 use cases are typically written to describe successful operations.
 
-Extensions:
+## Extensions:
   you can add extensions or steps for alternative flows, for what happens when things go wrong
 
   precondition that must be true to begin the use case. 
 
-Diagramming use case 
+## Diagramming use case 
 
   it's a diagram of several use cases and multiple actors at the same time. 
   It shows the relationship between the actors and the different use cases in which they're involved.
@@ -76,3 +76,34 @@ Diagramming use case
   and the secondary actors on the right hand side, the actors that take more of a reactive role.
 
   his diagram is not referring to a specific sequence that the use cases need to be executed in, so there's no order that they need to be listed.
+
+---------
+
+## User stories
+  are another written format for describing parts of an application,
+  but they're shorter and simpler than a use case. 
+  still describes a single small scenario from a user's perspective, focusing on their goal.
+  what they want to do and why rather than focusing on the system. 
+  But unlike a use case, which can be several pages, 
+  a user story is typically written as just one, perhaps two, sentences 
+  and they're very commonly written on index cards because that forces us to keep them short and sweet.
+
+the focus is on intent and should not include descriptions of the user interface.
+these are intended to be quick, readable summaries of a specific goal and why the user wants it.
+
+-  [user story] 
+  As a (type of user)
+  I want  (Goal) => the reason or the benefit. 
+  so that (reason)  => provide context on how this application will be used. -
+
+It focuses on one specific goal of one specific user for a particular reason. 
+
+_______________________________________________________________
+|    User store                 |     use cases                |
+|Short(one index card)          |  Long(a document)            |
+|One goal, No detail            |  Multiple goals and details  |
+|Informal                       |   Casual to (very) formal    |
+|"placeholder for conversation" |  "Record of conversation"    |
+|______________________________________________________________|
+
+For more information about user stories check out Mike Cohn's book, User Stories Applied for Agile Software Development.
