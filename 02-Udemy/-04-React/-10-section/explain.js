@@ -46,7 +46,7 @@ you need to set the initial value as a parameter in the provider element
 
 access a context without wrapping the child element with a <context.Consumer />
 
-you but the context as an argument and the hook simply return the value 
+you put the context as an argument and the hook simply return the value 
 
 /------ passing functions using dynamic context
 
