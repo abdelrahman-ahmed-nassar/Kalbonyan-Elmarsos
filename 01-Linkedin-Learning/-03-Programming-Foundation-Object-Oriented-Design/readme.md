@@ -37,4 +37,7 @@
 [Course Link](https://www.linkedin.com/learning/programming-foundations-object-oriented-design-3/)
 <br>[Preview Certificate](https://www.linkedin.com/learning/certificates/7121233111351f6728ad8cdb7a349e948632a159378058f8e1839df3f02d644e?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B9znAdOUJTu2aYA5T5YqZLQ%3D%3D)
 
+## [Next Course](../-04-Programming-Foundations-Data-Structures/)
+
+
 ### [Back To LinkedIn Courses](../)

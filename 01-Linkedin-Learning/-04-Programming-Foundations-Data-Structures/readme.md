@@ -29,4 +29,6 @@
 [Course Link](https://www.linkedin.com/learning/programming-foundations-data-structures-2/)
 <br>[Preview Certificate](https://www.linkedin.com/learning/certificates/d0a30953390ef4da8bdcd207e8b5200b03b81779978de2261985150f5384ec80?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B9znAdOUJTu2aYA5T5YqZLQ%3D%3D)
 
+## [Next Course](../-05-Programming-Foundations-Algorithms/)
+
 ### [Back To LinkedIn Courses](../)

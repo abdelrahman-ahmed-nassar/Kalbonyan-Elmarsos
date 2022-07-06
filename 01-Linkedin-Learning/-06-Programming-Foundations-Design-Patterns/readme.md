@@ -16,4 +16,6 @@
 [Course Link](https://www.linkedin.com/learning/programming-foundations-design-patterns-2/)
 <br>[Preview Certificate](https://www.linkedin.com/learning/certificates/db0bc81ea188c4e4ca5d2d31cc6b863bee81845e254b62fbc49bcf812787a60f?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B9znAdOUJTu2aYA5T5YqZLQ%3D%3D)
 
+## [Next Course](../-07-Programming-Foundations-Databases/)
+
 ### [Back To LinkedIn Courses](../)

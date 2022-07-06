@@ -25,4 +25,7 @@
 [Course Link](https://www.linkedin.com/learning/programming-foundations-software-testing-qa)
 <br>[Preview Certificate](https://www.linkedin.com/learning/certificates/466789e63196f136a35fa5cbd7ae5b1e54086995e2f66f9d4db3e91f08666733?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B9znAdOUJTu2aYA5T5YqZLQ%3D%3D)
 
+## [Next Course](../-10-Git-Essential-Training/)
+
+
 ### [Back To LinkedIn Courses](../)

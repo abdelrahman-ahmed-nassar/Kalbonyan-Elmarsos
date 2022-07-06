@@ -26,4 +26,6 @@
 [Course Link](https://www.linkedin.com/learning/programming-foundations-algorithms/)
 <br>[Preview Certificate](https://www.linkedin.com/learning/certificates/d07b586ff5cf840a2ab332fc79410f161639f9d61f17ed9958391ee15f5cfd4a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B9znAdOUJTu2aYA5T5YqZLQ%3D%3D)
 
+## [Next Course](../-06-Programming-Foundations-Design-Patterns/)
+
 ### [Back To LinkedIn Courses](../)
