@@ -3,7 +3,7 @@
 
 ## Omnifood 
 
-### [Code](https://github.io/abdelrhman-ahmed-kamal/omnifood)
+### [Code](https://github.com/abdelrhman-ahmed-kamal/omnifood)
 
 ### [Live Demo](https://abdelrhman-ahmed-kamal.github.io/omnifood)
 
