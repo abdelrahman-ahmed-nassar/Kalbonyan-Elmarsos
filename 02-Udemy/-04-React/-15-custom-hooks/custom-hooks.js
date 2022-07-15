@@ -1,7 +1,0 @@
-/*
-The custom hook name must start with use
-
-use it as regular hook and store what you will return 
-
-custom hook can accept parameters normally 
-*/
