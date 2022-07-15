@@ -1,0 +1,2 @@
+result.ops
+useCreateIndex: true,

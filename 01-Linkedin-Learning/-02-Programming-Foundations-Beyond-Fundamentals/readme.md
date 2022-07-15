@@ -1,8 +1,5 @@
 # Programming-foundations-Beyond-fundamentals
 
-### Course details
-- Continue your coding journey as you dive deeper into the foundational concepts, practices, and terminology of programming. In this installment of the Programming Foundations series, instructor Sasha Vodnik goes beyond the basics, using Python to tackle a variety of intermediate and advanced concepts and skills you can add to your programming repertoire. Sasha covers creating and working with collections and loops, combining and manipulating strings, and using external code—all of which are critical concepts, regardless of which programming language you end up working with. He goes over several essential processes, such as choosing a code style and debugging. Plus, he digs into a few more advanced concepts, including memory management and multithreading.
-------------
 
 ### Code Summary and Explanation
 
@@ -16,9 +13,17 @@
 - [**Section 8:** OOP ](./course-code-and-explanation/8-OOP/)
 - [**Section 9:** Advanced Topics](./course-code-and-explanation/9-Advanced-Topics/)
 
+----------
+
+### [challenges](./Challenges/)
 
 
 -----------
+### Course details
+- Continue your coding journey as you dive deeper into the foundational concepts, practices, and terminology of programming. In this installment of the Programming Foundations series, instructor Sasha Vodnik goes beyond the basics, using Python to tackle a variety of intermediate and advanced concepts and skills you can add to your programming repertoire. Sasha covers creating and working with collections and loops, combining and manipulating strings, and using external code—all of which are critical concepts, regardless of which programming language you end up working with. He goes over several essential processes, such as choosing a code style and debugging. Plus, he digs into a few more advanced concepts, including memory management and multithreading.
+------------
+
+
 [Course Link](https://www.linkedin.com/learning/programming-foundations-beyond-the-fundamentals/?resume=false)
 <br>
 [Preview Certificate](https://www.linkedin.com/learning/certificates/025d0dc9cef8a6b5cc199b396bec5b2099294eeaead5c3b7993f578ad33ecbaa?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B9znAdOUJTu2aYA5T5YqZLQ%3D%3D)

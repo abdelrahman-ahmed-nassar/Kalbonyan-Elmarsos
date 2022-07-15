@@ -1,132 +1,119 @@
 # React - The Complete Guide (incl Hooks, React Router, Redux)
 
+
+## [Course Code And Explanation](./-30-REACT_GUIDE/)
+
+
 ## Projects
 
 ### expenses-app (S3-S5)
 
-- [Section 3 Code](./Projects/Expenses-app/S03-project)
-- [Section 4 Code](./Projects/Expenses-app/S04-project/)
-- [Section 5 Code](./Projects/Expenses-app/S05-project/)
-
-  <br/>
-
-- [Section 3 Project Live Demo]()
-- [Section 4 Project Live Demo]()
-- [Section 5 Project Live Demo]()
-
+- [Project-code](./-05-Rendering-lists-%26-conditional-content/expenses-app-project/)
+- [Live Demo](https://abdelrahman-expenses-app.netlify.app/)
+---
 ### goals app (S6-S7)
 
-- [Section 6 Code](./Projects/goals-app/S06-project/)
-- [Section 7 Code](./Projects/goals-app/S07-project/)
+- [Project-ode](./-06-styling-react-cmp/goals-app-project/)
+- [Live Demo](https://abdelrahman-goals-app.netlify.app/)
+---
+### Users app (S8- S9)
 
-<br/>
-
-- [Section 6 Project Live Demo]()
-- [Section 7 Project Live Demo]()
-
-### Section 8-9 Project
-
-- [Project-code](./Projects/section-8-9-project)
-- [Live Demo]()
-
+- [Project-code](./-09-fragmants-portals-refs/users-app-project/)
+- [Live Demo](https://abdelrahman-users-app.netlify.app/)
+- [My optimized version](https://abdelrhman-ahmed-kamal.github.io/passwords-manager-app/)
+---
 ### Login-app (S10)
 
-- [Project-code](./Projects/Login-app-s10/)
-- [Live Demo]()
+- [Project-code](./-10-use-effect-reducer-context/fake-login-app-project/)
+- [Live Demo](https://abdelrahman-fake-login-app.netlify.app/)
+---
+### Behind the scenes project (S12)
 
-### Order-food App (S11)
+- [Project-code](./-12-behind-the-scenes/behind-the-scenes-app-project/)
+- [Live Demo](https://abdelrhaman-behind-the-scenes.netlify.app/)
+---
+### Class based components Project (S13)
 
-- [Project-code](./Projects/order-food-app/S11-project/)
-- [Live Demo]()
-
-### Section 12 Project
-
-- [Project-code](./Projects/S12-project)
-- [Live Demo]()
-
-### Section 13 Project
-
-- [Project-code](./Projects/S13-project)
-- [Live Demo]()
-
+- [Project-code](./-13-class-based-cmp/class-based-cmp-project/)
+- [Live Demo](https://abdelrahman-class-based-cmp.netlify.app/)
+---
 ### movies app(S14)
 
-- [Project-code](./Projects/movies-app)
-- [Live Demo]()
-
+- [Project-code](./-14-http-requests/movies-app-project/)
+- [Live Demo](https://abdelrahman-movies-app.netlify.app/)
+---
 ### Tasks app with firebase(S15)
 
-- [Project-code](./Projects/task-app-firbase/)
-- [Live Demo]()
+- [Project-code](./-15-custom-hooks/tasks-app-project/)
+- [Live Demo](https://abdelrahman-tasks-app.netlify.app/)
+### Timer app project(S15)
 
+- [Project-code](./-15-custom-hooks/timer-app-project/)
+- [Live Demo](https://abdelrahman-timer-app.netlify.app/)
+---
 ### Form-app(S16)
 
-- [Project-code](./Projects/form-app)
-- [Live Demo]()
+- [Project-code](./-16-work-with-forms/form-validation-project/)
+- [Live Demo](https://abdelrahman-form-validation-app.netlify.app/)
+---
+### Order-food App (S11 - S17)
 
-### Order-food App (S17)
-
-- [Project Code](./Projects/order-food-app/S17-project/)
-- [Final Project Live Live Demo]()
-
+- [Project Code](./-17-practice-order-food-project/order-food-app-project/)
+- [Final Project Live Live Demo](https://abdelrahman-order-food-app.netlify.app/)
+---
 ### Redux Counter(S18)
 
-- [Project-code](./Projects/redux-counter)
-- [Live Demo]()
-
+- [Project-code](./-18-redux/redux-app-project/)
+- [Live Demo](https://abdelrahman-redux-auth.netlify.app/)
+---
 ### Redux Cart(S19)
 
-- [Project-code](./Projects/redux-cart)
-- [Live Demo]()
-
+- [Project-code](./-19-advanced-redux/redux-cart-project)
+- [Live Demo](https://abdelrahman-redux-cart.netlify.app/)
+---
 ### Quotes app(S20)
 
 - [Project-code](./Projects/quotes-app)
-- [Live Demo]()
-
+- [Live Demo](https://abdelrahman-quotes-app.netlify.app/)
+---
 ### Authentication-page(S22)
 
-- [Project-code](./Projects/Authentication-page)
-- [Live Demo]()
+- [Project-code](./-22-authentication/auth-app-project/)
+- [Live Demo](https://abdelrahman-auth.netlify.app/)
+---
+### Meetup app(S23)
 
-### Meetsup app(S23)
-
-- [Project-code](./Projects/meetsup-app)
-- [Live Demo]()
-
+- [Project-code](./-23-next-js/meetups-app-project/)
+- [Live Demo](https://meetups-app-sigma.vercel.app/)
+---
 ### Animation-app (S24)
 
-- [Project-code](./Projects/animation-app)
-- [Live Demo]()
-
+- [Project-code](./-24-animation-react/project/)
+- [Live Demo](https://abdelrahman-react-animation.netlify.app/)
+---
 ### Products-app(S25)
 
-- [Project-code](./Projects/Products-app)
-- [Live Demo]()
-
+- [Project-code](./-25-replace-redux/products-app-project/)
+- [Live Demo](https://abdelrahman-replace-redux.netlify.app/)
+---
 ### todo-app-TS(S27)
 
-- [Project-code](./Projects/todo-app-TS)
-- [Live Demo]()
-
+- [Project-code](./-27-type-script/todo-app/)
+- [Live Demo](https://abdelrahman-todo-ts-app.netlify.app/)
+---
 ### ingredients-app(S28)
 
-- [Project-code](./Projects/ingredients-app/)
-- [Live Demo]()
-
+- [Project-code](./-28-react-hooks-introduction/ingredients-app/)
+- [Live Demo](https://abdelrahman-ingredients-app.netlify.app/)
+---
 ### Section 29 Project
 
-- [Project-code](./Projects/Section-29/)
-- [Live Demo]()
-
+- [Project-code](./-29-react-core-features/summary-project/)
+- [Live Demo](https://abdelrahman-summary-app.netlify.app/)
 ---
 
-## Code
 
-[code](Code)
+[Course-Link](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)<br>
 
----
+[Certificate](ude.my/UC-c7aa9939-c33c-46aa-a88a-6a345ba05bbf)
 
-[Course-Link](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
-<br>
-![Certificate](https://via.placeholder.com/468x300?text=Certificate+Here)

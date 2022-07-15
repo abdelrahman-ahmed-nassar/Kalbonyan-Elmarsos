@@ -12,6 +12,28 @@
 - [x] [Object Oriented Programming (OOP)](<./Challenges/Object%20Oriented%20Programming%20(OOP)/>)
 - [x] [Asynchronous JavaScript](./Challenges/Asynchronous%20JavaScript/)
 
+---
+
+## Course Code And explanation
+
+- [Fundamentals 1](./Code/a-fundamentals%231/)
+- [Fundamentals 2](./Code/b-fundamentals%232/)
+- [developer skills](./Code/c-developer-skills/)
+- [Games](./Code/d-games/)
+- [Data Structure and operations](./Code/e-data-structures-and-operations/)
+- [How JS works behind the scenes](./Code/e-How-js-work-behind-the-scenes/)
+- [Closer look at functions](./Code/f-functions/)
+- [Arrays](./Code/g-arrays/)
+- [Numbers, Date and time](./Code/h-numbers-date-time/)
+- [Dom Manipulation](./Code/i-DOM-minpulation/)
+- [Object Oriented Programming](./Code/j-OOP/)
+- [Mapty and GeoLocation](./Code/k-Mapty/)
+- [Async JavaScript](./Code/m-Asynchronous-JavaScript%2CAJAX%2CAPIs/)
+- [JS development](./Code/n-js-development/)
+
+
+
+---
 ## Projects
 
 ### Pig Game
@@ -41,26 +63,6 @@
 
 ---
 
-## Code
-
-- [Fundamentals 1](./Code/a-fundamentals%231/)
-- [Fundamentals 2](./Code/b-fundamentals%232/)
-- [developer skills](./Code/c-developer-skills/)
-- [Games](./Code/d-games/)
-- [Data Structure and operations](./Code/e-data-structures-and-operations/)
-- [How JS works behind the scenes](./Code/e-How-js-work-behind-the-scenes/)
-- [Closer look at functions](./Code/f-functions/)
-- [Arrays](./Code/g-arrays/)
-- [Numbers, Date and time](./Code/h-numbers-date-time/)
-- [Dom Manipulation](./Code/i-DOM-minpulation/)
-- [Object Oriented Programming](./Code/j-OOP/)
-- [Mapty and GeoLocation](./Code/k-Mapty/)
-- [Async JavaScript](./Code/m-Asynchronous-JavaScript%2CAJAX%2CAPIs/)
-- [JS development](./Code/n-js-development/)
-
-
-
----
 
 [Course-Link](https://www.udemy.com/course/the-complete-javascript-course/)
 <br>

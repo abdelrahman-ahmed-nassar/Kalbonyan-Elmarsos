@@ -73,4 +73,16 @@ using useEffect to get data and store it in redux
 and when ever the redux data change it will refetch 
 so the state updated and then we send the request 
 
-2- execute it inside the action creator
+2- execute it inside the action creator (petter choice)
+
+normal function written in the top level code in the slice that will receive the data
+
+this function will return a function that has a dispatch argument
+
+execute the async code in the returned function that might be dispatch actions or https request
+
+now export this function 
+
+import it in other files
+
+dispatch(the_fn(data))
