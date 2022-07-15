@@ -115,5 +115,5 @@
 
 [Course-Link](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)<br>
 
-[Certificate](ude.my/UC-c7aa9939-c33c-46aa-a88a-6a345ba05bbf)
-
+[Certificate](https://www.udemy.com/certificate/UC-c7aa9939-c33c-46aa-a88a-6a345ba05bbf/)
+ 
