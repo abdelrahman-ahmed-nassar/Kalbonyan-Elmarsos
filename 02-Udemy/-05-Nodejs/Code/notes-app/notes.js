@@ -2,7 +2,7 @@ const fs = require("fs");
 
 // helpers
 
-const saveNotes =  (notes) => {
+const saveNotes = (notes) => {
   const dataJSON = JSON.stringify(notes);
   fs.writeFileSync("notes.json", dataJSON);
 };
@@ -19,16 +19,12 @@ const loadNotes = () => {
 
 // core functions
 
-const getNotes = () => {
-  return "Your";
-};
-
 const addNote = (title, body) => {
   const notes = loadNotes();
 
-  const duplicateNote = notes.find((note) => note.title === title)
+  const duplicateNote = notes.find((note) => note.title === title);
 
-  debugger
+  // debugger;
 
   if (!duplicateNote) {
     notes.push({
@@ -61,19 +57,19 @@ const listNotes = () => {
 
   if (notes.length === 0) {
     console.log("There is NO notes ");
-    return
+    return;
   }
   console.log("\n YOUR NOTES: \n");
   notes.forEach((note, i) => {
     console.log(`Note ${i + 1}: ${note.title}`);
   });
   console.log();
-}
+};
 
 const readNote = (title) => {
   const notes = loadNotes();
 
-  const note = notes.find(note => note.title === title);
+  const note = notes.find((note) => note.title === title);
 
   if (note) {
     console.log(note.title + ":");
@@ -81,7 +77,7 @@ const readNote = (title) => {
   } else {
     console.log("Note Not Found");
   }
-}
+};
 
 module.exports = {
   addNote: addNote,

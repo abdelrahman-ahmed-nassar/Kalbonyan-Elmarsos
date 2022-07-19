@@ -94,3 +94,51 @@ use the promise chaining
 
 ### delete a document
 Model.findByIdAndDelete("62d0288cd1a823e27ae3e703").then().catch();
+
+
+### UPDATE DOCUMENT (PATCH)
+    const user = await User.findByIdAndUpdate(req.params.id, req.body , {new: true, runValidators: true});
+
+**set the allowed updates**
+
+  const allowedUpdates = ["email", "name", "password", "age"];
+
+```
+  const allowedUpdates = ["email", "name", "password", "age"];
+  const updates = Object.keys(req.body);
+  const isValidOperation = updates.every((update) =>
+    allowedUpdates.includes(update)
+  );
+
+  if (!isValidOperation) {
+    return res.status(400).send({error: "Invalid updates"})
+  }
+```
+
+
+### Delete Document (DELETE)
+
+```
+  const _id = req.params.id;
+
+  try {
+    const user = await User.findByIdAndDelete(_id);
+    if (!user) {
+      return res.status(404).send();
+    }
+
+    res.send(user);
+  } catch (error) {
+    res.status(500).send();
+  }
+```
+
+### Create Router 
+const router = new express.Router();
+
+router.get("/test", (req, res) => {
+  res.send("test")
+})
+
+### register the router 
+app.use(router)

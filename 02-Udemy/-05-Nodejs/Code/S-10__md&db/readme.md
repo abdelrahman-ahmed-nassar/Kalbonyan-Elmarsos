@@ -33,7 +33,8 @@ const databaseName = "tasks-app";
 mongoClient.connect(connectionUrl, {
   useNewUrlParser: true,
 }, (error, client) => {
-  if (error) return console.log("unable to connect to the data base")
+  if (error) return console.log("unable to connect to the data base");
+  // every thing
   console.log("connect to the database successfully");
 });
 
@@ -53,10 +54,11 @@ db.collection("users").insertOne({
   })
 
 **insert multiple collections at the same time**
+use insertMany
 take an array of objects instead of one object and it will just do the same
 
 
-**create Object ID**
+**create Custom Object ID**
 const {MongoClient, ObjectId} = require("mongodb")
 
 const id = new ObjectId();
