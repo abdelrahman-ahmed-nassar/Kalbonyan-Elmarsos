@@ -30,7 +30,7 @@ router.post("/users/login", async (req, res) => {
     );
 
     const token = await user.generateAuthToken();
-    res.status(202).send({ user, token });
+    res.status(200).send({ user, token });
   } catch (error) {
     res.status(400).send(error.message);
   }
