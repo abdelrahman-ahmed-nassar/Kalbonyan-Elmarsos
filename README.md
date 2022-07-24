@@ -71,8 +71,10 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 - [x] `Completed` `35h` - 15 - [The Complete Node.js Developer Course (3rd Edition)](/02-Udemy/-05-Nodejs/)
 
-<!--<img src="https://img.shields.io/badge/Total%20Number%20Of%20Hours%20For%20This%20Courses-157h30m-blue"> -->
-<br />
+
+<img src="https://img.shields.io/badge/Total%20Number%20Of%20Hours%20For%20This%20Courses-152h-blue">
+
+
 
 ---
 
