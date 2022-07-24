@@ -1,5 +1,5 @@
 # React - The Complete Guide (incl Hooks, React Router, Redux)
 
-### [code]()
+### [code](../../code/-19-advance-redux/redux-cart-project/)
 
-### [Live Demo]()
+### [Live Demo](https://abdelrahman-redux-cart.netlify.app/)

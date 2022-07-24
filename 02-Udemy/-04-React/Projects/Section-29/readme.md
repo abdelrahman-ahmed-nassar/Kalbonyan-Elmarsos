@@ -1,5 +1,5 @@
 # React - The Complete Guide (incl Hooks, React Router, Redux)
 
-### [code]()
+### [code](../../code/-29-react-core-features/summary-project/)
 
-### [Live Demo]()
+### [Live Demo](https://abdelrahman-summary-app.netlify.app/)

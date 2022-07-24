@@ -1,5 +1,5 @@
 # React - The Complete Guide (incl Hooks, React Router, Redux)
 
-### [code]()
+### [code](../../code/-25-replace-redux/products-app-project/)
 
-### [Live Demo]()
+### [Live Demo](https://abdelrahman-replace-redux.netlify.app/)

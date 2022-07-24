@@ -1,5 +1,5 @@
 # React - The Complete Guide (incl Hooks, React Router, Redux)
 
-### [code]()
+### [code](../../code/-28-react-hooks-introduction/ingredients-app/)
 
-### [Live Demo]()
+### [Live Demo](https://abdelrahman-ingredients-app.netlify.app/)
