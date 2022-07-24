@@ -82,10 +82,10 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 # Learn How to Deploy your web applications with Cloud Provider (AWS)
 
-![0%](https://progress-bar.dev/0/?title=Done)
+![100%](https://progress-bar.dev/100/?title=Done)
 
-- [ ] `in progress` `7h` - 16 - [AWS Certified Cloud Practitioner 2020](03-aCloudGuru/AWS%20Certified%20Cloud%20Practitioner%202020/)
-- [ ] `in progress` `35h` - 17 - [AWS Certified Solutions Architect Associate (SAA-C02)](<03-aCloudGuru/AWS%20Certified%20Solutions%20Architect%20Associate%20(SAA-C02)>)
+- [x] `Completed` `7h` - 16 - [AWS Certified Cloud Practitioner 2020](03-aCloudGuru/AWS%20Certified%20Cloud%20Practitioner%202020/)
+- [x] `completed` `35h` - 17 - [AWS Certified Solutions Architect Associate (SAA-C02)](<03-aCloudGuru/AWS%20Certified%20Solutions%20Architect%20Associate%20(SAA-C02)>)
 
 <img src="https://img.shields.io/badge/Total%20Number%20Of%20Hours%20For%20This%20Courses-42h-blue">
 <br />
@@ -98,6 +98,6 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 # Learn How to Make serverless web applications
 
-![0%](https://progress-bar.dev/0/?title=Done)
+![100%](https://progress-bar.dev/100/?title=Done)
 
-- [ ] `in progress` - 18 - [Serverless Stack (SST)](04-Serverless-Stack-Project/)
+- [x] `Completed` - 18 - [Serverless Stack (SST)](04-Serverless-Stack-Project/)
