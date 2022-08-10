@@ -4,11 +4,12 @@
 
 ## Project
 
-[code](<[Serverless-project](https://github.com/abdelrhman-ahmed-kamal/Notezilla-app)>)
+[code](https://github.com/abdelrhman-ahmed-kamal/Notezilla-app)
 
 ## [Demo](https://d36pfzmwqzyqcp.cloudfront.net/)
 
 <br>
+
 ## Screenshots
 
 ![App Screenshot](27a58120-e5f1-44ed-9a83-d7860ae58b74.png)
