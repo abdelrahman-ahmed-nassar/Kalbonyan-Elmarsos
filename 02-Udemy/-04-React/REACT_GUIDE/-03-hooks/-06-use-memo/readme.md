@@ -1,3 +1,7 @@
+## when the cmp will rerender
+
+when evr the state or the props change
+
 # useMemo
 
 ## prevent child reevaluation for values change

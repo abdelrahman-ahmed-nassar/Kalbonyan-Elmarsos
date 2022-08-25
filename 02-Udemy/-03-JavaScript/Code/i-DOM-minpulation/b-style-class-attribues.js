@@ -23,7 +23,7 @@ message.style.height =
   Number.parseFloat(getComputedStyle(message).height, 10) + 40 + "px";
 
 //------- modify css custom properties [root variables]
-document.documentElement.style.setProperty("--color-primary", "orangered");
+document.documentElement.style.setProperty("--color-primary", "orange");
 
 ///////////////////////////////////////////////
 //*********** attributes

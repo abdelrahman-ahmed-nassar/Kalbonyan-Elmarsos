@@ -1,8 +1,8 @@
-# useReducer 
+# useReducer
 
-### IMPORT 
+### IMPORT
+
 import {useReducer} from "react";
-
 
 ### Configure
 
@@ -14,7 +14,8 @@ dispatchFn: A function that can be used to dispatch a new action
 reducerFn: a function is triggered automatically once action is dispatched it receive the latest state snap shot and should return the new updated state
 initialState: **usually an object**
 
-### ACCESS STATE 
+### ACCESS STATE
+
 console.log(state)
 will be the object with properties you defined
 
@@ -22,15 +23,14 @@ will be the object with properties you defined
 
 dispatchFn({type: "INCREASE", amount: 2});
 
+### REDUCER FUNCTION [mutate the original array]
 
-### REDUCER FUNCTION 
 is written out of the component
 
 const reducerFn = (state, action) {
-  if (action.type === "INCREASE") {
-    return {...state, number =+ action.amount}
-  }
-
-  return THE_INITIAL_STATE_USUALLY_OBJ
+if (action.type === "INCREASE") {
+return {...state, number =+ action.amount}
 }
 
+return THE_INITIAL_STATE_USUALLY_OBJ
+}

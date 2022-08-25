@@ -1,6 +1,5 @@
 # JSX
 
-
 ## FUNCTIONAL COMPONENTS
 
 component in react is just a js function
@@ -21,6 +20,7 @@ you must have one root element per return statement
 To wrap multiple line use ()
 
 ## Dynamic data in jsx components
+
 using js variables in jsx use {}
 
 inside these {} you can execute any kind of js expression
@@ -33,13 +33,19 @@ access these values using "props" parameter
 
 will be an object which hold all these data
 
+**Passing data UP**
+
+- pass a function from the parent component
+- receive this function in the child component
+- invoke this function with the data
 
 **using fragmant as a wrapper cmp**
-- import {fragmant}from "react;
+
+- import {fragmant} from "react;
 - use it as a wrapper cmp
 
 **closer look at ajx**
-function components in s syntactic sugar for the createElement function 
+function components in s syntactic sugar for the createElement function
 import React from "react"
 
 return React.createElement(

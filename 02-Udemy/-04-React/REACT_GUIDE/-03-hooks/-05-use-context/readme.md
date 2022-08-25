@@ -16,14 +16,17 @@ That will hold the context value
 
 export default AuthContext
 
-## Provide the context 
+## Provide the context
+
+in the top cmp that wrap all the component
+
 import Context from "./store/context"
 
 make the <Context.Provider value={
-  THE_VALUE;
-}> 
+THE_INITIAL_VALUE;
+}>
 
-As the wrapper of the most parent component that contains all the other components that wants to have access to the data 
+As the wrapper of the most parent component that contains all the other components that wants to have access to the data
 
 ## Access value
 
@@ -34,14 +37,15 @@ const ctx = useContext(Context);
 
 console.log(ctx.value);
 
-### change values 
-you can add function on the provider value that manipulate the sate and then call this functions in the child cmp 
+### change values
+
+you can add function on the provider value that manipulate the sate and then call this functions in the child cmp
 
 ### PASSING FUNCTIONS WITH CONTEXT
 
 in the provider value property
-make new property and point to function 
-
+make new property and point to function
 
 ### CUSTOM CONTEXT PROVIDER
-you can create custom context provider that return {props.children} and export it 
+
+you can create custom context provider that return {props.children} and export it
