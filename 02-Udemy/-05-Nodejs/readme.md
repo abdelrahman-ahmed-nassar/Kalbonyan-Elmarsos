@@ -14,7 +14,7 @@
 ### Weather App
 
 - [Project-code](./Projects/Weather-App)
-- [Live Demo](https://abdelrahman-node-weather-app.herokuapp.com/)
+- [Live Demo](https://abdelrahman-node-weather-app-2.herokuapp.com/)
 
 ### Chat App
 
