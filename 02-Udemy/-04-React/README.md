@@ -151,7 +151,7 @@
 
 ### Quotes app(S20)
 
-- [Project-code](./code/Projects/quotes-app)
+- [Project-code](./code/-20-react-router/quotes-app-project/)
 - [Live Demo](https://quotes-app-prod.web.app)
   ![quotes app](./screens/quotes-app.png)
 
