@@ -2,6 +2,24 @@
 
 ## [Course Code And Explanation](./REACT_GUIDE/)
 
+- [Learn jsx syntax](./REACT_GUIDE/-01-jsx/)
+- [Learn Styling your components](./REACT_GUIDE/-02-features/-01-style-components/)
+- [Learn How to listen for events](./REACT_GUIDE/-02-features/-02-listen-to-events/)
+- [learn how to create react portal](./REACT_GUIDE/-02-features/-04-react-portals/)
+- [learn how ro use useState Hook](./REACT_GUIDE/-03-hooks/-01-use-state/)
+- [learn how ro use useEffect Hook](./REACT_GUIDE/-03-hooks/-02-use-effect/)
+- [learn how ro use useRef Hook](./REACT_GUIDE/-03-hooks/-03-use-ref/)
+- [learn how ro use useReducer Hook](./REACT_GUIDE/-03-hooks/-04-use-reducer/)
+- [learn how ro use useContext Hook](./REACT_GUIDE/-03-hooks/-05-use-context/)
+- [learn how ro use useMemo Hook](./REACT_GUIDE/-03-hooks/-06-use-memo/)
+- [learn how ro use useCallback Hook](./REACT_GUIDE/-03-hooks/-07-use-callback/)
+- [learn how ro use custom Hooks](./REACT_GUIDE/-03-hooks/-08-custom-hooks/)
+- [learn how to use Redux](./REACT_GUIDE/-04-redux/-01-redux/)
+- [learn how to use Redux toolkit](./REACT_GUIDE/-04-redux/-02-redux-toolkit/)
+- [learn how to use react Route](./REACT_GUIDE/-06-react-router/)
+- [learn how to use nextJs](./REACT_GUIDE/-07-next.js/)
+- [learn how to use typescript](./REACT_GUIDE/-08-typescript/)
+
 ## Projects
 
 ### expenses-app (S3-S5)
@@ -198,5 +216,7 @@
 ## [Course-Link](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)<br>
 
 ## [Certificate](https://www.udemy.com/certificate/UC-c7aa9939-c33c-46aa-a88a-6a345ba05bbf/)
+
+![Certificate](./certificate.jpg)
 
 ### [Back](../)

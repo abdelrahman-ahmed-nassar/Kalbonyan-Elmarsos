@@ -1,5 +1,7 @@
 # Build Responsive Real-World Websites with HTML and CSS
+
 ## Challenges
+
 - [x] [Section 2 – Challenge #2](./Challenges/01-Challenges/)
 - [x] [Section 3 – Challenge #1](./Challenges/02-Challenges/)
 - [x] [Section 3 – Challenge #2](./Challenges/03-Challenges/)
@@ -10,10 +12,10 @@
 
 ---
 
-
 ## Course Code And Explanation
 
 ### HTML
+
 - [HTML Intro](./Code/Html/HTML%20Essential%20Training/a-HTML/)
 - [Format](./Code/Html/HTML%20Essential%20Training/b-Format/)
 - [HTML Features](./Code/Html/HTML%20Essential%20Training/c-HTMl-features/)
@@ -25,8 +27,8 @@
 - [Forms](./Code/Html/HTML%20Essential%20Training/i-Forms/)
 - [Tables](./Code/Html/HTML%20Essential%20Training/j-Tables/)
 
-
 ### CSS
+
 - [Design structure](./Code/CSS/a-structure/)
 - [Selectors](./Code/CSS/b-selectors/)
 - [Colors](./Code/CSS/c-colors/)
@@ -55,10 +57,14 @@
 ## Projects
 
 ### Omnifood
+
 - [Project-code](./Projects/) <br>
 - [Live Demo](https://abdelrhman-ahmed-kamal.github.io/omnifood/)
 
 ---
+
 [Course-Link](https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3)<br>
 
-![Certificate](https://drive.google.com/file/d/1i7_y9xUG1oQyBhnEjTSvgf9OkYU5ar6e/view?usp=sharing)
+[Certificate Link](https://drive.google.com/file/d/1i7_y9xUG1oQyBhnEjTSvgf9OkYU5ar6e/view)
+
+![Certificate](./certificate.jpg)

@@ -31,9 +31,8 @@
 - [Async JavaScript](./Code/m-Asynchronous-JavaScript%2CAJAX%2CAPIs/)
 - [JS development](./Code/n-js-development/)
 
-
-
 ---
+
 ## Projects
 
 ### Pig Game
@@ -63,8 +62,9 @@
 
 ---
 
-
 [Course-Link](https://www.udemy.com/course/the-complete-javascript-course/)
 <br>
 
 [Certificate](https://www.udemy.com/certificate/UC-f32afeb5-246e-4073-a57d-b26844a095b9/)
+
+![Certificate](./certificate.jpg)
