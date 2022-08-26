@@ -152,7 +152,7 @@
 ### Quotes app(S20)
 
 - [Project-code](./code/Projects/quotes-app)
-- [Live Demo](https://abdelrahman-quotes-app.netlify.app/)
+- [Live Demo](https://quotes-app-prod.web.app)
   ![quotes app](./screens/quotes-app.png)
 
 ---
