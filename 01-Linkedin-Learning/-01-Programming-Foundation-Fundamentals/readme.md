@@ -10,13 +10,9 @@
 
 ---
 
-
-
 ### [challenges](./Challenges/)
 
-
-----
-
+---
 
 ### Course details
 
@@ -40,6 +36,8 @@
 
 <br>[Course Link](https://www.linkedin.com/learning/programming-foundations-fundamentals-3/)
 <br>[Preview Certificate](https://www.linkedin.com/learning/certificates/0614272f25ce2f2092198979824dfc3891e37cdb52dcf6c3d3b01d00e93ad8d0?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B9znAdOUJTu2aYA5T5YqZLQ%3D%3D)
+
+![Certificate](./certificate.png)
 
 ## [Next Course](../-02-Programming-Foundations-Beyond-Fundamentals/)
 

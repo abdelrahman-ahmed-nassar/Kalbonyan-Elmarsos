@@ -1,6 +1,5 @@
 # Programming Foundations: Object-Oriented Design
 
-
 ### Code Summary and Explanation
 
 - [**Section 1:** Object oriented fundamentals](./course-code-and-explanation/1-Object-oriented-fundamentals/)
@@ -13,16 +12,15 @@
 
 ---
 
-### [Challenges](./Challenges/)  
+### [Challenges](./Challenges/)
 
---- 
+---
 
 ### Course details
 
 - All good software starts with a great design. Object-oriented design helps developers plan applications before they write a single line of code, and break down ideas into reusable and maintainable components. This course focuses on the foundational concepts, teaching them in a fun, interactive way to help you quickly develop your skills. Tag team Olivia and Barron Stone introduce you to the concepts and terms—objects, classes, abstraction, inheritance, and more—that you need to get started. They then show how to take the requirements for an app, identify use cases, and map out classes using Universal Modeling Language (UML). The final design can then be translated into code using one of the many popular object-oriented programming languages, such as Java, C#, Ruby, or Python.
 
 ---
-
 
 ### Learning objectives
 
@@ -43,7 +41,8 @@
 [Course Link](https://www.linkedin.com/learning/programming-foundations-object-oriented-design-3/)
 <br>[Preview Certificate](https://www.linkedin.com/learning/certificates/7121233111351f6728ad8cdb7a349e948632a159378058f8e1839df3f02d644e?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3B9znAdOUJTu2aYA5T5YqZLQ%3D%3D)
 
-## [Next Course](../-04-Programming-Foundations-Data-Structures/)
+![Certificate](./certificate.png)
 
+## [Next Course](../-04-Programming-Foundations-Data-Structures/)
 
 ### [Back To LinkedIn Courses](../)
