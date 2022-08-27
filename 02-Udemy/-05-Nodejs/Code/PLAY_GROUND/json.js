@@ -20,22 +20,13 @@ const bookJSON = JSON.stringify(book);
 // const data = JSON.parse(dataJson);
 // console.log(data.title);
 
-
 //////// challenge
-
-
 
 const bufferData = fs.readFileSync("1-json.json");
 const dataJSON = bufferData.toString();
 const user = JSON.parse(dataJSON);
-user.name = "ali"
+user.name = "ali";
 user.age = 52;
 
 const userJSON = JSON.stringify(user);
-fs.writeFileSync("1-json.json", userJSON)
-
-
-
-
-
-
+fs.writeFileSync("1-json.json", userJSON);

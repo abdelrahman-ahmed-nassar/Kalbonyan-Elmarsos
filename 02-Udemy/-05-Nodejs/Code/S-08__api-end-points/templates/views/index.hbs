@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+
+  <script defer src="./js/script.js"></script>
+
+  <style>
+    form {
+      margin-top: 25px;
+    }
+    input {
+      outline: none;
+      border: 1px solid #ccc;
+      padding: 5px;
+      font-size: 16px;
+    }
+    input:focus {
+  border: 1px solid #555;
+    } 
+    button {
+      outline: none;
+      border: none;
+      padding: 6px 16px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #888;
+      cursor: pointer;
+    }
+  </style>
+  
+  <title>Weather</title>
+</head>
+<body>
+  {{>header}}
+  <main class="index__main">
+    <h3>start by enter a location and get the weather!</h3>
+
+    <form class="index__form">
+      <input  class="index__form__input" placeholder="location">
+      <button >search</button>
+    </form>
+
+    <p class="first-message"></p>
+    <p class="second-message"></p>
+  </main>
+  {{>footer}}
+</body>
+</html>

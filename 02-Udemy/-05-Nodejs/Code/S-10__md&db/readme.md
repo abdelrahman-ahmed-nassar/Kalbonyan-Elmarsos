@@ -48,7 +48,7 @@ db.collection("users").insertOne({
     name: "abdelrahman", 
     age: "18"
   }, (error, result) => {
-    if (error) return console.log("error);
+    if (error) return console.log("error");
 
     console.log(result.insertedId)
   })

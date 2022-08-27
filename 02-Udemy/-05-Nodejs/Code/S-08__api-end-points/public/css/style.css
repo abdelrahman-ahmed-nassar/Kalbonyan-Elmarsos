@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", system-ui;
+  color: #333;
+  background-repeat: no-repeat;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a,
+a:focus,
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+@media (max-width: 776px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/******************* header ******************/
+.app__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  border-bottom: 1px solid #333;
+}
+
+
+.app__header img {
+  width: 60px;
+  height: 60px;
+}
+
+
+.nav__list {
+  display: flex;
+  gap: 60px;
+}
+
+.nav__list--item {
+  font-size: 2rem;
+}
+
+.nav__list--item  a{
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.nav__list--item  a:hover{
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  .app__header {
+    padding: 1rem 2rem;
+  }
+
+  .app__header img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav__list {
+    gap: 30px;
+  }
+
+  .nav__list--item {
+    font-size: 2rem;
+  }
+}
+
+
+/******************* index ******************/
+.index__main {
+margin-top: 150px;
+  flex-direction: column;
+  padding: 0 4rem;
+  text-align: center;
+}
+
+/******************* about ******************/
+
+.about__main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.about__main p {
+  font-size: 2.4rem;
+}
+
+/******************* footer ******************/
+
+.footer {
+  margin-top:  auto;
+  border-top: 1px solid #333;
+  text-align: center;
+}
