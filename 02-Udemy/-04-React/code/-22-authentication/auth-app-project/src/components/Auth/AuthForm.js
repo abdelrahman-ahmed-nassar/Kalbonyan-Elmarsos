@@ -1,16 +1,22 @@
 import { useRef, useState, useContext } from "react";
+
 import { useHistory } from "react-router-dom";
+
 import { FIREBASE_KEY } from "../../config/config";
+
 import AuthContext from "../../store/auth-context";
 
 import classes from "./AuthForm.module.css";
 
 const AuthForm = () => {
   const [isLogin, setIsLogin] = useState(true);
+
   const [isLoading, setIsLoading] = useState(false);
+
   const history = useHistory();
 
   const emailRef = useRef();
+
   const passwordRef = useRef();
 
   const authContext = useContext(AuthContext);

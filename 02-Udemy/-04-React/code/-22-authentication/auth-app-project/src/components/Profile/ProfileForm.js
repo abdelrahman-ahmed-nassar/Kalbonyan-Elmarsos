@@ -1,7 +1,11 @@
 import { useContext, useRef } from "react";
+
 import { useHistory } from "react-router-dom";
+
 import { FIREBASE_KEY } from "../../config/config";
+
 import AuthContext from "../../store/auth-context";
+
 import classes from "./ProfileForm.module.css";
 
 const ProfileForm = () => {
@@ -13,7 +17,6 @@ const ProfileForm = () => {
   const { token, logout } = authContext;
   const submitHandler = (event) => {
     event.preventDefault();
-    //  5482 7435 6469 6384  / 628
     const newPasswordValue = newPasswordRef.current.value;
 
     fetch(

@@ -1,4 +1,5 @@
 import UserFinder from './components/UserFinder';
+
 import UsersContext from './store/users-context';
 
 const DUMMY_USERS = [

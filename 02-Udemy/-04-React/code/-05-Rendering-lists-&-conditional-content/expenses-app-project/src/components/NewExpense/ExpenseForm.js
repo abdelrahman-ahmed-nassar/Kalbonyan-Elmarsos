@@ -1,13 +1,19 @@
 import React, { useState } from "react";
+
 import "./ExpenseForm.css";
 
 const ExpenseForm = (props) => {
+
   // states
+
   const [enteredDate, setEnteredDate] = useState("");
+
   const [enteredTitle, setEnteredTitle] = useState("");
+
   const [enteredAmount, setEnteredAmount] = useState("");
 
   // setting states
+
   const titleChangeHandler = (e) => {
     setEnteredTitle(e.target.value);
   };
@@ -21,9 +27,9 @@ const ExpenseForm = (props) => {
   };
 
   // listen submit
+
   const submitHandler = (e) => {
     e.preventDefault();
-
     const expenseData = {
       title: enteredTitle,
       amount: +enteredAmount,
@@ -31,6 +37,7 @@ const ExpenseForm = (props) => {
     };
 
     // passing data to parent el
+
     props.onSaveExpenseData(expenseData);
     // clear the inputs
     setEnteredTitle("");
@@ -78,6 +85,7 @@ const ExpenseForm = (props) => {
       </div>
     </form>
   );
+  
 };
 
 export default ExpenseForm;

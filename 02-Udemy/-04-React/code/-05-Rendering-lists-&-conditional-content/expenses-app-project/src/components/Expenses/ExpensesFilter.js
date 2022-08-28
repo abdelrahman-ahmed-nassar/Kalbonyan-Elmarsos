@@ -3,6 +3,7 @@ import React from "react";
 import "./ExpensesFilter.css";
 
 const ExpensesFilter = (props) => {
+
   const dropdownChangeHandler = (e) => {
     props.onChangeFilter(e.target.value);
   };
@@ -20,6 +21,8 @@ const ExpensesFilter = (props) => {
       </div>
     </div>
   );
+  
 };
+
 
 export default ExpensesFilter;

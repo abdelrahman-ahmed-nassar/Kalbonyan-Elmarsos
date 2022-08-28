@@ -4,6 +4,16 @@ import styles from "./Button.module.css";
 
 import React from "react";
 
+const Button = (props) => {
+  return (
+    <button type={props.type} className={styles.button} onClick={props.onClick}>
+      {props.children}
+    </button>
+  );
+};
+
+export default Button;
+
 // const Button = styled.button`
 //   width: 100%;
 //   font: inherit;
@@ -13,11 +23,9 @@ import React from "react";
 //   background: #8b005d;
 //   box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
 //   cursor: pointer;
-
 //   .button:focus {
 //     outline: none;
 //   }
-
 //   .button:hover,
 //   .button:active {
 //     background: #ac0e77;
@@ -28,7 +36,6 @@ import React from "react";
 //     width: auto;
 //   }
 // `;
-
 // const Button = props => {
 //   return (
 //     <button type={props.type} className="button" onClick={props.onClick}>
@@ -36,13 +43,3 @@ import React from "react";
 //     </button>
 //   );
 // };
-
-const Button = (props) => {
-  return (
-    <button type={props.type} className={styles.button} onClick={props.onClick}>
-      {props.children}
-    </button>
-  );
-};
-
-export default Button;

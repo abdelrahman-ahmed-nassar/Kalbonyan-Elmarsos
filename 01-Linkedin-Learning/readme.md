@@ -1,4 +1,4 @@
-# LinkedIn Learning Courses
+# LinkedIn Learning Courses.
 
 - [01-Programming-Foundation-Fundamentals](./-01-Programming-Foundation-Fundamentals/)
 

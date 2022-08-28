@@ -1,5 +1,4 @@
 // Hello world!
-
 import React, { useState } from "react";
 
 import NewExpense from "./components/NewExpense/NewExpense";
@@ -7,7 +6,6 @@ import NewExpense from "./components/NewExpense/NewExpense";
 import Expenses from "./components/Expenses/Expenses";
 
 const App = () => {
-
   const expenses = [
     {
       id: "e1",
@@ -37,12 +35,10 @@ const App = () => {
   //   React.createElement(Expenses, { items: expenses })
   // );
 
-  
   const addExpenseHandler = (expense) => {
     console.log("In App.js");
     console.log(expense);
   };
-
 
   return (
     <div>

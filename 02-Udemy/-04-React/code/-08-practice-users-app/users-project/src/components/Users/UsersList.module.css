@@ -1,0 +1,52 @@
+.users {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 40rem;
+}
+
+.users ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+.users li {
+  border: 1px solid #ccc;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  display: flex;
+}
+
+.users li button {
+  align-self: center;
+  border-radius: 4px;
+  border: none;
+  background: #e03131;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.text-container {
+  flex: 1;
+  max-width: 90%;
+}
+
+.text-container p {
+  word-break: break-all;
+  max-width: 90%;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 6px 0 0 0;
+}

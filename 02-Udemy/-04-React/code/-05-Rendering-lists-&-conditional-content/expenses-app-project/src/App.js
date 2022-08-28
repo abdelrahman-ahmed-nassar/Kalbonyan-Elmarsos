@@ -1,3 +1,4 @@
+// Hello world!
 import React, { useState } from "react";
 
 import NewExpense from "./components/NewExpense/NewExpense";

@@ -1,4 +1,4 @@
-# Serverless-Stack-project
+# Serverless-Stack-project.
 
 [Serverless-Stack-Guide](https://serverless-stack.com/#guide)
 

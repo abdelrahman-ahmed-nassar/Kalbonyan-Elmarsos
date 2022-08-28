@@ -1,8 +1,11 @@
 import { useRef, useEffect } from "react";
 
 import useHttp from "../../hooks/use-http";
+
 import { addComment } from "../../lib/api";
+
 import LoadingSpinner from "../ui/LoadingSpinner";
+
 import classes from "./NewCommentForm.module.css";
 
 const NewCommentForm = (props) => {
@@ -16,8 +19,6 @@ const NewCommentForm = (props) => {
     event.preventDefault();
 
     const enteredText = commentTextRef.current.value;
-
-    // optional: Could validate here
 
     sendRequest({ commentData: { text: enteredText }, quoteId: props.quoteId });
   };

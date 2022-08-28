@@ -4,18 +4,18 @@ import classes from "./AddMovie.module.css";
 
 function AddMovie(props) {
   const titleRef = useRef("");
+
   const openingTextRef = useRef("");
+
   const releaseDateRef = useRef("");
 
   function submitHandler(event) {
     event.preventDefault();
 
-    // could add validation here...
-
     const movie = {
-      title: titleRef.current.value,
-      openingText: openingTextRef.current.value,
       releaseDate: releaseDateRef.current.value,
+      openingText: openingTextRef.current.value,
+      title: titleRef.current.value,
     };
 
     props.onAddMovie(movie);

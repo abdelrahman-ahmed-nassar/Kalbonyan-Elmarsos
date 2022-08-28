@@ -1,5 +1,7 @@
 import Section from '../UI/Section';
+
 import TaskForm from './TaskForm';
+
 import useHttp from '../../hooks/use-http';
 
 const NewTask = (props) => {

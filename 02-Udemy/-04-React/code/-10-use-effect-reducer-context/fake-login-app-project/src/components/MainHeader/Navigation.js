@@ -1,10 +1,12 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 
-import classes from './Navigation.module.css';
-import AuthContext from '../../store/auth-context';
+import classes from "./Navigation.module.css";
+
+import AuthContext from "../../store/auth-context";
 
 const Navigation = () => {
-  const ctx = useContext(AuthContext)
+  const ctx = useContext(AuthContext);
+
   return (
     <AuthContext.Consumer>
       {(ctx) => {
@@ -27,9 +29,9 @@ const Navigation = () => {
                 </li>
               )}
             </ul>
-          </nav>)
+          </nav>
+        );
       }}
-
     </AuthContext.Consumer>
   );
 };

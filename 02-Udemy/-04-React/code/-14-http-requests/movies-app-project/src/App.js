@@ -1,12 +1,16 @@
 import React, { useState, useEffect, useCallback } from "react";
 
 import MoviesList from "./components/MoviesList";
+
 import "./App.css";
+
 import AddMovie from "./components/AddMovie";
 
 function App() {
   const [movies, setMovies] = useState([]);
+
   const [isLoading, setIsLoading] = useState(false);
+
   const [error, setError] = useState(null);
 
   const fetchMovies = useCallback(async () => {
@@ -20,7 +24,9 @@ function App() {
       if (!response.ok) {
         throw new Error("Something went wrong");
       }
+
       const data = await response.json();
+
       const loadedMovies = [];
 
       for (const key in data) {
@@ -31,6 +37,7 @@ function App() {
           releaseDate: data[key].releaseDate,
         });
       }
+
       const transformedMovie = loadedMovies.map((movieData) => {
         return {
           id: movieData.id,
@@ -43,6 +50,7 @@ function App() {
     } catch (error) {
       setError(error.message);
     }
+
     setIsLoading(false);
   }, []);
 

@@ -1,10 +1,12 @@
 import useInput from "../hooks/useInput";
+
 import Input from "../ui/Input";
+
 const validate = (input) => input.trim().length > 0;
+
 const emailValidate = (emailInput) => emailInput.includes("@");
 
 const BasicForm = (props) => {
-  //  Custom user Hook
   const {
     value: firstNameInput,
     isValid: firstNameIsValid,
