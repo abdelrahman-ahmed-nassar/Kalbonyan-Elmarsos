@@ -97,5 +97,12 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 - [x] `Completed` - 18 - [Serverless Stack (SST)](04-Serverless-Stack-Project/)
 
-### [Portfolio Live](https://abdelrahman.website)
-### [Portfolio Code](https://github.com/abdelrhman-ahmed-kamal/portfolio)
+---
+
+#### [Portfolio Live](https://abdelrahman.website)
+
+#### [Portfolio Code](https://github.com/abdelrhman-ahmed-kamal/portfolio)
+
+[CV](./Abdelrhmans_resume.pdf)
+
+> ###### made with ❤️ by abdelrahman ahmed.
