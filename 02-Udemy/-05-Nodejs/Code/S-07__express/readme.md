@@ -1,62 +1,72 @@
-install express 
+## Getting started with express
 
-require(express);
+`npm install express`
+
+`require(express);`
 
 ### create server
-const app = express();
 
-### receive request and send data 
+`const app = express();`
 
-app.get("url route", callbackFunction(req, res) => {
-  res.send(app data)
-})
+### receive request and send data
+
+```
+app.get("/",  (req, res) => {
+  res.send("data");
+});
+```
 
 ### open the server
 
-app.listen(3000, initialCallBackFunction)
+`app.listen(3000, initialCallBackFunction)`
 
 ### send html as response
+
 put the html inside a text
 
 ### send JSON as response
-pass array or object just like that
+
+pass array or object
 
 ### provide a separate files to load in the server
 
-
-**get the path of the index.html file** 
-the raw way  with some string manipulation
-console.log(__dirname) => the path to directory
-console.log(__filename) => the path to the file
-
+**get the path of the index.html file**
+the raw way with some string manipulation
+console.log(**dirname) => the path to directory
+console.log(**filename) => the path to the file
 
 with path npm package (built in node)
 
-path.join(__dirname, "the path")
+path.join(\_\_dirname, "the path")
 
 **use the html file**
 
 app.use(express.static(path of the folder));
 
 ### add css
+
 make normal css file and link it to the html file
 
 ### add js
+
 make normal js file and link it to the html file
 
-### add images 
+### add images
+
 bro just as normal i'm not gonna learn you html basics
 
 **when dealing with hbs**
 use the path as you in the public folder
 
-### dynamic pages with template engine 
+### dynamic pages with template engine
+
 npm install hbs
 
-### setup  hbs
+### setup hbs
+
 app.set("view engine", "hbs");
 
-### create template 
+### create template
 
 create views folder in the main directory
 
@@ -66,43 +76,41 @@ have the same features as html
 
 ### serve the route
 
-app.get("path", (req, res)  => {
-  res.render("fileName with out extension", {
-    values: 1;
-  })
-}) 
-
+app.get("path", (req, res) => {
+res.render("fileName with out extension", {
+values: 1;
+})
+})
 
 ### inject dynamic values
 
 {{value}}
 
-
-###  customize the handle bars 
+### customize the handle bars
 
 get the new views path as you want it
-const viewsPath = path.join(__dirname, "../newName")
+const viewsPath = path.join(\_\_dirname, "../newName")
 
 app.set("views", viewsPath)
 
 ### partials in hbs
 
-import  hbs
+import hbs
 
-create new folder for partials 
+create new folder for partials
 
 hbs.registerPartial(partialPath)
 
-
 **create a partial**
 
-create new file in the partials dir and put html elements inside it 
+create new file in the partials dir and put html elements inside it
 
 **use partials**
 in the file you want to use partial
 {{>filename}}
 
 ### make the nodemon restart for the html changes
+
 nodemon path -e js,hbs
 
 **using dynamic value in the partial**
@@ -110,4 +118,4 @@ as you will put it in the normal hbs file
 
 {{value}}
 
-### 404 page 
+### 404 page

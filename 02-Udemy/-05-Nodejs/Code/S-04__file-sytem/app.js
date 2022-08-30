@@ -1,7 +1,11 @@
 const yargs = require("yargs");
+
 const { addNote, removeNote, listNotes, readNote } = require("./notes");
+
 yargs.version("1.1.0");
+
 const argv = yargs.argv;
+
 yargs.command({
   command: "add",
   describe: "Add a new note",
@@ -21,6 +25,7 @@ yargs.command({
     addNote(argv.title, argv.body);
   },
 });
+
 yargs.command({
   command: "remove",
   describe: "remove note",
@@ -35,11 +40,13 @@ yargs.command({
     removeNote(argv.title);
   },
 });
+
 yargs.command({
   command: "list",
   describe: "show list",
   handler: () => listNotes(),
 });
+
 yargs.command({
   command: "read",
   describe: "read",
@@ -54,4 +61,5 @@ yargs.command({
     readNote(argv.title);
   },
 });
+
 yargs.parse();

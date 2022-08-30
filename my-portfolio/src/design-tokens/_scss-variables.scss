@@ -1,0 +1,59 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+--- 07 WHITESPACE
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+$bgc-color: #0f1624;
+
+$very-large-screen: "max-width: 1600px";
+$large-screen: "max-width: 991px";
+$medium-screen: "max-width: 776px";
+$small-screen: "max-width: 600px";
+$so-small-screen: "max-width: 400px";
+
+$small-screen-height: "max-height: 530px";
+
+$main-btn-gradient: linear-gradient(270deg, #00dbd8 0%, #b133ff 100%);
+
+$large-font: 4.2rem;
+
+$medium-font: 3.4rem;
+
+$small-font: 2rem;
+
+$nav-z: 1000;
+
+$hero-title-z: 5;
+
+$transition-3: all 0.3s;
+$transition-5: all 0.5s;
+$transition-1: all 1s;
+
+.section__container {
+  height: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-bottom: 120px;
+
+  @media (max-width: 600px) {
+    max-width: 85%;
+  }
+}

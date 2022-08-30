@@ -1,0 +1,163 @@
+@import "../../design-tokens/scss-variables.scss";
+
+.services {
+  height: auto;
+  overflow: hidden;
+  &__container {
+    @extend .section__container;
+    display: flex;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-basis: 50%;
+
+    p {
+      font-size: 2rem;
+      line-height: 2;
+    }
+  }
+
+  &__cards-container {
+    position: relative;
+    > * {
+      position: absolute;
+    }
+  }
+
+  &__button {
+    width: 262px;
+    height: 6.4rem;
+    margin: 180px 0 0;
+    background: linear-gradient(90deg, #4a00e0 30%, #8e2de2 100%);
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: $transition-3;
+    -webkit-transition: $transition-3;
+    -moz-transition: $transition-3;
+    -ms-transition: $transition-3;
+    -o-transition: $transition-3;
+    outline: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+
+    @media ($large-screen) {
+      margin: 115px 0 0;
+    }
+    @media ($medium-screen) {
+      margin: 90px 0 0;
+    }
+    @media ($small-screen) {
+      margin: 70px 0 0;
+    }
+  }
+
+  &__button::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.8s;
+    -webkit-transition: opacity 0.8s;
+    -moz-transition: opacity 0.8s;
+    -ms-transition: opacity 0.8s;
+    -o-transition: opacity 0.8s;
+  }
+
+  &__button:hover {
+    // background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background: linear-gradient(90deg, #4a00e0, #8e2de2, #03a9f4, #4a00e0);
+    background-size: 400%;
+    z-index: 1;
+    animation: glow 8s linear infinite;
+  }
+
+  &__button:hover::before {
+    opacity: 1;
+    z-index: -1;
+  }
+
+  .front-end {
+    order: 2;
+  }
+  .back-end {
+    order: 1;
+  }
+}
+
+@media ($large-screen) {
+  .services {
+    &__container {
+      flex-direction: column;
+      gap: 70px;
+      height: auto;
+    }
+
+    &__text-box {
+      order: 2;
+    }
+
+    &__cards-container {
+      order: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      position: static;
+      > * {
+        position: static;
+      }
+    }
+
+    &__button {
+      margin-top: 80px;
+    }
+  }
+}
+
+@media ($medium-screen) {
+  .services {
+    .front-end {
+      order: 1;
+    }
+    .back-end {
+      order: 2;
+    }
+  }
+}
+
+@media ($small-screen) {
+  .services {
+    &__button {
+      width: 196.5px;
+      height: 48px;
+    }
+  }
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}

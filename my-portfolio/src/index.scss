@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import "./design-tokens/scss-variables.scss";
+/* 
+
+white: 
+#ccd6f6
+#f2f5f7
+
+gray: 
+
+bgc: 
+#0F1624
+
+accent color:
+#64ffda
+
+option 2:
+#2c304d
+
+accent:
+#fec576
+button: 
+#006bb8
+
+pinks: 
+#ea80fc
+
+gradient 
+'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)'
+'linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)'
+
+*/
+
+$color: red;
+
+:root {
+  --primary-color: #edf2f8;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --white-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 600px) {
+  .html {
+    font-size: 55%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #0f1624;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+.new-section {
+  height: 1000vh;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/***************/
+/* scroll bar  */
+/**************/
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #606060;
+  display: block;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #606060d2;
+}
+
+/* hero section */
+.nav-replacer {
+  width: 100%;
+  height: 8.4rem;
+}
+
+@media (max-width: 600px) {
+  .nav-replacer {
+    height: 6.4rem;
+  }
+}
+
+.preLoad-container {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: #fff;
+}
+
+button:focus {
+  outline: none;
+  border: none;
+}
+
+// general styles
+
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-text {
+  font-size: 0.8rem;
+  text-align: left;
+  line-height: 1.5;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
+}
+
+.bold-text {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--black-color);
+  text-align: left;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+  }
+}
+
+ul {
+  padding: 0;
+}

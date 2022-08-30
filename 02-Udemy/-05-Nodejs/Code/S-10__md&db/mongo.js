@@ -86,15 +86,15 @@ MongoClient.connect(connect, { useNewUrlParser: true }, (error, client) => {
   //     console.log(error)
   // });
 
-  //? Deleting task
-  db.collection("tasks")
-    .deleteOne({
-      _id: new ObjectID("62c0a429d644687f8865ac23"),
-    })
-    .then((result) => {
-      console.log(result);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+  //* Deleting task
+  // db.collection("tasks")
+  //   .deleteOne({
+  //     _id: new ObjectID("62c0a429d644687f8865ac23"),
+  //   })
+  //   .then((result) => {
+  //     console.log(result);
+  //   })
+  //   .catch((error) => {
+  //     console.log(error);
+  //   });
 });

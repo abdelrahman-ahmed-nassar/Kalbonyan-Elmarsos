@@ -1,0 +1,65 @@
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 5rem;
+  background: linear-gradient(121.57deg, #ffffff, rgba(255, 255, 255, 0.66));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  margin-left: 10%;
+  margin-top: 100px;
+  margin-bottom: 45px;
+}
+
+@media (max-width: 991px) {
+  .title {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 776px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    margin-bottom: 45px;
+    font-size: 3.6rem;
+  }
+}
+
+/* 
+
+export const SectionTitle = styled.h2`
+  font-weight: 800;
+  font-size: ${(props) => props.main ? '65px' : '56px'};
+  line-height: ${(props) => props.main ? '72px' : '56px'};
+  width: max-content;
+  max-width: 100%;
+  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  padding: ${(props) => props.main ? '58px 0 16px' : '0'};
+  @media ${props => props.theme.breakpoints.md}{
+    font-size: ${(props) => props.main ? '56px' : '48px'};
+    line-height: ${(props) => props.main ? '56px' : '48px'};
+    margin-bottom: 12px;
+    padding: ${(props) => props.main ? '40px 0 12px' : '0'};
+  }
+  @media ${props => props.theme.breakpoints.sm}{
+    font-size: 32px;
+    line-height: 40px;
+    font-size: ${(props) => props.main ? '28px' : '32px'};
+    line-height: ${(props) => props.main ? '32px' : '40px'};
+    margin-bottom: 8px;
+    padding: ${(props) => props.main ? '16px 0 8px' : '0'};
+    max-width: 100%;
+  }
+`
+
+*/

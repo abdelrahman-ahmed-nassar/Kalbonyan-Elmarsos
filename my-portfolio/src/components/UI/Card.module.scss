@@ -1,0 +1,49 @@
+.card {
+  $border: 3px;
+
+  position: relative;
+
+  background-clip: padding-box;
+  border: solid $border transparent;
+
+  width: 270px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-align: center;
+  background-color: #0f1624;
+  color: #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 0 26px 3.2rem 26px;
+
+  .heading {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$border;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #4a00e0 30%, #8e2de2 100%);
+  }
+}
+
+@media (max-width: 776px) {
+  .card {
+    width: 290px;
+  }
+}

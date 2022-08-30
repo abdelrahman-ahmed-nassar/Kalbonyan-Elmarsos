@@ -61,4 +61,5 @@ yargs.command({
     readNote(argv.title);
   },
 });
+
 yargs.parse();

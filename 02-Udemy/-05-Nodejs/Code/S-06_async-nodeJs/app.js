@@ -1,5 +1,5 @@
 const geocode = require("./utils/geocode");
-const weather = require("./utils/weather");
+const weather = require("./utils/forecast");
 
 geocode(process.argv[2], (error, { latitude, longitude, placeName } = {}) => {
   if (error) {

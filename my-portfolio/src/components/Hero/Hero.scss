@@ -1,0 +1,194 @@
+@import "../../design-tokens/scss-variables.scss";
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero {
+  height: 103.5vh;
+  color: #fff;
+
+  &__container {
+    @extend .section__container;
+  }
+
+  &__text-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -100px;
+    padding-right: 20px;
+  }
+
+  //******* animated bgc
+  &__bgc {
+    width: 650px;
+    height: 650px;
+    position: absolute;
+    top: 12%;
+    right: 0;
+  }
+
+  // text
+  &__title {
+    font-weight: normal;
+    font-size: $large-font;
+
+    margin-bottom: 60px;
+    z-index: $hero-title-z;
+  }
+
+  &__text {
+    height: 50px;
+    font-size: $medium-font;
+  }
+
+  //***** text animation
+  .blinking-cursor:after {
+    content: "|";
+    color: #fff;
+    animation: blink 1s step-start infinite;
+    -webkit-animation: blink 1s step-start infinite;
+  }
+
+  //***** Button
+  &__button {
+    width: 262px;
+    height: 64px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px 0 -150px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    outline: none;
+    position: relative;
+    border: none;
+    outline: none;
+    background: linear-gradient(270deg, #00dbd8 0%, #b133ff 100%);
+  }
+
+  &__button::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.8s;
+    -webkit-transition: opacity 0.8s;
+    -moz-transition: opacity 0.8s;
+    -ms-transition: opacity 0.8s;
+    -o-transition: opacity 0.8s;
+  }
+
+  &__button:hover {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    //   background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+    background-size: 400%;
+    z-index: 1;
+    animation: glow 8s linear infinite;
+  }
+
+  &__button:hover::before {
+    opacity: 1;
+    z-index: -1;
+  }
+}
+
+@media ($large-screen) {
+  .hero {
+    &__bgc {
+      width: 600px;
+      height: 600px;
+      top: 15%;
+    }
+  }
+}
+
+@media ($medium-screen) {
+  .hero {
+    &__bgc {
+      width: 500px;
+      height: 500px;
+    }
+
+    // text
+    &__title {
+      font-size: $medium-font;
+    }
+    &__text {
+      font-size: 2.8rem;
+    }
+    &__text-wrapper {
+      height: 100%;
+      padding-right: 0;
+    }
+  }
+}
+
+@media ($small-screen) {
+  .hero {
+    &__bgc {
+      width: 400px;
+      height: 400px;
+      top: 12%;
+      right: 0;
+    }
+
+    // text
+    &__title {
+      font-size: 3rem;
+    }
+    &__text {
+      font-size: 2.4rem;
+    }
+
+    // button
+    &__button {
+      width: 196.5px;
+      height: 48px;
+      margin: 100px 0 -100px 0;
+    }
+  }
+}
+
+@media ($so-small-screen) {
+  .hero {
+    &__bgc {
+      width: 350px;
+      height: 30px;
+    }
+  }
+}
+
+@media ($small-screen-height) {
+  .hero {
+    height: 700px;
+  }
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
