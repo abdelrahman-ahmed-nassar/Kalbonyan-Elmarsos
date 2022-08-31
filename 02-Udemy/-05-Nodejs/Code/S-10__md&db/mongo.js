@@ -89,7 +89,7 @@ MongoClient.connect(connect, { useNewUrlParser: true }, (error, client) => {
   //* Deleting task
   // db.collection("tasks")
   //   .deleteOne({
-  //     _id: new ObjectID("62c0a429d644687f8865ac23"),
+  //     _id: new ObjectID("06f1c560a322567c33251c43"),
   //   })
   //   .then((result) => {
   //     console.log(result);
