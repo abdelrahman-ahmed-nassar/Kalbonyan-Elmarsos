@@ -103,6 +103,6 @@ Kalbonyan Elmarsos is an Egyptian non-profit organization whose goal is to help 
 
 #### [Portfolio Code](https://github.com/abdelrhman-ahmed-kamal/portfolio)
 
-[CV](./Abdelrhmans_resume.pdf)
+[CV](https://icy-drop-674.notion.site/Abdelrhman-s-resume-3b987f47d3554ec79339a7e897773e1a)
 
 > ###### made with ❤️ by abdelrahman ahmed.
