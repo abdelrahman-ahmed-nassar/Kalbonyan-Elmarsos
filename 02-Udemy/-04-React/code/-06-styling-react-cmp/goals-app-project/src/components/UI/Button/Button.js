@@ -1,5 +1,3 @@
-import styled from "styled-components";
-
 import styles from "./Button.module.css";
 
 import React from "react";
